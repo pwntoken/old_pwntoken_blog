@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-02-24T14:47:33+05:30</updated>
+  <updated>2015-02-24T15:00:55+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Shritam Bhowmick]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
