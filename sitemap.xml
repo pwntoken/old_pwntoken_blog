@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://pwntoken.github.io/2015/03/initial-post-and-an-introduction/</loc>
+    <lastmod>2015-03-12T01:54:25+05:30</lastmod>
+  </url>
+  <url>
     <loc>http://pwntoken.github.io/blog/archives/</loc>
-    <lastmod>2015-02-27T19:53:17+05:30</lastmod>
+    <lastmod>2015-03-12T02:04:17+05:30</lastmod>
   </url>
   <url>
     <loc>http://pwntoken.github.io/</loc>
-    <lastmod>2015-02-27T19:53:17+05:30</lastmod>
+    <lastmod>2015-03-12T02:04:17+05:30</lastmod>
   </url>
 </urlset>

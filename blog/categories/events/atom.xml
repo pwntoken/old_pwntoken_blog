@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Pwntoken - Digital Security Research]]></title>
-  <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Events | Pwntoken - Digital Security Research]]></title>
+  <link href="http://pwntoken.github.io/blog/categories/events/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
   <updated>2015-03-12T02:04:17+05:30</updated>
   <id>http://pwntoken.github.io/</id>
