@@ -10,9 +10,9 @@ This would be the very first post on Pwntoken. I have configured Octopress which
 
 I have decided to post specific things here:
 
-- Recent events
-- My updates on pentests
-- Application Security Specific updates
-- Different code usability and coding in general
+ - Recent events
+ - My updates on pentests
+ - Application Security Specific updates
+ - Different code usability and coding in general
 
 That's all for now; I hope this would be useful for others as well. Originally, this has been made for personal digital research and creating an archive of digital security updates.
