@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Events | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/events/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-03-12T02:27:07+05:30</updated>
+  <updated>2015-03-12T02:56:21+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Initial Post and an Introduction]]></title>
-    <link href="http://pwntoken.github.io/initial-post-and-an-introduction/"/>
+    <link href="http://pwntoken.github.io/2015/03/initial-post-and-an-introduction/"/>
     <updated>2015-03-12T01:54:25+05:30</updated>
-    <id>http://pwntoken.github.io/initial-post-and-an-introduction</id>
+    <id>http://pwntoken.github.io/2015/03/initial-post-and-an-introduction</id>
     <content type="html"><![CDATA[<p>This would be the very first post on Pwntoken. I have configured Octopress which has more features and control then Wordpress (<a href="http://www.pwntoken.wordpress.com">http://www.pwntoken.wordpress.com</a>) and decided to dedicate my posts here.</p>
 
 <p>I have decided to post specific things here:</p>
