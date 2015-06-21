@@ -8,7 +8,7 @@ categories: Events
 
 Readers,
 
-It's been a while since I was in a move to port my old blog at pwntoken.wordpress.com to Octopress. I chose octopress over wordpress because of the functionality,the learning experience for the new age hackers and the speed. Along with the added repository at github, I have stood acoss on this one to be available to the public from github site publishing service. 
+It's been a while since I was in a move to port my old blog at pwntoken.wordpress.com to Octopress. I chose octopress over wordpress because of the functionality, the learning experience for the new age hackers and the speed. Along with the added repository at github, I have stood acoss on this one to be available to the public from github site publishing service. 
 	
 Here's a couple of pointers I would like to add on this introductory posts and what this blog would essentially be about:
 	
