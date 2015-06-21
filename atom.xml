@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Pwntoken - Digital Security Research]]></title>
+  <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
+  <link href="http://pwntoken.github.io/"/>
+  <updated>2015-03-12T16:23:19+05:30</updated>
+  <id>http://pwntoken.github.io/</id>
+  <author>
+    <name><![CDATA[Shritam Bhowmick]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Initial Post and an Introduction]]></title>
+    <link href="http://pwntoken.github.io/initial-post-and-an-introduction/"/>
+    <updated>2015-03-12T01:54:25+05:30</updated>
+    <id>http://pwntoken.github.io/initial-post-and-an-introduction</id>
+    <content type="html"><![CDATA[<p>This would be the very first post on Pwntoken. I have configured Octopress which has more features and control then Wordpress (<a href="http://www.pwntoken.wordpress.com">http://www.pwntoken.wordpress.com</a>) and decided to dedicate my posts here.</p>
+
+<p>I have decided to post specific things here:</p>
+
+<ul>
+<li>Recent events</li>
+<li>My updates on pentests</li>
+<li>Application Security Specific updates</li>
+<li>Different code usability and coding in general</li>
+</ul>
+
+
+<p>That&rsquo;s all for now; I hope this would be useful for others as well. Originally, this has been made for personal digital research and creating an archive of digital security updates.</p>
+]]></content>
+  </entry>
+  
+</feed>
