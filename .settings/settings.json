@@ -1,4 +1,4 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-	"editor.wrappingColumn": 0, "editor.wrappingIndent": "none"
+	"editor.wrappingColumn": 0, "editor.wrappingIndent": "same"
 }
