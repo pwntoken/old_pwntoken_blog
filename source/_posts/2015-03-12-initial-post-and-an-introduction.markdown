@@ -20,7 +20,5 @@ Here's a couple of pointers I would like to add on this introductory posts and w
 A couple of other posts could make it out here. To get an overall abstract of the posts, it's recommended to take a note of the category section and then click on the link of your subject interest. The sole purpose of this blog is to serve personal research tracking, however, this same information could be freely used for essentially incorporating working knowledge repository given original credits are included. I hope the readers will find this blog informative and updated from time to time. I look forward to constant feedbacks, if any. 
 
 Regards,
-
 Shritam Bhowmick,
-
 Independent Security Consultant	
