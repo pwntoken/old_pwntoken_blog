@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | Pwntoken - Digital Security Research]]></title>
+  <link href="http://pwntoken.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://pwntoken.github.io/"/>
+  <updated>2015-07-14T12:43:19+05:30</updated>
+  <id>http://pwntoken.github.io/</id>
+  <author>
+    <name><![CDATA[Shritam Bhowmick]]></name>
+    <email><![CDATA[shritam.bhowmick@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Driving-By Dirty Octopress]]></title>
+    <link href="http://pwntoken.github.io/driving-by-dirty-octopress/"/>
+    <updated>2015-07-14T11:25:27+05:30</updated>
+    <id>http://pwntoken.github.io/driving-by-dirty-octopress</id>
+    <content type="html"><![CDATA[<h1>Quick Dirty Press</h1>
+
+<p>If you drove off here to know about the Octopress framework and get started rapidly over in a hour, this could be your best bet or you could always research and end up in thousand more blogs and end up on the same thing except only after having lost hours linking one solution to another problem and vice versa.</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h1>Why port to Octopress?</h1>
+
+<p>Why would a chap like me want to port from Wordpress to Octopress? For that I would first need to answer problems with the basic setup and i.e: PHP/MySQL stack - a complete stupid stack with needs to update plugins/code, etc. in a long run, generate more dynamic pages, parameters, etc in order to exhale more security loopholes.</p>
+
+<h2>Deploying to Github:</h2>
+
+<ul>
+<li>create a new repository at Github, this is fairly self explainatory.</li>
+<li>the host machine must have Ruby, Github and Octopress downloaded via Git.</li>
+<li><p>Now that, everything is ready, move to octopress folder and run
+   rake setup_github_pages</p></li>
+<li><p>set the repository URL from Github when asked.</p></li>
+<li><p>run rake generate
+   rake generate</p></li>
+<li><p>run deployment. This might ask username and SSH keys password from Github.
+   rake deploy</p></li>
+<li><p>check git status to look if anything is uncommited
+   git status</p></li>
+<li>to push any changes into the remote github repository, use below
+   git add .
+   git commit -m &ldquo;any message here, a conventional one&rdquo;
+   git push origin source</li>
+</ul>
+
+
+<p>Octopress Video Plugin:</p>
+
+<pre><code> {% video absolute url [width height] [the image] %}
+ {% video http://localhost:4000/video.mov 854 480 http://image_host.com/someimage.png %}
+</code></pre>
+
+<p>Octopress Image Plugin:</p>
+
+<pre><code> {% img [class anme] /path/to/image [width] [height] [title text [alt text]] %}
+ {% img http://localhost:4000/assets/img.png %}
+</code></pre>
+
+<p>Octopress Blockquote Plugin:</p>
+
+<pre><code> {% blockquote [author [, source ]] [link] [source link title] %} {% endblockquote %}
+ {% blockquote Shritam Bhowmick, His Portfolio %}
+ To the mind that is still, the whole world surrenders.
+ {% endblockquote %}
+</code></pre>
+
+<p>Octopress Code Plugin:</p>
+
+<p>Markdown Method: tab in your code.</p>
+
+<pre><code> var framework = "octopress";
+</code></pre>
+
+<p>Backtick Method: open and close with three backticks</p>
+
+<pre><code> ``` js Variable Assignment http://www.localhost:4000/ Link
+ var farmework = "octopress";
+ ```
+</code></pre>
+
+<p>CodeBlock Method: more like blockquote method</p>
+
+<pre><code> {% codeblock Variable Assignment lang:js http://www.localhost:4000/ Link %}
+ var framework = "octopress";
+ {% endcodeblock %}
+</code></pre>
+
+<p>Include Code: file is stored in the octopress source directory, and one can include the code from the file. The user needs to use the /config.yml and there would be code_dir set to teh default one.</p>
+
+<pre><code> {% include_code JS lang:js file.js %}
+</code></pre>
+
+<p>Gist Method: The sample code below can used to pull out code from Gist from Github</p>
+
+<pre><code> {% gist gist_id [filename] %}
+</code></pre>
+
+<p>JSFiddle Method: Pull JavaScript code from JSFiddle</p>
+
+<pre><code> {% jsfiddle shorttag [tabs] {skin} [height] [width] %}
+ {% jsfiddle fATe6 %}
+</code></pre>
+
+<p>To split a page into &lsquo;read more&rsquo; styling, use:</p>
+
+<pre><code> &lt;!-- more --&gt;
+</code></pre>
+
+<h1>Fixes and Work-Arounds!</h1>
+
+<p>These are some of the fixes which I though might be just helpful when not using any automation for markdown via editors such as Atom, etc .. if you are writing in raw text and believe it&rsquo;s going to be all easy - trust me it&rsquo;s not going to be!</p>
+
+<ol>
+<li><p>Fix &ldquo;Liquid Exceptions&rdquo; - common symptoms are &lsquo;tags not closed&rsquo; etc .. Here&rsquo;s a hint for you - always close tags in proper syntax such as for blockquote:</p>
+
+<p> {% blockquote Octopress, It&rsquo;s Documentation %}
+ has to end with endblockquotes
+ {% endblockquote %}</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
