@@ -4,33 +4,41 @@
   <title><![CDATA[Category: Events | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/events/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-03-12T16:23:19+05:30</updated>
+  <updated>2015-08-09T00:24:57+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
-    
+    <email><![CDATA[shritam.bhowmick@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[Initial Post and an Introduction]]></title>
+    <title type="html"><![CDATA[Introduction]]></title>
     <link href="http://pwntoken.github.io/initial-post-and-an-introduction/"/>
     <updated>2015-03-12T01:54:25+05:30</updated>
     <id>http://pwntoken.github.io/initial-post-and-an-introduction</id>
-    <content type="html"><![CDATA[<p>This would be the very first post on Pwntoken. I have configured Octopress which has more features and control then Wordpress (<a href="http://www.pwntoken.wordpress.com">http://www.pwntoken.wordpress.com</a>) and decided to dedicate my posts here.</p>
+    <content type="html"><![CDATA[<p>Readers,</p>
 
-<p>I have decided to post specific things here:</p>
+<p>It&rsquo;s been a while since I was in a move to port my old blog at pwntoken.wordpress.com to Octopress. I chose octopress over wordpress because of the functionality, the learning experience for the new age hackers and the speed. Along with the added repository at github, I had stood across on this one to be made available to the public from github site publishing service (git pages).</p>
+
+<p>Here&rsquo;s a couple of pointers I would like to add on this introductory post and what this blog would essentially be about:</p>
 
 <ul>
-<li>Recent events</li>
-<li>My updates on pentests</li>
-<li>Application Security Specific updates</li>
-<li>Different code usability and coding in general</li>
+<li>computer science</li>
+<li>information security research</li>
+<li>web application security research</li>
+<li>network infrastructure security research</li>
 </ul>
 
 
-<p>That&rsquo;s all for now; I hope this would be useful for others as well. Originally, this has been made for personal digital research and creating an archive of digital security updates.</p>
+<p>A couple of other posts could make it out here. To get an overall abstract of the posts, it&rsquo;s recommended to take a note of the category section and then click on the link of your subject interest. The sole purpose of this blog is to serve personal research tracking to myself and keep a regulatory note of information security sciences for analytical study and it&rsquo;s development in past, present, recent and for future times; however the collected informational repository made out here could be used for essential incorporation of working knowledge into pratical driven measures given original credits are included and outcome of any code herein mentioned or copied does not hold any accountable responsibility to it&rsquo;s authors.</p>
+
+<p>I hope the readers will find this blog informative and updated from time to time and will ensure a good resource overall for the information security community. I look forward to constant feedbacks, if any. Time to get back to the originals.</p>
+
+<p>Regards,     <br/>
+Shritam Bhowmick,        <br/>
+Independent Security Consultant</p>
 ]]></content>
   </entry>
   
