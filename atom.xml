@@ -4,7 +4,7 @@
   <title><![CDATA[Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-08-14T05:03:12+05:30</updated>
+  <updated>2015-08-20T04:00:12+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -89,6 +89,8 @@
 </span><span class='line'>git commit -m "any message here, a conventional one"
 </span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
 
+
+<p>Octopress documentation could be a great place to start with. Here&rsquo;s [the web documentation] (<a href="http://octopress.org/docs/">http://octopress.org/docs/</a> &ldquo;Octopress Docs&rdquo;).</p>
 
 <p>Octopress Video Plugin:</p>
 
@@ -239,6 +241,26 @@
 
 
 <p>Note: you&rsquo;ll notice I have had used <em>include code</em> method instead of <code>codeblock</code> to illustrate my example in the above code snippet. The reason is I would had to iterate the <code>raw</code> and <code>endraw</code> liquid markup and escape opening liquid markup. This is however possible using <code>assign</code> operators; however I have had not done the research on it and it somehow rendered the entire code bad.</p>
+
+<ul>
+<li><strong>Special Characters in Octopress</strong> could be used using the method as shown above i.e via using <code>raw</code> and <code>endraw</code>. Sample code below!</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>&amp;#x3C;ul id=&amp;#x22;beers-list&amp;#x22;&amp;#x3E;
+</span><span class='line'>    <span class="p">{{</span><span class="err">#</span><span class="nv">beers</span><span class="p">}}</span>
+</span><span class='line'>        &amp;#x3C;li&amp;#x3E;<span class="p">{{</span><span class="nv">name</span><span class="p">}}</span> - <span class="p">{{</span><span class="nv">color</span><span class="p">}}</span> - <span class="p">{{</span><span class="nv">alcohol</span><span class="p">}}</span>%&amp;#x3C;/li&amp;#x3E;
+</span><span class='line'>    <span class="p">{{</span><span class="err">/</span><span class="nv">beers</span><span class="p">}}</span>
+</span><span class='line'>&amp;#x3C;/ul&amp;#x3E;
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
