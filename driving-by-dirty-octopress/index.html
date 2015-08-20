@@ -174,7 +174,20 @@
 </span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Octopress documentation could be a great place to start with. Here&rsquo;s [the web documentation] (<a href="http://octopress.org/docs/">http://octopress.org/docs/</a> &ldquo;Octopress Docs&rdquo;).</p>
+<h2>Before you commit to Octopress</h2>
+
+<p>There are basics if one really would need to customize and initiate the power of octopress to the next level. One does not simply limit himself to understanding of markdown but there&rsquo;s a lot <del>under-the-hood in the octopress framework</del> (<em>not really</em>, take time reading!).</p>
+
+<p>Octopress 3.0 makes it more simpler but here I would be using Octopress 2.0 in it&rsquo;s truest and meanest form possible since it&rsquo;s easy and isn&rsquo;t tough for one from a developer background. That been said, here are some pre-requisities suggested (<del>although not mandatory</del>, but it is!)</p>
+
+<ul>
+<li><p>Octopress documentation could be a great place to start with. Here&rsquo;s <a target ="_blank" href="http://octopress.org/docs/">the web documentation</a>.</p></li>
+<li><p>Markdown basics and additional markdown cheatsheets could be a benifit. Start with <a href="http://daringfireball.net/projects/markdown/basics">DaringBall Markdown Basics</a>. A good amount of <a href="http://www.sitepoint.com/markdown-processing-ruby/">pointers on markup summarization</a> has been done by Jesse Herrick. Take time going through them as well.</p></li>
+<li><p>Before you do down deeper, know what are different parsers which are used with octopress installation and take liberty to understand <code>rDiscount</code>, <code>Kramdown</code> and <code>Shopify Templates</code> or one can also read through the documentation covered here in <a href="http://jekyllrb.com/docs/home/">Jekyll</a>. Jekyll go hand-in-hand with Octopress 2.0 and Octopress relies on it&rsquo;s support, however this has come to an drastic change since <a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/">release of Octopress 3.0</a>.</p></li>
+</ul>
+
+
+<h2>Octopress Plugins and Support</h2>
 
 <p>Octopress Video Plugin:</p>
 
@@ -324,10 +337,10 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Note: you&rsquo;ll notice I have had used <em>include code</em> method instead of <code>codeblock</code> to illustrate my example in the above code snippet. The reason is I would had to iterate the <code>raw</code> and <code>endraw</code> liquid markup and escape opening liquid markup. This is however possible using <code>assign</code> operators; however I have had not done the research on it and it somehow rendered the entire code bad.</p>
+<p><em>Note</em>: you&rsquo;ll notice I have had used <em>include code</em> method instead of <code>codeblock</code> to illustrate my example in the above code snippet. The reason is I would had to iterate the <code>raw</code> and <code>endraw</code> liquid markup and escape opening liquid markup. This is however possible using <code>assign</code> operators; however I have had not done the research on it and it somehow rendered the entire code bad.</p>
 
 <ul>
-<li><strong>Special Characters in Octopress</strong> could be used using the method as shown above i.e via using <code>raw</code> and <code>endraw</code>. Sample code below!</li>
+<li>Having been into security, I would <em>really</em> need to illustrate code snippets which carry special information and thos which deal with non-ASCII, such as <code>&amp;#x3c</code> and such. <strong>Special Characters in Octopress</strong> could be used using the method as shown above i.e via using <code>raw</code> and <code>endraw</code>. Have a look at the Sample code below!</li>
 </ul>
 
 
@@ -345,6 +358,21 @@
 </span><span class='line'>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<ul>
+<li>Fix <em>liquid exception</em> <strong>undefined method <code>[]</code></strong> on octopress might just be a time consuming research. I have it before-hand for you. So, the ground fact is here&rsquo;s what you might end up sometime while doing a <code>rake generate</code> and hence the parser not being able to <em>completely</em> generate the markdown files (e.g. below)</li>
+</ul>
+
+
+<p><img src="http://s23.postimg.org/k2ylvsmmz/fixundefined.png"></p>
+
+<p>To solve this, goto the <code>.pygments-cache</code> and <code>rm .pygments-cache</code> directory as a whole as shown below in your octopress installation.</p>
+
+<p><em>Note</em>: ignore <code>The system cannot find the path specified.</code> since they are generic custom <code>cmd</code> environment errors and not related to octopress, it&rsquo;s ruby dependency or python pygments highlighter dependencies.</p>
+
+<p><img src="http://s30.postimg.org/wx0nlazht/deletepygments.png"></p>
+
+<p>This <em>issue</em> persists with Windows installations and haven&rsquo;t been found in linux installations. I had however tried <em>re-installing python 2.7.x</em>, <em>re-installing ruby 2.2.x</em>, and everything else which were possible but all solution ended up to this <em>working method</em>.</p>
 </div>
 
 
