@@ -84,7 +84,7 @@ _Sample Video_ via YouTube Embed (without using *markdown*):
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0cLh_-O-SJA" frameborder="0" allowfullscreen></iframe>
 {% endraw %} {% endcodeblock %}
 
-_Note_: Frame height and width can be accordingly adjusted using the given `width-height` parameters.
+<u>_Note_</u>: Frame height and width can be accordingly adjusted using the given `width-height` parameters.
 
 _Sample Video_ via *Markdown* (using Liquid Markup Video-Image Alternatives):
 
@@ -210,8 +210,7 @@ To split a page into 'read more' styling, use:
 
 The _sample_ for this was illustrated when you chose to click on `continue reading ..`
 
-Fixes and Work-Arounds!
-=======================
+## Fixes and Work-Arounds!
 
 These are some of the fixes which I though might be just helpful when not using any automation for markdown via editors such as Atom, etc .. if you are writing in raw text and believe it's going to be all easy - trust me it's not going to be!
 
@@ -228,7 +227,7 @@ has to end with endblockquotes
 
 {% include_code code.js %}
 
-*Note*: you'll notice I have had used *include code* method instead of `codeblock` to illustrate my example in the above code snippet. The reason is I would had to iterate the `raw` and `endraw` liquid markup and escape opening liquid markup. This is however possible using `assign` operators; however I have had not done the research on it and it somehow rendered the entire code bad. 
+<u>*Note*</u>: you'll notice I have had used *include code* method instead of `codeblock` to illustrate my example in the above code snippet. The reason is I would had to iterate the `raw` and `endraw` liquid markup and escape opening liquid markup. This is however possible using `assign` operators; however I have had not done the research on it and it somehow rendered the entire code bad. 
 
 * Having been into security, I would *really* need to illustrate code snippets which carry special information and thos which deal with non-ASCII, such as `&#x3c` and such. **Special Characters in Octopress** could be used using the method as shown above i.e via using `raw` and `endraw`. Have a look at the Sample code below!
 
@@ -247,13 +246,23 @@ has to end with endblockquotes
 
 To solve this, goto the `.pygments-cache` and `rm .pygments-cache` directory as a whole as shown below in your octopress installation. 
 
-*Note*: ignore `The system cannot find the path specified.` since they are generic custom `cmd` environment errors and not related to octopress, it's ruby dependency or python pygments highlighter dependencies.
+<u>*Note*</u>: ignore `The system cannot find the path specified.` since they are generic custom `cmd` environment errors and not related to octopress, it's ruby dependency or python pygments highlighter dependencies.
 
 {% img http://s30.postimg.org/wx0nlazht/deletepygments.png %}
 
 This *issue* persists with Windows installations and haven't been found in linux installations. I had however tried *re-installing python 2.7.x*, *re-installing ruby 2.2.x*, and everything else which were possible but all solution ended up to this *working method*. 
 
 * To fix and be <u>choosy</u> of your *markdown processor* not being able to provide with you with good alternatives for code block, you do know it's customizable and you can always have a `GitHub Style` combination [here](http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/).
+
+* To fix *bullet/numbered* styling which ships as default and indents to cornering left of the actual article body, you will require to add below lines to `sass/custom/_style.scss`:
+
+{% codeblock lang:liquid %}
+article {
+  ol, ul {
+    padding-left: 3em;
+  }
+}
+{% endcodeblock %}
 
 ## Conclusions
 
