@@ -65,7 +65,7 @@ Octopress 3.0 makes it more simpler but here I would be using Octopress 2.0 in i
 
 ##Octopress Plugins and Support
 
-Octopress Video Plugin:
+**Octopress Video Plugin**:
 
 {% codeblock lang:liquid %}
 {% raw %}
@@ -73,12 +73,42 @@ Octopress Video Plugin:
 {% video http://localhost:4000/video.mov 854 480 http://image_host.com/someimage.png %}
 {% endraw %} {% endcodeblock %}
 
-Octopress Image Plugin:
+_Sample Video_ via YouTube Embed (without using *markdown*):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0cLh_-O-SJA" frameborder="0" allowfullscreen></iframe>
+
+*Original Source* used for the above were (YouTube's Embed):
+
+{% codeblock lang:liquid %}
+{% raw %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0cLh_-O-SJA" frameborder="0" allowfullscreen></iframe>
+{% endraw %} {% endcodeblock %}
+
+_Note_: Frame height and width can be accordingly adjusted using the given `width-height` parameters.
+
+_Sample Video_ via *Markdown* (using Liquid Markup Video-Image Alternatives):
+
+{% video http://s3.imathis.com/video/zero-to-fancy-buttons.mp4 640 320 http://s3.imathis.com/video/zero-to-fancy-buttons.png %}
+
+*Original Sample* taken from [Octopress Documentation](http://octopress.org/docs/plugins/video-tag/).
+
+**Octopress Image Plugin**:
 
 {% codeblock lang:liquid %}
 {% raw %}
 {% img [class name] /path/to/image [width] [height] [title text [alt text]] %}
 {% img http://localhost:4000/assets/img.png %}
+{% endraw %} {% endcodeblock %}
+
+*Sample Image Example* using Liquid Markup:
+
+{% img http://s17.postimg.org/wvwql2atr/sample.png %}
+
+<u>_Note_</u>: This image was not set for *heights* and *widths*, the raw source code is as follows:
+
+{% codeblock lang:liquid %}
+{% raw %}
+{% img http://s17.postimg.org/wvwql2atr/sample.png %}
 {% endraw %} {% endcodeblock %}
 
 Octopress Blockquote Plugin:
@@ -91,18 +121,35 @@ To the mind that is still, the whole world surrenders.
 {% endblockquote %}
 {% endraw %} {% endcodeblock %}
 
+_Sample Quote Example_:
+
+{% blockquote Shritam Bhowmick, His Portfolio. %}
+To the mind that is still, the whole world surrenders.
+{% endblockquote %}
+
 Octopress Code Plugin:
 
-Markdown Method: tab in your code.
+Markdown Method: tab (indent) in your code.
 
 {% codeblock lang:liquid %}
 {% raw %}
-  var framework = "octopress";
+    var framework = "octopress";
 {% endraw %} {% endcodeblock %}
 
+_Sample Code Example_ Block using tab indenting:
+
+    var framework = "octopress";
+  
 Backtick Method: open and close with three backticks.
 
 {% include_code backtick.js %}
+
+_Sample Code Example_ using Backtick method for a codeblock:
+
+```
+js Variable Assignment http://www.localhost:4000/ Link
+var framework = "octopress";
+```
 
 CodeBlock Method: more like blockquote method.
 
@@ -113,6 +160,12 @@ var framework = "octopress";
 {% endcodeblock %}
 {% endraw %} {% endcodeblock %}
 
+_Sample Code Example_ using codeblock method with `lang:js` i.e. language set to it's intended type:
+
+{% codeblock Variable Assignment lang:js http://www.localhost:4000/ Link %}
+var framework = "octopress";
+{% endcodeblock %}
+
 Include Code: file is stored in the octopress source directory, and one can include the code from the file. The user needs to use the /config.yml and there would be code_dir set to the default one.
 
 {% codeblock lang:liquid %}
@@ -120,12 +173,20 @@ Include Code: file is stored in the octopress source directory, and one can incl
 {% include_code JS lang:js file.js %}
 {% endraw %} {% endcodeblock %}
 
+_Sample Code Example_ of an included `.js` file which has it'code content:
+
+{% include_code JS lang:js week.js %}
+
 Gist Method: The sample code below can used to pull out code from Gist from Github
 
 {% codeblock lang:liquid %}
 {% raw %}
 {% gist gist_id [filename] %}
 {% endraw %} {% endcodeblock %}
+
+_Sample Code Example_ to illustrate a random `gist` taken from Github:
+
+{% gist 85722d7e599c2858c0f3 pwntokenage.c %}
 
 JSFiddle Method: Pull JavaScript code from JSFiddle
 
@@ -135,12 +196,19 @@ JSFiddle Method: Pull JavaScript code from JSFiddle
 {% jsfiddle fATe6 %}
 {% endraw %} {% endcodeblock %}
 
+_Sample Code Example_ with a random `jsfiddle` ID:
+
+{% jsfiddle fATe6 %}
+
+
 To split a page into 'read more' styling, use:
 
 {% codeblock lang:liquid %}
 {% raw %}
 <!-- more -->
 {% endraw %} {% endcodeblock %}
+
+The _sample_ for this was illustrated when you chose to click on `continue reading ..`
 
 Fixes and Work-Arounds!
 =======================
@@ -184,3 +252,11 @@ To solve this, goto the `.pygments-cache` and `rm .pygments-cache` directory as 
 {% img http://s30.postimg.org/wx0nlazht/deletepygments.png %}
 
 This *issue* persists with Windows installations and haven't been found in linux installations. I had however tried *re-installing python 2.7.x*, *re-installing ruby 2.2.x*, and everything else which were possible but all solution ended up to this *working method*. 
+
+* To fix and be <u>choosy</u> of your *markdown processor* not being able to provide with you with good alternatives for code block, you do know it's customizable and you can always have a `GitHub Style` combination [here](http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/).
+
+## Conclusions
+
+That was a short but a devasting ride for a start with the `Octopress Framework`. My recommendations would be to stick to the Octopress *documentation*, and research a lot in order to get a perfect working shape of your work. 
+
+Feel free to drop your queries below and I could test them to get a `new rake post task` for you under the octopress category section - laters!
