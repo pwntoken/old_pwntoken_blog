@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Security | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-08-22T04:29:49+05:30</updated>
+  <updated>2015-08-22T04:38:11+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -64,7 +64,7 @@
 
 <p>For the third example - <em>personal scale industries</em>, there&rsquo;s social network which people rely on, small scale businesses which are growing but are striggling hard. Most targeted asset should be a single person who holds the data of value. Once this particular asset is compromised, the industry is compromised as well too. This isn&rsquo;t only about the personal industry but by compromising an entire range of information also leads to affect lives of others. A more realistic scenario could be a breach where <a href="http://edition.cnn.com/2015/08/20/us/josh-duggar-ashley-madison/">Asley Madison&rsquo;s site was compromised</a> - the one which lead to confusions with so many relationships and sometimes when it takes a techical breach to cause a havoc.</p>
 
-<p>Out there is a <strong>huge</strong> economy of relatively <em>economic impact vulnerabilities</em> which are sadly either neglected or often too underestimated in evaluation and therefore *security testing** becaomes a repetative failure. What could be a more wonder that a <a href="http://www.csoonline.com/article/2943968/data-breach/hacking-team-hacked-attackers-claim-400gb-in-dumped-data.html">hacking team, the one responsible to hold security for others landing up hacked themselves</a>?</p>
+<p>Out there is a <strong>huge</strong> economy of relatively <em>economic impact vulnerabilities</em> which are sadly either neglected or often too underestimated in evaluation and therefore <strong> <em>security testing</em> </strong> becomes a repetative failure. What could be a more wonder that a <a href="http://www.csoonline.com/article/2943968/data-breach/hacking-team-hacked-attackers-claim-400gb-in-dumped-data.html">hacking team, the one responsible to hold security for others landing up hacked themselves</a>?</p>
 
 <p>Hence the study of <em>economics of web application security</em> or for that matter <em>information security</em>/<em>network security</em> or <em>application security</em> in general is <strong>that</strong> (emphasized!) important. Take-away pointers:</p>
 
