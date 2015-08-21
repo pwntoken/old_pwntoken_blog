@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Web | Pwntoken - Digital Security Research]]></title>
+  <link href="http://pwntoken.github.io/blog/categories/web/atom.xml" rel="self"/>
+  <link href="http://pwntoken.github.io/"/>
+  <updated>2015-08-22T04:16:09+05:30</updated>
+  <id>http://pwntoken.github.io/</id>
+  <author>
+    <name><![CDATA[Shritam Bhowmick]]></name>
+    <email><![CDATA[shritam.bhowmick@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Economics of Web Application Security]]></title>
+    <link href="http://pwntoken.github.io/economics-of-web-application-security/"/>
+    <updated>2015-08-22T01:24:47+05:30</updated>
+    <id>http://pwntoken.github.io/economics-of-web-application-security</id>
+    <content type="html"><![CDATA[<h2><em>and the following isn&rsquo;t discouraging!</em></h2>
+
+<p>Here&rsquo;s why software security would always be a growing concern for leading technologies as well as for them who depend on these technologies e.g. corporations, companies, industry, small scale businesses and at a personal level social sites too. What we are talking here isn&rsquo;t related to a set of standard de-facto technology but what we <strong>are</strong> tallking about is the <strong> <em>economics</em> </strong> of related web application software, their technologies and how they can be measured in order to provide a continious flow of quality.</p>
+
+<!-- more -->
+
+
+<p>Almost everytime a new standard, or a technology is released - it <em>does</em> contain <em>vulnerabilities</em> Most often, these vulnerabilities are either hunted down using platforms such as <em>bug bounty</em> or otherwise dealt with privately via internal security team or traded in terms of a <em>0day</em>. It&rsquo;s no more about <em>how</em> one was able to compromise the applications in order to gain/trade or protect data but <em>how</em> it could had or has been important to make <em>an impact</em> to the business in concern. Almost all technical security researchers can deal with <em>identifying vulnerabilities</em> and claim they had been protecting the industry - but how about <em>measuring</em> these vulnerabilities in terms of <u><em>monetary impact to the business concerned?</em> </u>  This post is to talk about <em>that corner</em> of web application security industry which hasn&rsquo;t been much appretiated but still remains the core foundation to providing <strong>real security</strong>.</p>
+
+<p><img class="<a" src="href="http://s14.postimg.org/5u25o02td/solution.jpg">http://s14.postimg.org/5u25o02td/solution.jpg</a>&#8221;></p>
+
+<p>To <strong> <em>quantify</em> </strong> the expenditure spent due to  the presence of a vulnerability or a chain of vulnerabilities isn&rsquo;t an unknown art - but it is percieved to be as the most analytical security research art and therefore requires patience and core understanding about the vulnerability - most importantly <em>business wise in terms of quantifying them in monetary impact</em> and also in terms of <em>technical impact which could lead to furthur compromise or weaken a particular asset</em>. To me there are three categories of businesses:</p>
+
+<ul>
+<li>Industrial scale business</li>
+<li>Retail scale business</li>
+<li>Personal scale business</li>
+</ul>
+
+
+<p>To each having it&rsquo;s own valuation in the market and having said that I furthur look at asset classifications for them; which is for an example a stock market would be an industrial scale business and they might have these assets:</p>
+
+<ol>
+<li>people</li>
+<li>investors</li>
+<li>investments</li>
+</ol>
+
+
+<p>Now, taking the same example, it&rsquo;s self-evident that <em>people</em> lead to <em>processes</em> in their business as per their role; this could be:</p>
+
+<ul>
+<li>HR role</li>
+<li>Employee role</li>
+<li>Adminstration role</li>
+</ul>
+
+
+<p>Furthur categorization of the targeted asset value will lead to realization that most targeted attacks should be (<em>atleast in my personal opinion</em>) Employee role and Administration role since they the people who have the keys to the technical foundation and now that it&rsquo;s realized that these keys will lead to the door which weren&rsquo;t meant to be open - it&rsquo;s <em>seldom</em> that the <em>people in the processess</em> such as this, become the victim of attacks. At one hand, these people have the keys that lead to <em>secure access/trusted access to data</em> and then at the other hand these are the same people who are least trained to handle a security operation or not trained enough for security policies (<em>even if security policies are enforced</em>). A realistic example here could be <a href="http://www.tripwire.com/state-of-security/incident-detection/dhs-confirms-u-s-public-utilitys-control-system-was-hacked/">compromise of U.S. PUCS SCADA</a>.</p>
+
+<p><img class="<a" src="href="http://s8.postimg.org/hlt0gqp79/statistics_vuln_industry.jpg">http://s8.postimg.org/hlt0gqp79/statistics_vuln_industry.jpg</a>&#8221;></p>
+
+<p>Now let&rsquo;s take for an example a <em>Retail scale business</em> which by far can be any from a cyber security company to a ecommerce based company, a a ventured start-up or a well established commercial platform. These businesses run on <em>consumers</em> that they rely on and hence the most likely target will be <em>consumers</em> and their data. Ofcourse there are other assets such as <em>employees</em> - <em>IT Department employees specifically</em>. Categorization of asset once again will lead to an evaluation of what audience target should most likely be! A realistic example here could be <a href="http://www.techworld.com/news/e-commerce/e-bay-magento-e-commerce-platform-hacked-by-credit-card-fraudsters-3617851/">the breach of E-bay leading to credit card information exposed</a>.</p>
+
+<p>For the third example - <em>personal scale industries</em>, there&rsquo;s social network which people rely on, small scale businesses which are growing but are striggling hard. Most targeted asset should be a single person who holds the data of value. Once this particular asset is compromised, the industry is compromised as well too. This isn&rsquo;t only about the personal industry but by compromising an entire range of information also leads to affect lives of others. A more realistic scenario could be a breach where <a href="http://edition.cnn.com/2015/08/20/us/josh-duggar-ashley-madison/">Asley Madison&rsquo;s site was compromised</a> - the one which lead to confusions with so many relationships and sometimes when it takes a techical breach to cause a havoc.</p>
+
+<p>Out there is a <strong>huge</strong> economy of relatively <em>economic impact vulnerabilities</em> which are sadly either neglected or often too underestimated in evaluation and therefore *security testing** becaomes a repetative failure. What could be a more wonder that a <a href="http://www.csoonline.com/article/2943968/data-breach/hacking-team-hacked-attackers-claim-400gb-in-dumped-data.html">hacking team, the one responsible to hold security for others landing up hacked themselves</a>?</p>
+
+<p>Hence the study of <em>economics of web application security</em> or for that matter <em>information security</em>/<em>network security</em> or <em>application security</em> in general is <strong>that</strong> (emphasized!) important. Take-away pointers:</p>
+
+<ol>
+<li><p>Translate technical understanding of vulnerabilities to <strong>monetary terms</strong> or how well it can <strong>impact business in monetary terms</strong> and being able to leverage protection mechanisms against the same.</p></li>
+<li><p>The first pointer will lead to effectively gain an insight of <strong>cost of vulnerabilities</strong> to the owner of the business and hence the <em>chief security officer</em> be able to develop a fair plan to chart <strong>measurements for <em>return on investments</em> (ROI)</strong>.</p></li>
+<li><p>Being able to provide an accurate budget set-up on security and able to understand it&rsquo;s <em>return on investment</em>, the <strong>protection mechanisms placed</strong> can be more hardened and pre-planned with <em>Red Team exercies</em>.  Assign <strong> <em>appropiate</em> resources</strong> to pro-actively <strong>manage information security risks</strong>.</p></li>
+</ol>
+
+
+<p>All of the aforementioned three-pointers play a vital role in an industry to access it&rsquo;s security risks. Now, that we are talking about economics - the question remains how such assessments could be made easy and how <del>narrower</del> can be the road to this achievement?</p>
+
+<p>Answer is it <strong>takes years of expertise and understanding impact</strong> by not fueling the <strong>easy way out to vulnerabilities</strong>. I have had that taste of <strong>bug bounty programs</strong> which are mostly never meant to close the <strong>monetary impact</strong> of a particular vulnerability but instead * <strong>focus on the softer technical side and close out the </strong>bugs<em><em> </em>. Again, these are </em>bugs<em> and not </em>security threats as a whole<em>. Rare could be such occasions where </em>a valuable monetary vulnerability* has been reported. Here&rsquo;s a <a href="https://sites.google.com/site/bughunteruniversity/behind-the-scenes/charts">VRP chart from Google</a>.</p>
+
+<p><img class="<a" src="href="https://sites.google.com/site/bughunteruniversity/_/rsrc/1422631746620/behind-the-scenes/charts/trafficdist.png">https://sites.google.com/site/bughunteruniversity/_/rsrc/1422631746620/behind-the-scenes/charts/trafficdist.png</a>&#8221;></p>
+
+<p>&hellip;  and that doesn&rsquo;t really <em>motivate</em> me.</p>
+
+<p>Here are some quick pointers/gotcha&rsquo;s from this chart alone:</p>
+
+<ol>
+<li><p>Monetary to <del>security researchers</del> (now that they claim to be!) for hasteful reports <a href="https://www.bbhq.net/forums/topic/3/adobe-what-a-joke"><strong>just to gain rewards</strong></a> is a plain dis-respect to self-respect but could be professionally a no-harm&#8217;er. But tl;dr <em>the bug bounty program</em> cannot itself expect more and hence is <a href="http://thehackernews.com/2013/10/Yahoo-bug-bounty-program-reward-vulnerability.html"><em>always gentle</em></a>.</p></li>
+<li><p>Realizing a <a href="https://www.facebook.com/notes/facebook-bug-bounty/bug-bounty-highlights-and-updates/818902394790655">percent of valid reports</a> are made and ofcourse <strong>awarded</strong> does not verify the fact that it <em>had</em> <a href="http://shubh.am/the-deterioration-of-unmanaged-bug-bounties/">any monetary impact on the business</a>. Relaity check more vulnerabilities are dependent on each other and hence often times * <strong>a chain of vulnerabilities</strong> * which has to exist the same time as of depecndency of existence of others lead to a <strong>critical threat</strong>. Ofcourse, this too has a narrow window with <del>security researchers</del>.</p></li>
+<li><p>It&rsquo;s real that <a href="https://www.offensive-security.com/offsec/bug-bounty-program-insights/">Perspective is everything</a> but let&rsquo;s just say sometimes a persistent <em>hackerhat</em> cowboy either way does what they had always wanted to do and <a href="https://www.exploit-db.com/papers/15823/">it&rsquo;s not yet secure-proof</a> but let&rsquo;s just <a href="https://www.offensive-security.com/backtrack/offsec-web-server-hacked/">stay strong</a>.</p></li>
+<li><p>&hellip; <a href="https://medium.com/@Anonymous_India/the-truth-about-nakul-mohan-7e9c84d733c9">Really</a>?</p></li>
+</ol>
+
+
+<p><img class="<a" src="href="http://s27.postimg.org/yctiz01nn/reallyohmy.png">http://s27.postimg.org/yctiz01nn/reallyohmy.png</a>&#8221;></p>
+
+<p>That&rsquo;s an epic legend for a <del>security researcher</del>!</p>
+
+<ul>
+<li>What one <strong>should had gotten away</strong> with pointer above is this:</li>
+</ul>
+
+
+<p><img class="<a" src="href="http://s21.postimg.org/j9agzia53/youget.png">http://s21.postimg.org/j9agzia53/youget.png</a>&#8221;></p>
+
+<ul>
+<li><p>&hellip; and what <a href="http://www.ubercomp.com/posts/2014-01-16_facebook_remote_code_execution"><strong><u>an accurate security research looks like</u></strong></a> had quarter more the price economy as of teh previous. I highly doubt this ios the best management of crowdsourced vulnerabilities and if not - very dissapointed overall.</p></li>
+<li><p>&hellip; and to add <em>Managed Bug Crowd</em> isn&rsquo;t really <a href="https://engineering.linkedin.com/security/our-private-bug-bounty-program-reducing-vulnerabilities-leveraging-expert-crowds"><strong> <em>private</em> </strong></a> as claimed. It&rsquo;s doorway to <em>private accessess</em> lies in keys to the kingdom of already <em>open public</em> bug bounty managed crowd sourcing and whosoever chooses to <em>obtain a minimum criteria</em> to access the private zone is able to get it - <strong>no matter how they reach there</strong> but sometimes there are <a href="http://homakov.blogspot.in/2014/02/how-i-hacked-github-again.html">people who do what they do</a>.</p></li>
+</ul>
+
+
+<h2><em>problem with economics of security</em></h2>
+
+<p>There&rsquo;s just another side of evaluating security risks and that could be the darker side. Security risk evaluation in terms of economics isn&rsquo;t well defined, complete or has any standardization but there does exists methodologies and practices such as ..</p>
+
+<ol>
+<li>NIST</li>
+<li>OWASP</li>
+<li>WASC</li>
+<li>etc ..</li>
+</ol>
+
+
+<p>To cut short, <strong>there isn&rsquo;t any magic equation to be precisely accurate</strong> about security since <strong>quantity does not equal to quality</strong> and where there is <em>quality</em>, it isn&rsquo;t necessary the <em>risk is accessed by the brighter side</em>. What this means is if organizations haven&rsquo;t yet taken the appropiate measures to access it&rsquo;s security risks and quantify vulnerabilities in terms of:</p>
+
+<ol>
+<li>monetary lossess</li>
+<li>reputational losses</li>
+<li>asset informational lossess</li>
+</ol>
+
+
+<p>.. it&rsquo;s an end game at the end of the day - the darker side already might have the data one is trying to protect. Hence working to <strong> <em>solve the security equation proactively</em> </strong> might just be the wisest decision a CIO could ever made.</p>
+
+<p>There&rsquo;s solution to this existing problem and whilst escalation could be <em>internally managed and solved</em>, it isn&rsquo;t always the only way and it&rsquo;s necessary to understand why. Let&rsquo;s solve this in the upcoming posts to come-by and stay tuned folks. One liner take-away!</p>
+
+<p><blockquote><p>Vulnerability Research and it&rsquo;s Quantification in terms of monetary impact is an essential art in itself to providing better in terms of Application Security.</p><footer><strong>Shritam Bhowmick</strong> <cite>His Information Security Diaries.</cite></footer></blockquote></p>
+]]></content>
+  </entry>
+  
+</feed>

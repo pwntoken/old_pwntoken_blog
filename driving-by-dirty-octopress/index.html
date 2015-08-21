@@ -214,7 +214,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>Note</em>: Frame height and width can be accordingly adjusted using the given <code>width-height</code> parameters.</p>
+<p><u><em>Note</em></u>: Frame height and width can be accordingly adjusted using the given <code>width-height</code> parameters.</p>
 
 <p><em>Sample Video</em> via <em>Markdown</em> (using Liquid Markup Video-Image Alternatives):</p>
 
@@ -439,7 +439,7 @@ int main()
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>Note</em>: you&rsquo;ll notice I have had used <em>include code</em> method instead of <code>codeblock</code> to illustrate my example in the above code snippet. The reason is I would had to iterate the <code>raw</code> and <code>endraw</code> liquid markup and escape opening liquid markup. This is however possible using <code>assign</code> operators; however I have had not done the research on it and it somehow rendered the entire code bad.</p>
+<p><u><em>Note</em></u>: you&rsquo;ll notice I have had used <em>include code</em> method instead of <code>codeblock</code> to illustrate my example in the above code snippet. The reason is I would had to iterate the <code>raw</code> and <code>endraw</code> liquid markup and escape opening liquid markup. This is however possible using <code>assign</code> operators; however I have had not done the research on it and it somehow rendered the entire code bad.</p>
 
 <ul>
 <li>Having been into security, I would <em>really</em> need to illustrate code snippets which carry special information and thos which deal with non-ASCII, such as <code>&amp;#x3c</code> and such. <strong>Special Characters in Octopress</strong> could be used using the method as shown above i.e via using <code>raw</code> and <code>endraw</code>. Have a look at the Sample code below!</li>
@@ -470,15 +470,29 @@ int main()
 
 <p>To solve this, goto the <code>.pygments-cache</code> and <code>rm .pygments-cache</code> directory as a whole as shown below in your octopress installation.</p>
 
-<p><em>Note</em>: ignore <code>The system cannot find the path specified.</code> since they are generic custom <code>cmd</code> environment errors and not related to octopress, it&rsquo;s ruby dependency or python pygments highlighter dependencies.</p>
+<p><u><em>Note</em></u>: ignore <code>The system cannot find the path specified.</code> since they are generic custom <code>cmd</code> environment errors and not related to octopress, it&rsquo;s ruby dependency or python pygments highlighter dependencies.</p>
 
 <p><img src="http://s30.postimg.org/wx0nlazht/deletepygments.png"></p>
 
 <p>This <em>issue</em> persists with Windows installations and haven&rsquo;t been found in linux installations. I had however tried <em>re-installing python 2.7.x</em>, <em>re-installing ruby 2.2.x</em>, and everything else which were possible but all solution ended up to this <em>working method</em>.</p>
 
 <ul>
-<li>To fix and be <u>choosy</u> of your <em>markdown processor</em> not being able to provide with you with good alternatives for code block, you do know it&rsquo;s customizable and you can always have a <code>GitHub Style</code> combination <a href="http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/">here</a>.</li>
+<li><p>To fix and be <u>choosy</u> of your <em>markdown processor</em> not being able to provide with you with good alternatives for code block, you do know it&rsquo;s customizable and you can always have a <code>GitHub Style</code> combination <a href="http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/">here</a>.</p></li>
+<li><p>To fix <em>bullet/numbered</em> styling which ships as default and indents to cornering left of the actual article body, you will require to add below lines to <code>sass/custom/_style.scss</code>:</p></li>
 </ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>article {
+</span><span class='line'>  ol, ul {
+</span><span class='line'>    padding-left: 3em;
+</span><span class='line'>  }
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Conclusions</h2>
@@ -545,6 +559,8 @@ int main()
         <a class="basic-alignment left" href="/initial-post-and-an-introduction/" title="Previous Post: Introduction">&laquo; Introduction</a>
       
       
+        <a class="basic-alignment right" href="/economics-of-web-application-security/" title="Next Post: Economics of Web Application Security">Economics of Web Application Security &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -571,6 +587,10 @@ int main()
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/economics-of-web-application-security/">Economics of Web Application Security</a>
+      </li>
+    
+      <li class="post">
         <a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a>
       </li>
     
@@ -589,8 +609,28 @@ int main()
     <section>
     
     <h2 id="2015-ref">2015</h2>
-    <h3 id="2015-July-ref">July</h3>
+    <h3 id="2015-August-ref">August</h3>
     <ul>
+    
+
+    <li><a href="/economics-of-web-application-security/">Economics of Web Application Security</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-July-ref">July</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
     
 
     <li><a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a></li>
