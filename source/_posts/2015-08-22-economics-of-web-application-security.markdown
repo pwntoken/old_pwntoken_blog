@@ -78,7 +78,7 @@ That's an epic legend for a ~~security researcher~~!
 
 {% img http://s21.postimg.org/j9agzia53/youget.png %}
 
-- ... and what [**<u>an accurate security research looks like</u>**](http://www.ubercomp.com/posts/2014-01-16_facebook_remote_code_execution) had quarter more the price economy as of teh previous. I highly doubt this ios the best management of crowdsourced vulnerabilities and if not - very dissapointed overall.
+- ... and what [**<u>an accurate security research looks like</u>**](http://www.ubercomp.com/posts/2014-01-16_facebook_remote_code_execution) had quarter more the price economy as of the previous. I highly doubt this is the best management of crowdsourced vulnerabilities and if not - very dissapointed overall.
 
 5. ... and to add *Managed Bug Crowd* isn't really [** *private* **](https://engineering.linkedin.com/security/our-private-bug-bounty-program-reducing-vulnerabilities-leveraging-expert-crowds) as claimed. It's doorway to *private accessess* lies in keys to the kingdom of already *open public* bug bounty managed crowd sourcing and whosoever chooses to *obtain a minimum criteria* to access the private zone is able to get it - **no matter how they reach there** but sometimes there are [people who do what they do](http://homakov.blogspot.in/2014/02/how-i-hacked-github-again.html).
 
