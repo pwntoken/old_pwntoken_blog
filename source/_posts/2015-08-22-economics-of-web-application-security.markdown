@@ -91,7 +91,7 @@ There's just another side of evaluating security risks and that could be the dar
 3. WASC
 4. etc ..
 
-To cut short, **there isn't any magic equation to be precisely accurate** about security since **quantity does not equal to quality** and where there is *quality*, it isn't necessary the *risk is accessed by the brighter side*. What this means is if organizations haven't yet taken the appropiate measures to access it's security risks and quantify vulnerabilities in terms of:
+To cut short, **there isn't any magic equation to be precisely accurate** about security since **quantity does not equal to quality** and where there is *quality*, it isn't necessary the *risk is accessed by the brighter side*. What this means is if organizations haven't yet taken the appropriate measures to access it's security risks and quantify vulnerabilities in terms of:
 
 1. monetary lossess
 2. reputational losses
