@@ -54,7 +54,7 @@ Hence the study of *economics of web application security* or for that matter *i
 
 All of the aforementioned three-pointers play a vital role in an industry to access it's security risks. Now, that we are talking about economics - the question remains how such assessments could be made easy and how ~~narrower~~ can be the road to this achievement? 
 
-Answer is it **takes years of expertise and understanding impact** by not fueling the **easy way out to vulnerabilities**. I have had that taste of **bug bounty programs** which are mostly never meant to close the **monetary impact** of a particular vulnerability but instead * **focus on the softer technical side and close out the **bugs** *. Again, these are *bugs* and not *security threats as a whole*. Rare could be such occasions where *a valuable monetary vulnerability* has been reported. Here's a [VRP chart from Google](https://sites.google.com/site/bughunteruniversity/behind-the-scenes/charts).
+Answer is it **takes years of expertise and understanding impact** by not fueling the **easy way out to vulnerabilities**. I have had that taste of **bug bounty programs** which are mostly never meant to close the **monetary impact** of a particular vulnerability but instead ** *focus on the softer technical side* ** and close out the ** *bugs* **. Again, these are *bugs* and not *security threats as a whole*. Rare could be such occasions where *a valuable monetary vulnerability* has been reported. Here's a [VRP chart from Google](https://sites.google.com/site/bughunteruniversity/behind-the-scenes/charts).
 
 {% img https://sites.google.com/site/bughunteruniversity/_/rsrc/1422631746620/behind-the-scenes/charts/trafficdist.png %}
 
