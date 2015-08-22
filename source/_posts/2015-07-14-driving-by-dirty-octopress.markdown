@@ -6,7 +6,7 @@ comments: true
 categories: Octopress
 ---
 
-##Quick Dirty Press
+## *and getting started with Octopress 2.0!*
 
 
 If you drove off here to know about the Octopress framework and get started rapidly over in a hour, this could be your best bet or you could always research and end up in thousand more blogs and end up on the same thing except only after having lost hours linking one solution to another problem and vice versa.
