@@ -3,7 +3,7 @@ layout: post
 title: "Economics of Web Application Security"
 date: 2015-08-22 01:24:47 +0530
 comments: true
-categories: Web Application Security
+categories: Web_Application_Security
 ---
 
 ## *and the following isn't discouraging!*
