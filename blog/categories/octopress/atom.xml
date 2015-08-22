@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-08-22T04:43:22+05:30</updated>
+  <updated>2015-08-22T05:41:29+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -18,7 +18,7 @@
     <link href="http://pwntoken.github.io/driving-by-dirty-octopress/"/>
     <updated>2015-07-14T11:25:27+05:30</updated>
     <id>http://pwntoken.github.io/driving-by-dirty-octopress</id>
-    <content type="html"><![CDATA[<h2>Quick Dirty Press</h2>
+    <content type="html"><![CDATA[<h2><em>and getting started with Octopress 2.0!</em></h2>
 
 <p>If you drove off here to know about the Octopress framework and get started rapidly over in a hour, this could be your best bet or you could always research and end up in thousand more blogs and end up on the same thing except only after having lost hours linking one solution to another problem and vice versa.</p>
 
