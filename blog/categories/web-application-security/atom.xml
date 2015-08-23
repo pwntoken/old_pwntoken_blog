@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web_application_security | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/web-application-security/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-08-22T21:02:11+05:30</updated>
+  <updated>2015-08-23T13:55:23+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -20,7 +20,7 @@
     <id>http://pwntoken.github.io/economics-of-web-application-security</id>
     <content type="html"><![CDATA[<h2><em>and the following isn&rsquo;t discouraging!</em></h2>
 
-<p>Here&rsquo;s why software security would always be a growing concern for leading technologies as well as for them who depend on these technologies e.g. corporations, companies, industry, small scale businesses and at a personal level social sites too. What we are talking here isn&rsquo;t related to a set of standard de-facto technology but what we <strong>are</strong> tallking about is the <strong> <em>economics</em> </strong> of related web application software, their technologies and how they can be measured in order to provide a continious flow of quality.</p>
+<p>Here&rsquo;s why software security would always be a growing concern for leading technologies as well as for them who depend on these technologies e.g. corporations, companies, industry, small scale businesses and at a personal level social sites too. What we are talking here isn&rsquo;t related to a set of standard de-facto technology but what we <strong>are</strong> talking about is the <strong> <em>economics</em> </strong> of related web application software, their technologies and how they can be measured in order to provide a continious flow of quality in security.</p>
 
 <!-- more -->
 
@@ -87,7 +87,7 @@
 
 <ol>
 <li><p>Monetary to <del>security researchers</del> (now that they claim to be!) for hasteful reports <a href="https://www.bbhq.net/forums/topic/3/adobe-what-a-joke"><strong>just to gain rewards</strong></a> is a plain dis-respect to self-respect but could be professionally a no-harm&#8217;er. But tl;dr <em>the bug bounty program</em> cannot itself expect more and hence is <a href="http://thehackernews.com/2013/10/Yahoo-bug-bounty-program-reward-vulnerability.html"><em>always gentle</em></a>.</p></li>
-<li><p>Realizing a <a href="https://www.facebook.com/notes/facebook-bug-bounty/bug-bounty-highlights-and-updates/818902394790655">percent of valid reports</a> are made and ofcourse <strong>awarded</strong> does not verify the fact that it <em>had</em> <a href="http://shubh.am/the-deterioration-of-unmanaged-bug-bounties/">any monetary impact on the business</a>. Relaity check more vulnerabilities are dependent on each other and hence often times * <strong>a chain of vulnerabilities</strong> * which has to exist the same time as of depecndency of existence of others lead to a <strong>critical threat</strong>. Ofcourse, this too has a narrow window with <del>security researchers</del>.</p></li>
+<li><p>Realizing a <a href="https://www.facebook.com/notes/facebook-bug-bounty/bug-bounty-highlights-and-updates/818902394790655">percent of valid reports</a> are made and ofcourse <strong>awarded</strong> does not verify the fact that it <em>had</em> <a href="http://shubh.am/the-deterioration-of-unmanaged-bug-bounties/">any monetary impact on the business</a>. Relaity check more vulnerabilities are dependent on each other and hence <em>often times</em> <strong> <em><u>a chain of vulnerabilities</u></em> </strong> which has to exist the same time as of depecndency of existence of others lead to a <strong>critical threat</strong>. Ofcourse, this too has a narrow window with <del>security researchers</del>.</p></li>
 <li><p>It&rsquo;s real that <a href="https://www.offensive-security.com/offsec/bug-bounty-program-insights/">Perspective is everything</a> but let&rsquo;s just say sometimes a persistent <em>hackerhat</em> cowboy either way does what they had always wanted to do and <a href="https://www.exploit-db.com/papers/15823/">it&rsquo;s not yet secure-proof</a> but let&rsquo;s just <a href="https://www.offensive-security.com/backtrack/offsec-web-server-hacked/">stay strong</a>.</p></li>
 <li><p>&hellip; <a href="https://medium.com/@Anonymous_India/the-truth-about-nakul-mohan-7e9c84d733c9">Really</a>?</p></li>
 </ol>
