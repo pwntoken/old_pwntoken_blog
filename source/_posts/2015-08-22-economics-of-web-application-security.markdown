@@ -8,7 +8,7 @@ categories: Web_Application_Security
 
 ## *and the following isn't discouraging!*
 
-Here's why software security would always be a growing concern for leading technologies as well as for them who depend on these technologies e.g. corporations, companies, industry, small scale businesses and at a personal level social sites too. What we are talking here isn't related to a set of standard de-facto technology but what we **are** tallking about is the ** *economics* ** of related web application software, their technologies and how they can be measured in order to provide a continious flow of quality.
+Here's why software security would always be a growing concern for leading technologies as well as for them who depend on these technologies e.g. corporations, companies, industry, small scale businesses and at a personal level social sites too. What we are talking here isn't related to a set of standard de-facto technology but what we **are** talking about is the ** *economics* ** of related web application software, their technologies and how they can be measured in order to provide a continious flow of quality in security.
 
 <!-- more -->
 
@@ -64,7 +64,7 @@ Here are some quick pointers/gotcha's from this chart alone:
 
 1. Monetary to ~~security researchers~~ (now that they claim to be!) for hasteful reports [**just to gain rewards**](https://www.bbhq.net/forums/topic/3/adobe-what-a-joke) is a plain dis-respect to self-respect but could be professionally a no-harm'er. But tl;dr *the bug bounty program* cannot itself expect more and hence is [*always gentle*](http://thehackernews.com/2013/10/Yahoo-bug-bounty-program-reward-vulnerability.html).
 
-2. Realizing a [percent of valid reports](https://www.facebook.com/notes/facebook-bug-bounty/bug-bounty-highlights-and-updates/818902394790655) are made and ofcourse **awarded** does not verify the fact that it *had* [any monetary impact on the business](http://shubh.am/the-deterioration-of-unmanaged-bug-bounties/). Relaity check more vulnerabilities are dependent on each other and hence often times * **a chain of vulnerabilities** * which has to exist the same time as of depecndency of existence of others lead to a **critical threat**. Ofcourse, this too has a narrow window with ~~security researchers~~.
+2. Realizing a [percent of valid reports](https://www.facebook.com/notes/facebook-bug-bounty/bug-bounty-highlights-and-updates/818902394790655) are made and ofcourse **awarded** does not verify the fact that it *had* [any monetary impact on the business](http://shubh.am/the-deterioration-of-unmanaged-bug-bounties/). Relaity check more vulnerabilities are dependent on each other and hence *often times* ** *<u>a chain of vulnerabilities</u>* ** which has to exist the same time as of depecndency of existence of others lead to a **critical threat**. Ofcourse, this too has a narrow window with ~~security researchers~~.
 
 3. It's real that [Perspective is everything](https://www.offensive-security.com/offsec/bug-bounty-program-insights/) but let's just say sometimes a persistent *hackerhat* cowboy either way does what they had always wanted to do and [it's not yet secure-proof](https://www.exploit-db.com/papers/15823/) but let's just [stay strong](https://www.offensive-security.com/backtrack/offsec-web-server-hacked/).
 
