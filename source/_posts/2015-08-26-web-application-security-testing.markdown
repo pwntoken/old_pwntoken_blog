@@ -3,7 +3,7 @@ layout: post
 title: "Web Application Security Testing"
 date: 2015-08-26 06:16:19 +0530
 comments: true
-categories: 
+categories: Web_Application_Security
 ---
 
 ## *.. is it that hard to integrate security into SDLC?*
