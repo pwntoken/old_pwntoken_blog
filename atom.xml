@@ -4,7 +4,7 @@
   <title><![CDATA[Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-08-26T06:05:40+05:30</updated>
+  <updated>2015-08-26T09:58:17+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -12,6 +12,196 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Web Application Security Testing]]></title>
+    <link href="http://pwntoken.github.io/web-application-security-testing/"/>
+    <updated>2015-08-26T06:16:19+05:30</updated>
+    <id>http://pwntoken.github.io/web-application-security-testing</id>
+    <content type="html"><![CDATA[<h2><em>.. is it that hard to integrate security into SDLC?</em></h2>
+
+<p>Web Applications (Useful Applications which can be served in Web 2.0/3.0) today are rich and serve an intended purpose - be it to serve an ecommerce website or host a collaborative API to re-create <em>something useful</em> using <em>new ideas</em> for people and by the people. It&rsquo;s completely safe to assume web applications should have a generic SDLC (<em>software decelopment life cycle</em> or <em>system development life cycle</em>) compared to that of software (<em>as in thick client</em>) and not surprisingly - they do!</p>
+
+<!-- more -->
+
+
+<p>Software go through <em>phases of development</em> which is known as the <strong><code>SDLC</code></strong> and represents how a particular task is carried out periodically and efficiently for better code productivity in terms of functionality. A generic overview process of a SDLC is to break tasks into pieces so that they can me managed well and later integrated into a complete working <em>product</em> which can be <em>used</em> for the intended consumers of that product. Similarily Enterprise Web Applications go through <em>application development processess</em> and on each of these phases of the entire process, seperate developers working on an unit is responsible for that particular code and hence is the <em>code maintainer</em>. <code>SDLC</code> isn&rsquo;t short and static at Enterprise level but get&rsquo;s worse and complex when phases begin to shift from one stage to another. There are main ingredients such as:</p>
+
+<ul>
+<li>Functional Project Management</li>
+<li>Technical Project Management</li>
+<li>Information Security Assurances</li>
+<li>System Integration Test Plan/Integration Test Cases</li>
+<li>User Acceptance Test Plan/ Acceptance Test Cases</li>
+</ul>
+
+
+<p>.. and most of what everyone else knows and what project managers are theoritically trained to prepare for boils down to:</p>
+
+<ul>
+<li>Planning</li>
+<li>Requirement Analysis</li>
+<li>Design</li>
+<li>Development</li>
+<li>System Integration</li>
+<li>User Acceptance and Parallel Testing</li>
+<li>Implementation</li>
+<li>Operations and Maintainence</li>
+</ul>
+
+
+<p><img src="http://s29.postimg.org/ncdjld2on/SDLC_1.jpg"></p>
+
+<p>All of the aforementioned are packaged into the five super&rsquo;s i.e. functional project management, technical project management, information security assurances, system integration test plan and integration test cases and user acceptance test plan and acceptance test cases. We are more worried about <strong>Information Security Assurances</strong> and not long far in this way - we&rsquo;ll be introduced to how <em>information security</em> is governed and where SDLC is outruled by it&rsquo;s superset, and when precisely <em>*security</em> is to be placed into <code>SDLC</code> thoughfully by it&rsquo;s governing superset.</p>
+
+<h2>But the Question Remains ..</h2>
+
+<p><u>How Enterprise Web Application SDLC are any different from Software Product Based SDLC?</u> and <u>how shall security governance take place during the entire lifecycle?</u> Enter <code>ALM - Application Lifecycle Management</code>. To cut short of everything else and <del>leave details</del> to it&rsquo;s own research place:</p>
+
+<ol>
+<li><p>Enterprise Web Applications <em>differ</em> in production, business case, and it&rsquo;s relative uses than that of a product applications. To elaborate - web applications might die fast due to it&rsquo;s trend nature, user acceptance or short life use case - <em>which means as long as the trend survives, the web application survives</em>, product software whilst might have <em>core re-use functionality</em> in operating systems (e.g. Microsoft Word? OpenOffice? ..). People leave Orkut to go newly obtained trend of Google+ and mighjt never get sick of <code>#hashtags</code> at Facebook but they never leave <em>productivity software suite</em> installed in their PC/Laptop for <em>general core functionality</em> use.</p></li>
+<li><p>To take care governance for both - Web Application Security as well as Software Security or for that matter all the five super ingredients we talked about earlier - we have <code>ALM</code> and it&rsquo;s really <em>not equal to</em> <code>SDLC</code>. <code>ALM</code> could be considered as the top gem mounted  above the <code>SDLC</code>, where <code>SDLC</code> lies in the bottom looking up at the <code>ALM</code> to manage it&rsquo;s <code>governance</code>, <code>development</code> and <code>operations</code>. The <code>ALM</code> has control of the <code>SDLC</code> - and <code>SDLC</code> has control of the <code>modular software/application deployment</code>.</p></li>
+</ol>
+
+
+<h2>Shritam! don&rsquo;t tl;dr ALM ..</h2>
+
+<p>.. and so I won&rsquo;t. <code>ALM</code> as you now know is <code>Application Lifecycle Management</code>, it&rsquo;s easier to think of it as a <em>superset</em> of <code>SDLC</code>. If <code>SDLC</code> takes care of the operational part, the <code>ALM</code> takes care of it&rsquo;s governance. It&rsquo;s important to understand that <code>security</code> from it&rsquo;s very core has to be <em>governed</em> and <em>regulated</em> in authoritive perspective or code maintainers would continue to write bad code - and <strong>this</strong> exactly is <em>what happens to the most applications - be them web application or applications/products in general!</em></p>
+
+<p>The three aspects of <code>ALM</code> is to provide:</p>
+
+<ol>
+<li>Governance</li>
+<li>Development</li>
+<li>Operations</li>
+</ol>
+
+
+<p>And all of these three factors are essential to run the show for <code>SDLC</code>, and ofcourse <code>SDLC</code> sometimes depend on it <em>operationally</em> if not for entire <em>development</em> (ever wonder about <code>DevOps</code>?). This is exactly where <em>security professionals</em> should be looking at! If one looks deeper thoughfully, any development criteria is only fullfilled by authorized operational means and if <em>operationally</em> security is placed forward - the <em>secure development</em> will become mandatory. There is a reason why I introduced <code>ALM</code> here because in layman terms:</p>
+
+<blockquote><p>If project managers care not to outrule their developers to enforce security internally and make it mandatory, someone else have had got the system processes broken already!</p><footer><strong>Shritam Bhowmick</strong> <cite>His Information Security Diaries.</cite></footer></blockquote>
+
+
+<p>Back to <code>ALM</code> basics, what we have is a raw idea which has a potential to either become an end-product for it&rsquo;s consumers and accepted by the massess in core functionality or it dies out and serves a short span of life to benefit from short-term use case/business case.</p>
+
+<p><img src="http://s13.postimg.org/blw9dfkrr/ALM_1.png"></p>
+
+<p>If the <code>security problem</code> at <em>operation level</em> has been identified, let&rsquo;s not forget to take a submarine-dive to explore what&rsquo;s beneath <code>ALM</code>.</p>
+
+<h3><strong>Governance</strong> for ALM</h3>
+
+<p>Take a <em>sweet note</em> - authorities always have a higher ground and what they only know is business, be it short termed or long termed - as long as it&rsquo;s beneficiaries are transparent, people will invest into the project. In <code>ALM</code>, to escalate ideas into businesses, there has to be a purpose; An application has to serve a purpose and then it should have a business value - this is the <code>business use case</code>. Everything else is High-Lower authority for the entire project and they are <code>project portfolio management</code> and <code>application portfolio management</code>.</p>
+
+<p><img src="http://s1.postimg.org/7hmdr1nbj/ALM_Governance.png"></p>
+
+<p>What they do specifically as part of the governance are simplified here.</p>
+
+<p><strong>Business Case Development</strong>: Business Authorities hold the investment share, they have the equities, they know the business, they have stolen the idea ( .. or have them originally perceived!?) and now they are ready to invest on this BIG-O-BANG idea and wish not to lose out on the competitor game. They decide the finances. This first serious move is known to be <code>Business Case Development</code> or <code>BCD</code>.</p>
+
+<p>To support the idea, there are peers who do the analysis for them (business authorities) and chalk out business use for the idea and if they are beneficial to the investors. If they are, business case is approved and application development might now proceed.</p>
+
+<p><strong>Project Portfolio Management</strong>: The people who might have originally perceived the idea, might not have his/her own abilities to implement and transform it into a working product. They need someone else to do it for them and hence <code>people</code>, <code>processes</code> and <code>product</code> become the essentials for any organization.</p>
+
+<p>There are two ways <code>Project Portfolio Management</code> or <code>PPM</code> is carried away - either a <code>project manager</code> is assigned the task with relative technical abilities to regulate a group of people who become the <code>core team</code> of that particular project or there is a dedicated <code>PMO</code> (Project Management Office) to regulate procedures at this level. Here actual development begins.</p>
+
+<p><strong>Application Portfolio Management</strong>: If Application deployment is over, it&rsquo;s now an <code>asset</code> to the organization and more importantly the investors who have invested money into the project. There needs to be an ongoing check on it&rsquo;s beneficiaries and costs plus measures to check if the trend isn&rsquo;t dying and flipping out of it&rsquo;s way.</p>
+
+<p><code>APM</code> or Application Portfolio Management provides a gateway to manage ongoing operation products, provide regulations around major revision (application or end-product software, as the case may be!) changes and perform updates keeping it&rsquo;s <code>business use case</code> in track and perform regular checks on it. If the trend persists, and the end-product or the application is feasibly performing well, updates for better performance, or added functionality is rolled out or a major updates are issued and released. This again needs checks from both <code>PMO</code> (or <code>PPM</code>) and <code>BCD</code>.</p>
+
+<p>Now if we look down here, pretty much during the whole process of life start to life end of the application development or software application end-product development - the <code>governance</code> is constant and does not die out; and this also includes SDLC&rsquo;s in-between (during which the <code>governance</code> hasn&rsquo;t died out either! and as described SDLC is only a part of the entire process).</p>
+
+<h3><strong>Development</strong> for ALM</h3>
+
+<p>Yet again, take a <em>sweet note</em> here - it&rsquo;s not always feasible or necessary for an organization to stick to traditional SDLC i.e. <code>RAD</code>, <code>Waterfall</code>, etc. <code>Iterative</code> might be sometimes the need of the time and more modern organizations have been using them.</p>
+
+<p><img src="http://s16.postimg.org/8ndjypyx1/ALM_Development.png"></p>
+
+<p>Development is a fundamental necessity for any <code>custom web application</code>, an <code>Enterprise Product</code> or any <code>End Product</code> and this is precisely the <code>security gone wrong</code> point which has <code>SDLC</code> phases in it. During the entire ALM, the <code>SDLC</code> is a part of the lifecycle and it&rsquo;s this point where <code>security professionals</code> should target and permanently set a reminder for a <code>security cross check</code>.</p>
+
+<p>Now, as talked before - generic <code>SDLC</code> has <strong>seven phases</strong> and equally there are <strong>seven security solutions</strong> to neutralize <code>security risks</code> specifically at those places.</p>
+
+<p><img src="http://s16.postimg.org/akevh1eyt/SDLC_3_Security.jpg"></p>
+
+<p>As to keep <code>security point-of-view</code> in reminder, here are the clauses for these <strong><u>specific security solutions at specific phases of a SDLC</u></strong>:</p>
+
+<ol>
+<li>Code Review</li>
+<li>Risk Analysis</li>
+<li>Penetration Testing</li>
+<li>Risk-Based Security Tests</li>
+<li>Abuse Cases</li>
+<li>Security Requirements</li>
+<li>Security Operations</li>
+</ol>
+
+
+<p><code>Security Operations</code> will be talked about when we discuss on <code>Operations</code> segment of <code>ALM</code> where it&rsquo;s an integral ongoing security process. Based on what we have covered so far, we have <code>code review</code> which is to be placed during <em>developing code (development)</em> and this can have:</p>
+
+<ul>
+<li>static code analysis and review</li>
+<li>dynamic code analysis and reviw</li>
+</ul>
+
+
+<p>.. and then there is <code>Risk Analysis</code> which is covered both during <em>requirements/use case planning</em> and <em>architectural design</em>. <code>Penetration Testing</code> is to be done both and as part of <code>testing</code> and <code>maintainence/feedback from the field</code> which if elaborated falls under the following types of tests:</p>
+
+<ul>
+<li>black-box penetration testing</li>
+<li>white-box penetration testing</li>
+<li>grey-box penetration testing</li>
+<li>glass-box penetration testing</li>
+</ul>
+
+
+<p>To really define these and cross the margin more:</p>
+
+<p>A <code>black-box penetration test</code> means there are no external or internal informational put upfront and security professionals should identify and abuse security loopholes externally and if required <em>offensively</em> go indepth of the flaw which means <em>exploiting</em> necessary security flaws to it&rsquo;s deepest extent.</p>
+
+<p>A <code>white-box penetration test</code> means there would be full feedback from the developers or <code>ALM</code> project managers to pin-point <em>resources of interest</em> and if required additionally provide <em>access credentials</em> to <em>security test</em> restricted zones. This sometimes is the industry de-facto because it&rsquo;s efficient.</p>
+
+<p>A <code>grey-box penetration test</code> means to provide necessary <em>resources of interests</em> while the penetration testers are encouraged to find security flaws on their own but not limiting them to be short of credential request, if necessity be!</p>
+
+<p>A <code>glass-box penetration test</code> is new modular penetration test where <code>security test monitoring</code> are placed (often times automated) and people monitor the activities of penetration testers while penetration testers are performing the test.</p>
+
+<p><code>Risk Based Security Test</code> is a suite of <em>Security testing</em> for <em>test plans</em> that are prepared which has to be formulated into the <em>development code</em>, the code is at <em>staging</em> area and isn&rsquo;t gone <em>productional</em> yet. <em>Abuse Cases</em> is where testers pre-discuss how a certain business model could be abused and in what ways it could be defended providing the right solutions in very early phases of the <code>SDLC</code> which is <em>Requirements Planning and Use Cases Development</em>. <code>Security Requirements</code> as fit as per the necessary feedbacks from <code>abuse cases</code> and also performed for <em>Requirements Planning and Use Cases Development</em> phase.</p>
+
+<p>Now if the <strong>Mammoth Security Gap Problem</strong> has been accessed right and the equation is to solve this <strong>security gap</strong>, <code>SDLC</code> is specifically where <em>security professionals</em> should start looking at and because this now has been <strong>scientifically proven</strong> and <strong>deduced</strong> out!</p>
+
+<p>Back to <code>ALM</code>, the part of lifecycle which we discussed have <code>SDLC</code> and this is where <strong>Security gap</strong> exists. There is another part of the problem which has to be ruled out and i.e <code>Maintainence</code>. As <em>developers</em> begin to write <em>code</em> and business case demands more functionalities, more <em>code</em> is generated using frameworks and these in turn have adverse effects ranging from <em>introduction of vulnerabilities</em> from frameworks itself. <code>Code Maintainence</code> have two popular entities:</p>
+
+<ol>
+<li>Updates</li>
+<li>Patches</li>
+</ol>
+
+
+<p>.. and both of them could do either of the following:</p>
+
+<ol>
+<li>either break functionality and feasibility</li>
+<li>or break security without letting anyone know</li>
+</ol>
+
+
+<p>.. and both of the aforementioned isn&rsquo;t preferred. This is exactly where <code>ALM</code> has another level i.e. <code>Operations</code> where for specifically <code>security</code> concerns, an organization should have a <code>security operations center</code> to identify vulnerabilities and threat them.</p>
+
+<h3><strong>Operations</strong> for ALM</h3>
+
+<p>No more <em>sweet notes</em>, it&rsquo;s tl;dr: <code>DevOps</code>.</p>
+
+<p><img src="http://s1.postimg.org/qjakg2b0v/ALM_Operations.png"></p>
+
+<p>Soon after applications are deployed from <code>staging</code> to <code>production</code>, they start receiving <code>patches</code> and <code>updates</code>. To cope up with these the application has to be managed throughout it&rsquo;s entire lifecycle and is now bond with the developers and the development team. The people who take care basically of both are <code>DevOps</code> and a <code>security operations center</code> here should be excactly placed here to do a routine check of <code>patches</code> and <code>updates</code> and release <code>security fixes</code> for <code>updates</code>, <code>patches</code> or <code>deployment code</code> as well.</p>
+
+<p>And in this way <code>security management</code> is closely packed with <code>SDLC</code> and <code>SDLC</code> is pushed forward keeping <strong>security as a process and not as a product</strong>. This should be the case but ..</p>
+
+<h2>is <em>security testing</em> an intergal part of most organizations?</h2>
+
+<p>And Now we have been asking the <em>right question</em>.</p>
+
+<p><img src="http://s4.postimg.org/bbuqihcel/SDLC_2.jpg"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Economics of Web Application Security]]></title>
