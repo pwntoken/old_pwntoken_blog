@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-08-26T10:16:14+05:30</updated>
+  <updated>2015-08-27T09:16:38+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -104,11 +104,13 @@ git push origin source
 
 <p><strong>Octopress Video Plugin</strong>:</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% video absolute url [width height] [the image] %}
-{% video <a href="http://localhost:4000/video.mov">http://localhost:4000/video.mov</a> 854 480 <a href="http://image_host.com/someimage.png">http://image_host.com/someimage.png</a> %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">video</span><span class="w"> </span>absolute<span class="w"> </span>url<span class="w"> </span>[width<span class="w"> </span>height]<span class="w"> </span>[the<span class="w"> </span>image]<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">video</span><span class="w"> </span>&lt;a<span class="w"> </span><span class="na">href</span><span class="o">=</span><span class="na">&quot;http</span><span class="o">:</span><span class="na">//localhost</span><span class="o">:</span><span class="na">4000/video.mov&quot;&gt;http</span><span class="o">:</span><span class="na">//localhost</span><span class="o">:</span><span class="mi">4000</span>/video.mov&lt;/a&gt;<span class="w"> </span><span class="mi">854</span><span class="w"> </span><span class="mi">480</span><span class="w"> </span>&lt;a<span class="w"> </span><span class="na">href</span><span class="o">=</span><span class="na">&quot;http</span><span class="o">:</span><span class="na">//image_host.com/someimage.png&quot;&gt;http</span><span class="o">:</span>//image_host.com/someimage.png&lt;/a&gt;<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Video</em> via YouTube Embed (without using <em>markdown</em>):</p>
 
@@ -117,65 +119,77 @@ git push origin source
 
 <p><em>Original Source</em> used for the above were (YouTube&rsquo;s Embed):</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0cLh_-O-SJA" frameborder="0" allowfullscreen></iframe>
-
-
-<p>{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/0cLh_-O-SJA&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><u><em>Note</em></u>: Frame height and width can be accordingly adjusted using the given <code>width-height</code> parameters.</p>
 
 <p><em>Sample Video</em> via <em>Markdown</em> (using Liquid Markup Video-Image Alternatives):</p>
 
-<p>{% video <a href="http://s3.imathis.com/video/zero-to-fancy-buttons.mp4">http://s3.imathis.com/video/zero-to-fancy-buttons.mp4</a> 640 320 <a href="http://s3.imathis.com/video/zero-to-fancy-buttons.png">http://s3.imathis.com/video/zero-to-fancy-buttons.png</a> %}</p>
+<p><video width='640' height='320' preload='metadata' controls poster='http://s3.imathis.com/video/zero-to-fancy-buttons.png">http://s3.imathis.com/video/zero-to-fancy-buttons.png</a>&#8217;><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4">http://s3.imathis.com/video/zero-to-fancy-buttons.mp4</a>&#8217; ></video></p>
 
 <p><em>Original Sample</em> taken from <a href="http://octopress.org/docs/plugins/video-tag/">Octopress Documentation</a>.</p>
 
 <p><strong>Octopress Image Plugin</strong>:</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% img [class name] /path/to/image [width] [height] [title text [alt text]] %}
-{% img <a href="http://localhost:4000/assets/img.png">http://localhost:4000/assets/img.png</a> %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">img</span><span class="w"> </span>[class<span class="w"> </span>name]<span class="w"> </span>/path/to/image<span class="w"> </span>[width]<span class="w"> </span>[height]<span class="w"> </span>[title<span class="w"> </span>text<span class="w"> </span>[alt<span class="w"> </span>text]]<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">img</span><span class="w"> </span>&lt;a<span class="w"> </span><span class="na">href</span><span class="o">=</span><span class="na">&quot;http</span><span class="o">:</span><span class="na">//localhost</span><span class="o">:</span><span class="na">4000/assets/img.png&quot;&gt;http</span><span class="o">:</span><span class="na">//localhost</span><span class="o">:</span><span class="mi">4000</span>/assets/img.png&lt;/a&gt;<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Image Example</em> using Liquid Markup:</p>
 
-<p>{% img <a href="http://s17.postimg.org/wvwql2atr/sample.png">http://s17.postimg.org/wvwql2atr/sample.png</a> %}</p>
+<p><img class="<a" src="href="http://s17.postimg.org/wvwql2atr/sample.png">http://s17.postimg.org/wvwql2atr/sample.png</a>&#8221;></p>
 
 <p><u><em>Note</em></u>: This image was not set for <em>heights</em> and <em>widths</em>, the raw source code is as follows:</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% img <a href="http://s17.postimg.org/wvwql2atr/sample.png">http://s17.postimg.org/wvwql2atr/sample.png</a> %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">img</span><span class="w"> </span>&lt;a<span class="w"> </span><span class="na">href</span><span class="o">=</span><span class="na">&quot;http</span><span class="o">:</span><span class="na">//s17.postimg.org/wvwql2atr/sample.png&quot;&gt;http</span><span class="o">:</span>//s<span class="mi">17</span>.postimg.org/wvwql<span class="mi">2</span>atr/sample.png&lt;/a&gt;<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Octopress Blockquote Plugin:</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% blockquote [author [, source ]] [link] [source link title] %} {% endblockquote %}
-{% blockquote Shritam Bhowmick, His Portfolio %}
-To the mind that is still, the whole world surrenders.
-{% endblockquote %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">blockquote</span><span class="w"> </span>[author<span class="w"> </span>[<span class="p">,</span><span class="w"> </span>source<span class="w"> </span>]]<span class="w"> </span>[link]<span class="w"> </span>[source<span class="w"> </span>link<span class="w"> </span>title]<span class="w"> </span><span class="p">%}</span> <span class="p">{%</span><span class="w"> </span><span class="nt">endblockquote</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">blockquote</span><span class="w"> </span>Shritam<span class="w"> </span>Bhowmick<span class="p">,</span><span class="w"> </span>His<span class="w"> </span>Portfolio<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>To the mind that is still, the whole world surrenders.
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">endblockquote</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Quote Example</em>:</p>
 
-<p>{% blockquote Shritam Bhowmick, His Portfolio. %}
-To the mind that is still, the whole world surrenders.
-{% endblockquote %}</p>
+<p><blockquote><p>To the mind that is still, the whole world surrenders.</p><footer><strong>Shritam Bhowmick</strong> <cite>His Portfolio.</cite></footer></blockquote></p>
 
 <p>Octopress Code Plugin:</p>
 
 <p>Markdown Method: tab (indent) in your code.</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-    var framework = &ldquo;octopress&rdquo;;
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>    var framework = &amp;ldquo;octopress&amp;rdquo;;
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Code Example</em> Block using tab indenting:</p>
 
@@ -184,7 +198,14 @@ To the mind that is still, the whole world surrenders.
 
 <p>Backtick Method: open and close with three backticks.</p>
 
-<p>{% include_code backtick.js %}</p>
+<p><figure class='code'><figcaption><span> (backtick.js)</span> <a href='/downloads/code/backtick.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">```</span> <span class="nx">js</span> <span class="nx">Variable</span> <span class="nx">Assignment</span> <span class="nx">http</span><span class="o">:</span><span class="c1">//www.localhost:4000/ Link</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">framework</span> <span class="o">=</span> <span class="s2">&quot;octopress&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="err">```</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Code Example</em> using Backtick method for a codeblock:</p>
 
@@ -194,62 +215,102 @@ var framework = "octopress";
 
 <p>CodeBlock Method: more like blockquote method.</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% codeblock Variable Assignment lang:js <a href="http://www.localhost:4000/">http://www.localhost:4000/</a> Link %}
-var framework = &ldquo;octopress&rdquo;;
-{% endcodeblock %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">codeblock</span><span class="w"> </span>Variable<span class="w"> </span>Assignment<span class="w"> </span><span class="na">lang</span><span class="o">:</span>js<span class="w"> </span>&lt;a<span class="w"> </span><span class="na">href</span><span class="o">=</span><span class="na">&quot;http</span><span class="o">:</span><span class="na">//www.localhost</span><span class="o">:</span><span class="na">4000/&quot;&gt;http</span><span class="o">:</span><span class="na">//www.localhost</span><span class="o">:</span><span class="mi">4000</span>/&lt;/a&gt;<span class="w"> </span>Link<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>var framework = &amp;ldquo;octopress&amp;rdquo;;
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">endcodeblock</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Code Example</em> using codeblock method with <code>lang:js</code> i.e. language set to it&rsquo;s intended type:</p>
 
-<p>{% codeblock Variable Assignment lang:js <a href="http://www.localhost:4000/">http://www.localhost:4000/</a> Link %}
-var framework = &ldquo;octopress&rdquo;;
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>Variable Assignment <a href="http://www.localhost:4000/">http://www.localhost:4000/</a> Link </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">framework</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">octopress</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;;</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Include Code: file is stored in the octopress source directory, and one can include the code from the file. The user needs to use the /config.yml and there would be code_dir set to the default one.</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% include_code JS lang:js file.js %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">include_code</span><span class="w"> </span>JS<span class="w"> </span><span class="na">lang</span><span class="o">:</span>js<span class="w"> </span>file.js<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Code Example</em> of an included <code>.js</code> file which has it&#8217;code content:</p>
 
-<p>{% include_code JS lang:js week.js %}</p>
+<p><figure class='code'><figcaption><span>JS  (week.js)</span> <a href='/downloads/code/week.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">DayOfWeek</span><span class="p">(</span><span class="nx">day</span><span class="p">,</span> <span class="nx">month</span><span class="p">,</span> <span class="nx">year</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="mi">14</span> <span class="o">-</span> <span class="nx">month</span><span class="p">)</span> <span class="o">/</span> <span class="mi">12</span><span class="p">);</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">year</span> <span class="o">-</span> <span class="nx">a</span><span class="p">;</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="nx">month</span> <span class="o">+</span> <span class="mi">12</span> <span class="o">*</span> <span class="nx">a</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="p">(</span><span class="nx">day</span> <span class="o">+</span> <span class="nx">y</span> <span class="o">+</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">y</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">y</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span>
+</span><span class='line'>             <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">y</span> <span class="o">/</span> <span class="mi">400</span><span class="p">)</span> <span class="o">+</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="mi">31</span> <span class="o">*</span> <span class="nx">m</span><span class="p">)</span> <span class="o">/</span> <span class="mi">12</span><span class="p">))</span>  <span class="o">%</span> <span class="mi">7</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>Gist Method: The sample code below can used to pull out code from Gist from Github</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% gist gist_id [filename] %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">gist</span><span class="w"> </span>gist_id<span class="w"> </span>[filename]<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Code Example</em> to illustrate a random <code>gist</code> taken from Github:</p>
 
-<p>{% gist 85722d7e599c2858c0f3 pwntokenage.c %}</p>
+<p><div><script src='https://gist.github.com/85722d7e599c2858c0f3.js?file=pwntokenage.c'></script>
+<noscript><pre><code>#include stdio.h
+#include conio.h
+
+// this is a sample gist located in Github for example reasons
+
+int main()
+{
+   printf(&quot;This is a Hi from pwntoken a.k.a Shritam Bhowmick&quot;); /* printf() prints the content inside quotation */
+   return 0;
+}</code></pre></noscript></div>
+</p>
 
 <p>JSFiddle Method: Pull JavaScript code from JSFiddle</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% jsfiddle shorttag [tabs] {skin} [height] [width] %}
-{% jsfiddle fATe6 %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">jsfiddle</span><span class="w"> </span>shorttag<span class="w"> </span>[tabs]<span class="w"> </span>{skin}<span class="w"> </span>[height]<span class="w"> </span>[width]<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">jsfiddle</span><span class="w"> </span>fATe<span class="mi">6</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><em>Sample Code Example</em> with a random <code>jsfiddle</code> ID:</p>
 
-<p>{% jsfiddle fATe6 %}</p>
+<p><iframe style="width: 100%; height: 300px" frameborder="0" seamless="seamless" src="http://jsfiddle.net/fATe6/embedded/js,resources,html,css,result/light/"></iframe></p>
 
 <p>To split a page into &lsquo;read more&rsquo; styling, use:</p>
 
-<p>{% codeblock lang:liquid %}
-{% raw %}</p>
-
-<!-- more -->
-
-
-<p>{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;!-- more --&gt;
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>The <em>sample</em> for this was illustrated when you chose to click on <code>continue reading ..</code></p>
 
@@ -262,19 +323,31 @@ var framework = &ldquo;octopress&rdquo;;
 </ul>
 
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-{% blockquote Octopress, It&rsquo;s Documentation %}
-has to end with endblockquotes
-{% endblockquote %}
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">blockquote</span><span class="w"> </span>Octopress<span class="p">,</span><span class="w"> </span>It&amp;rsquo;s<span class="w"> </span>Documentation<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>has to end with endblockquotes
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">endblockquote</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <ul>
 <li><strong>Fix color compatibility</strong> with proper liquid code block usage. This one, I needed documentation help and also existing Kramdown userbase help. I had a friend who suggested me to use the below code for all octopress documentation code in liquid since it&rsquo;s markdown support with color is amazing and Rdiscount parser which ships with octopress does not cry about it!</li>
 </ul>
 
 
-<p>{% include_code code.js %}</p>
+<p><figure class='code'><figcaption><span> (code.js)</span> <a href='/downloads/code/code.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="nx">codeblock</span> <span class="nx">lang</span><span class="o">:</span><span class="nx">liquid</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="nx">raw</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'><span class="nx">Put</span> <span class="nx">your</span> <span class="nx">code</span> <span class="nx">here</span>
+</span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="nx">endraw</span> <span class="o">%</span><span class="p">}</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcodeblock</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p><u><em>Note</em></u>: you&rsquo;ll notice I have had used <em>include code</em> method instead of <code>codeblock</code> to illustrate my example in the above code snippet. The reason is I would had to iterate the <code>raw</code> and <code>endraw</code> liquid markup and escape opening liquid markup. This is however possible using <code>assign</code> operators; however I have had not done the research on it and it somehow rendered the entire code bad.</p>
 
@@ -283,27 +356,32 @@ has to end with endblockquotes
 </ul>
 
 
-<p>{% codeblock lang:liquid %}
-{% raw %}
-&#x3C;ul id=&#x22;beers-list&#x22;&#x3E;
-    {{#beers}}
-        &#x3C;li&#x3E;{{name}} - {{color}} - {{alcohol}}%&#x3C;/li&#x3E;
-    {{/beers}}
-&#x3C;/ul&#x3E;
-{% endraw %} {% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>&amp;#x3C;ul id=&amp;#x22;beers-list&amp;#x22;&amp;#x3E;
+</span><span class='line'>    <span class="p">{{</span><span class="err">#</span><span class="nv">beers</span><span class="p">}}</span>
+</span><span class='line'>        &amp;#x3C;li&amp;#x3E;<span class="p">{{</span><span class="nv">name</span><span class="p">}}</span> - <span class="p">{{</span><span class="nv">color</span><span class="p">}}</span> - <span class="p">{{</span><span class="nv">alcohol</span><span class="p">}}</span>%&amp;#x3C;/li&amp;#x3E;
+</span><span class='line'>    <span class="p">{{</span><span class="err">/</span><span class="nv">beers</span><span class="p">}}</span>
+</span><span class='line'>&amp;#x3C;/ul&amp;#x3E;
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <ul>
 <li>Fix <em>liquid exception</em> <strong>undefined method <code>[]</code></strong> on octopress might just be a time consuming research. I have it before-hand for you. So, the ground fact is here&rsquo;s what you might end up sometime while doing a <code>rake generate</code> and hence the parser not being able to <em>completely</em> generate the markdown files (e.g. below)</li>
 </ul>
 
 
-<p>{% img <a href="http://s23.postimg.org/k2ylvsmmz/fixundefined.png">http://s23.postimg.org/k2ylvsmmz/fixundefined.png</a> %}</p>
+<p><img class="<a" src="href="http://s23.postimg.org/k2ylvsmmz/fixundefined.png">http://s23.postimg.org/k2ylvsmmz/fixundefined.png</a>&#8221;></p>
 
 <p>To solve this, goto the <code>.pygments-cache</code> and <code>rm .pygments-cache</code> directory as a whole as shown below in your octopress installation.</p>
 
 <p><u><em>Note</em></u>: ignore <code>The system cannot find the path specified.</code> since they are generic custom <code>cmd</code> environment errors and not related to octopress, it&rsquo;s ruby dependency or python pygments highlighter dependencies.</p>
 
-<p>{% img <a href="http://s30.postimg.org/wx0nlazht/deletepygments.png">http://s30.postimg.org/wx0nlazht/deletepygments.png</a> %}</p>
+<p><img class="<a" src="href="http://s30.postimg.org/wx0nlazht/deletepygments.png">http://s30.postimg.org/wx0nlazht/deletepygments.png</a>&#8221;></p>
 
 <p>This <em>issue</em> persists with Windows installations and haven&rsquo;t been found in linux installations. I had however tried <em>re-installing python 2.7.x</em>, <em>re-installing ruby 2.2.x</em>, and everything else which were possible but all solution ended up to this <em>working method</em>.</p>
 
@@ -313,13 +391,17 @@ has to end with endblockquotes
 </ul>
 
 
-<p>{% codeblock lang:liquid %}
-article {
-  ol, ul {
-    padding-left: 3em;
-  }
-}
-{% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>article {
+</span><span class='line'>  ol, ul {
+</span><span class='line'>    padding-left: 3em;
+</span><span class='line'>  }
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure></p>
 
 <h2>Conclusions</h2>
 

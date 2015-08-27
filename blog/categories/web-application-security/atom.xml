@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web_application_security | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/web-application-security/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-08-26T10:16:14+05:30</updated>
+  <updated>2015-08-27T09:16:38+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -50,7 +50,7 @@
 </ul>
 
 
-<p>{% img <a href="http://s29.postimg.org/ncdjld2on/SDLC_1.jpg">http://s29.postimg.org/ncdjld2on/SDLC_1.jpg</a> %}</p>
+<p><img class="<a" src="href="http://s29.postimg.org/ncdjld2on/SDLC_1.jpg">http://s29.postimg.org/ncdjld2on/SDLC_1.jpg</a>&#8221;></p>
 
 <p>All of the aforementioned are packaged into the five super&rsquo;s i.e. functional project management, technical project management, information security assurances, system integration test plan and integration test cases and user acceptance test plan and acceptance test cases. We are more worried about <strong>Information Security Assurances</strong> and not long far in this way - we&rsquo;ll be introduced to how <em>information security</em> is governed and where SDLC is outruled by it&rsquo;s superset, and when precisely <em>*security</em> is to be placed into <code>SDLC</code> thoughfully by it&rsquo;s governing superset.</p>
 
@@ -79,15 +79,11 @@
 
 <p>And all of these three factors are essential to run the show for <code>SDLC</code>, and ofcourse <code>SDLC</code> sometimes depend on it <em>operationally</em> if not for entire <em>development</em> (ever wonder about <code>DevOps</code>?). This is exactly where <em>security professionals</em> should be looking at! If one looks deeper thoughfully, any development criteria is only fullfilled by authorized operational means and if <em>operationally</em> security is placed forward - the <em>secure development</em> will become mandatory. There is a reason why I introduced <code>ALM</code> here because in layman terms:</p>
 
-<p>{% blockquote Shritam Bhowmick, His Information Security Diaries.%}</p>
-
-<p>If project managers care not to outrule their developers to enforce security internally and make it mandatory, someone else have had got the system processes broken already!</p>
-
-<p>{% endblockquote %}</p>
+<p><blockquote><p></p></p><p><p>If project managers care not to outrule their developers to enforce security internally and make it mandatory, someone else have had got the system processes broken already!</p></p><p><p></p><footer><strong>Shritam Bhowmick</strong> <cite>His Information Security Diaries.</cite></footer></blockquote></p>
 
 <p>Back to <code>ALM</code> basics, what we have is a raw idea which has a potential to either become an end-product for it&rsquo;s consumers and accepted by the massess in core functionality or it dies out and serves a short span of life to benefit from short-term use case/business case.</p>
 
-<p>{% img <a href="http://s13.postimg.org/blw9dfkrr/ALM_1.png">http://s13.postimg.org/blw9dfkrr/ALM_1.png</a> %}</p>
+<p><img class="<a" src="href="http://s13.postimg.org/blw9dfkrr/ALM_1.png">http://s13.postimg.org/blw9dfkrr/ALM_1.png</a>&#8221;></p>
 
 <p>If the <code>security problem</code> at <em>operation level</em> has been identified, let&rsquo;s not forget to take a submarine-dive to explore what&rsquo;s beneath <code>ALM</code>.</p>
 
@@ -95,7 +91,7 @@
 
 <p>Take a <em>sweet note</em> - authorities always have a higher ground and what they only know is business, be it short termed or long termed - as long as it&rsquo;s beneficiaries are transparent, people will invest into the project. In <code>ALM</code>, to escalate ideas into businesses, there has to be a purpose; An application has to serve a purpose and then it should have a business value - this is the <code>business use case</code>. Everything else is High-Lower authority for the entire project and they are <code>project portfolio management</code> and <code>application portfolio management</code>.</p>
 
-<p>{% img <a href="http://s1.postimg.org/7hmdr1nbj/ALM_Governance.png">http://s1.postimg.org/7hmdr1nbj/ALM_Governance.png</a> %}</p>
+<p><img class="<a" src="href="http://s1.postimg.org/7hmdr1nbj/ALM_Governance.png">http://s1.postimg.org/7hmdr1nbj/ALM_Governance.png</a>&#8221;></p>
 
 <p>What they do specifically as part of the governance are simplified here.</p>
 
@@ -117,13 +113,13 @@
 
 <p>Yet again, take a <em>sweet note</em> here - it&rsquo;s not always feasible or necessary for an organization to stick to traditional SDLC i.e. <code>RAD</code>, <code>Waterfall</code>, etc. <code>Iterative</code> might be sometimes the need of the time and more modern organizations have been using them.</p>
 
-<p>{% img <a href="http://s16.postimg.org/8ndjypyx1/ALM_Development.png">http://s16.postimg.org/8ndjypyx1/ALM_Development.png</a> %}</p>
+<p><img class="<a" src="href="http://s16.postimg.org/8ndjypyx1/ALM_Development.png">http://s16.postimg.org/8ndjypyx1/ALM_Development.png</a>&#8221;></p>
 
 <p>Development is a fundamental necessity for any <code>custom web application</code>, an <code>Enterprise Product</code> or any <code>End Product</code> and this is precisely the <code>security gone wrong</code> point which has <code>SDLC</code> phases in it. During the entire ALM, the <code>SDLC</code> is a part of the lifecycle and it&rsquo;s this point where <code>security professionals</code> should target and permanently set a reminder for a <code>security cross check</code>.</p>
 
 <p>Now, as talked before - generic <code>SDLC</code> has <strong>seven phases</strong> and equally there are <strong>seven security solutions</strong> to neutralize <code>security risks</code> specifically at those places.</p>
 
-<p>{% img <a href="http://s16.postimg.org/akevh1eyt/SDLC_3_Security.jpg">http://s16.postimg.org/akevh1eyt/SDLC_3_Security.jpg</a> %}</p>
+<p><img class="<a" src="href="http://s16.postimg.org/akevh1eyt/SDLC_3_Security.jpg">http://s16.postimg.org/akevh1eyt/SDLC_3_Security.jpg</a>&#8221;></p>
 
 <p>As to keep <code>security point-of-view</code> in reminder, here are the clauses for these <strong><u>specific security solutions at specific phases of a SDLC</u></strong>:</p>
 
@@ -192,7 +188,7 @@
 
 <p>No more <em>sweet notes</em>, it&rsquo;s tl;dr: <code>DevOps</code>.</p>
 
-<p>{% img <a href="http://s1.postimg.org/qjakg2b0v/ALM_Operations.png">http://s1.postimg.org/qjakg2b0v/ALM_Operations.png</a> %}</p>
+<p><img class="<a" src="href="http://s1.postimg.org/qjakg2b0v/ALM_Operations.png">http://s1.postimg.org/qjakg2b0v/ALM_Operations.png</a>&#8221;></p>
 
 <p>Soon after applications are deployed from <code>staging</code> to <code>production</code>, they start receiving <code>patches</code> and <code>updates</code>. To cope up with these the application has to be managed throughout it&rsquo;s entire lifecycle and is now bond with the developers and the development team. The people who take care basically of both are <code>DevOps</code> and a <code>security operations center</code> here should be excactly placed here to do a routine check of <code>patches</code> and <code>updates</code> and release <code>security fixes</code> for <code>updates</code>, <code>patches</code> or <code>deployment code</code> as well.</p>
 
@@ -202,7 +198,7 @@
 
 <p>And Now we have been asking the <em>right question</em>.</p>
 
-<p>{% img <a href="http://s4.postimg.org/bbuqihcel/SDLC_2.jpg">http://s4.postimg.org/bbuqihcel/SDLC_2.jpg</a> %}</p>
+<p><img class="<a" src="href="http://s4.postimg.org/bbuqihcel/SDLC_2.jpg">http://s4.postimg.org/bbuqihcel/SDLC_2.jpg</a>&#8221;></p>
 ]]></content>
   </entry>
   
@@ -220,7 +216,7 @@
 
 <p>Almost everytime a new standard, or a technology is released - it <em>does</em> contain <em>vulnerabilities</em>. Most often, these vulnerabilities are either hunted down using platforms such as <em>bug bounty</em> or otherwise dealt with privately via internal security team or traded in terms of a <em>0day</em>. It&rsquo;s no more about <em>how</em> one was able to compromise the applications in order to gain/trade or protect data but <em>how</em> it could had or has been important to make <em>an impact</em> to the business in concern. Almost all technical security researchers can deal with <em>identifying vulnerabilities</em> and claim they had been protecting the industry - but how about <em>measuring</em> these vulnerabilities in terms of <u><em>monetary impact to the business concerned?</em> </u>  This post is to talk about <em>that corner</em> of web application security industry which hasn&rsquo;t been much appretiated but still remains the core foundation to providing <strong>real security</strong>.</p>
 
-<p>{% img <a href="http://s14.postimg.org/5u25o02td/solution.jpg">http://s14.postimg.org/5u25o02td/solution.jpg</a> %}</p>
+<p><img class="<a" src="href="http://s14.postimg.org/5u25o02td/solution.jpg">http://s14.postimg.org/5u25o02td/solution.jpg</a>&#8221;></p>
 
 <p>To <strong> <em>quantify</em> </strong> the expenditure spent due to  the presence of a vulnerability or a chain of vulnerabilities isn&rsquo;t an unknown art - but it is percieved to be as the most analytical security research art and therefore requires patience and core understanding about the vulnerability - most importantly <em>business wise in terms of quantifying them in monetary impact</em> and also in terms of <em>technical impact which could lead to furthur compromise or weaken a particular asset</em>. To me there are three categories of businesses:</p>
 
@@ -251,7 +247,7 @@
 
 <p>Furthur categorization of the targeted asset value will lead to realization that most targeted attacks should be (<em>atleast in my personal opinion</em>) Employee role and Administration role since they the people who have the keys to the technical foundation and now that it&rsquo;s realized that these keys will lead to the door which weren&rsquo;t meant to be open - it&rsquo;s <em>seldom</em> that the <em>people in the processess</em> such as this, become the victim of attacks. At one hand, these people have the keys that lead to <em>secure access/trusted access to data</em> and then at the other hand these are the same people who are least trained to handle a security operation or not trained enough for security policies (<em>even if security policies are enforced</em>). A realistic example here could be <a href="http://www.tripwire.com/state-of-security/incident-detection/dhs-confirms-u-s-public-utilitys-control-system-was-hacked/">compromise of U.S. PUCS SCADA</a>.</p>
 
-<p>{% img <a href="http://s8.postimg.org/hlt0gqp79/statistics_vuln_industry.jpg">http://s8.postimg.org/hlt0gqp79/statistics_vuln_industry.jpg</a> %}</p>
+<p><img class="<a" src="href="http://s8.postimg.org/hlt0gqp79/statistics_vuln_industry.jpg">http://s8.postimg.org/hlt0gqp79/statistics_vuln_industry.jpg</a>&#8221;></p>
 
 <p>Now let&rsquo;s take for an example a <em>Retail scale business</em> which by far can be any from a cyber security company to a ecommerce based company, a a ventured start-up or a well established commercial platform. These businesses run on <em>consumers</em> that they rely on and hence the most likely target will be <em>consumers</em> and their data. Ofcourse there are other assets such as <em>employees</em> - <em>IT Department employees specifically</em>. Categorization of asset once again will lead to an evaluation of what audience target should most likely be! A realistic example here could be <a href="http://www.techworld.com/news/e-commerce/e-bay-magento-e-commerce-platform-hacked-by-credit-card-fraudsters-3617851/">the breach of E-bay leading to credit card information exposed</a>.</p>
 
@@ -272,7 +268,7 @@
 
 <p>Answer is it <strong>takes years of expertise and understanding impact</strong> by not fueling the <strong>easy way out to vulnerabilities</strong>. I have had that taste of <strong>bug bounty programs</strong> which are mostly never meant to close the <strong>monetary impact</strong> of a particular vulnerability but instead <strong> <em>focus on the softer technical side</em> </strong> and close out the <strong> <em>bugs</em> </strong>. Again, these are <em>bugs</em> and not <em>security threats as a whole</em>. Rare could be such occasions where <em>a valuable monetary vulnerability</em> has been reported. Here&rsquo;s a <a href="https://sites.google.com/site/bughunteruniversity/behind-the-scenes/charts">VRP chart from Google</a>.</p>
 
-<p>{% img <a href="https://sites.google.com/site/bughunteruniversity/_/rsrc/1422631746620/behind-the-scenes/charts/trafficdist.png">https://sites.google.com/site/bughunteruniversity/_/rsrc/1422631746620/behind-the-scenes/charts/trafficdist.png</a> %}</p>
+<p><img class="<a" src="href="https://sites.google.com/site/bughunteruniversity/_/rsrc/1422631746620/behind-the-scenes/charts/trafficdist.png">https://sites.google.com/site/bughunteruniversity/_/rsrc/1422631746620/behind-the-scenes/charts/trafficdist.png</a>&#8221;></p>
 
 <p>&hellip;  and that doesn&rsquo;t really <em>motivate</em> me.</p>
 
@@ -286,7 +282,7 @@
 </ol>
 
 
-<p>{% img <a href="http://s27.postimg.org/yctiz01nn/reallyohmy.png">http://s27.postimg.org/yctiz01nn/reallyohmy.png</a> %}</p>
+<p><img class="<a" src="href="http://s27.postimg.org/yctiz01nn/reallyohmy.png">http://s27.postimg.org/yctiz01nn/reallyohmy.png</a>&#8221;></p>
 
 <p>That&rsquo;s an epic legend for a <del>security researcher</del>!</p>
 
@@ -295,7 +291,7 @@
 </ul>
 
 
-<p>{% img <a href="http://s21.postimg.org/j9agzia53/youget.png">http://s21.postimg.org/j9agzia53/youget.png</a> %}</p>
+<p><img class="<a" src="href="http://s21.postimg.org/j9agzia53/youget.png">http://s21.postimg.org/j9agzia53/youget.png</a>&#8221;></p>
 
 <ul>
 <li><p>&hellip; and what <a href="http://www.ubercomp.com/posts/2014-01-16_facebook_remote_code_execution"><strong><u>an accurate security research looks like</u></strong></a> had quarter more the price economy as of the previous. I highly doubt this is the best management of crowdsourced vulnerabilities and if not - very dissapointed overall.</p></li>
@@ -328,9 +324,7 @@
 
 <p>There&rsquo;s solution to this existing problem and whilst escalation could be <em>internally managed and solved</em>, it isn&rsquo;t always the only way and it&rsquo;s necessary to understand why. Let&rsquo;s solve this in the upcoming posts to come-by and stay tuned folks. One liner take-away!</p>
 
-<p>{% blockquote Shritam Bhowmick, His Information Security Diaries. %}
- Vulnerability Research and it&rsquo;s Quantification in terms of monetary impact is an essential art in itself to providing better in terms of Application Security.
- {% endblockquote %}</p>
+<p><blockquote><p>Vulnerability Research and it&rsquo;s Quantification in terms of monetary impact is an essential art in itself to providing better in terms of Application Security.</p><footer><strong>Shritam Bhowmick</strong> <cite>His Information Security Diaries.</cite></footer></blockquote></p>
 ]]></content>
   </entry>
   
