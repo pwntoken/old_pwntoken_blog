@@ -4,7 +4,7 @@
   <title><![CDATA[Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-08-27T09:18:43+05:30</updated>
+  <updated>2015-09-06T20:19:15+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Enterprise Web Application Security Program]]></title>
+    <link href="http://pwntoken.github.io/enterprise-web-application-security-program/"/>
+    <updated>2015-09-05T04:56:17+05:30</updated>
+    <id>http://pwntoken.github.io/enterprise-web-application-security-program</id>
+    <content type="html"><![CDATA[<h2><em>Developing Web Security Program for Enterprise Organizations</em></h2>
+
+<p>A long-awaited idea to less complicate <em>web security program</em> came to me while researching and reading a thesis for CERN/European Organization for Nuclear Research to measure effictiveness and efficiency of web security methodologies &amp; techniques for their web applications via employement of <a href="http://link.springer.com/chapter/10.1007/978-3-642-13054-0_2#page-1">EAST - Extensible Agile Security Testing</a> on their test subject web applications and closely monitor old security methodology techniques v/s newer ones by two-times iteration of each of the respective old/new techniques.</p>
+
+<!-- more -->
+
+
+<p>I have already laid down the foundation of <a href="http://pwntoken.github.io/web-application-security-testing/">web application security testing</a> in one of my previous post. A web application security program is different actual security testing suite and from actual implementation This is essentially the starting point for information security managers to normalize <strong>web application security programs</strong>, required tools, resources, and other necessary tasks to chalk out the right security program planner for thier organizations at an Enterprise level. To loosely present the overall process here, it&rsquo;s relevant to discuss the essential pointers for any web application security program.</p>
+
+<p><u>Note:</u> A Security test plan is different than that of a security program. A security program must be placed first and then this program decides the security test plans with different test cases according to it&rsquo;s requirements (both <em>business</em> &amp; <em>functional</em>). I have had done the extensive research to liquidify and place the procedure in almost fundamental terms as much as possible and fixated this post to explore <code>web security program</code> rather than elevating it into topic of discussing the <em>security test plan</em>.</p>
+
+<p>Basically, an overall information security plan could be reduced down only if certain program is in place in the enterprise organization. This is done via first questioning if any security planning is required or isn&rsquo;t essential to it&rsquo;s business nature? .. and this question is almost always true in cases for enterprise web applications.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Web Application Security Testing]]></title>
@@ -50,7 +70,7 @@
 </ul>
 
 
-<p><img src="http://s29.postimg.org/ncdjld2on/SDLC_1.jpg"></p>
+<p><img src="http://i.imgur.com/Rxw9UPI.jpg"></p>
 
 <p>All of the aforementioned are packaged into the five super&rsquo;s i.e. functional project management, technical project management, information security assurances, system integration test plan and integration test cases and user acceptance test plan and acceptance test cases. We are more worried about <strong>Information Security Assurances</strong> and not long far in this way - we&rsquo;ll be introduced to how <em>information security</em> is governed and where SDLC is outruled by it&rsquo;s superset, and when precisely <em>*security</em> is to be placed into <code>SDLC</code> thoughfully by it&rsquo;s governing superset.</p>
 
