@@ -4,7 +4,7 @@
   <title><![CDATA[Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-09-06T20:19:15+05:30</updated>
+  <updated>2015-09-08T00:47:45+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -29,7 +29,125 @@
 
 <p><u>Note:</u> A Security test plan is different than that of a security program. A security program must be placed first and then this program decides the security test plans with different test cases according to it&rsquo;s requirements (both <em>business</em> &amp; <em>functional</em>). I have had done the extensive research to liquidify and place the procedure in almost fundamental terms as much as possible and fixated this post to explore <code>web security program</code> rather than elevating it into topic of discussing the <em>security test plan</em>.</p>
 
-<p>Basically, an overall information security plan could be reduced down only if certain program is in place in the enterprise organization. This is done via first questioning if any security planning is required or isn&rsquo;t essential to it&rsquo;s business nature? .. and this question is almost always true in cases for enterprise web applications.</p>
+<p>Basically, an overall information security plan could be reduced down only if certain program is in place in the enterprise organization. This is done via first questioning if any security planning is required or isn&rsquo;t essential to it&rsquo;s business nature? .. and this question is almost always true in cases for enterprise web applications. I have discussed <a href="http://pwntoken.github.io/web-application-security-testing/"><em>security governance</em></a> in Security Testing as an overall process with <a href="http://pwntoken.github.io/web-application-security-testing/">Application Lifecycle Management (ALM)</a> before and would again like to emphasize on &lsquo;governance&rsquo; since it&rsquo;s management of these processes (security program). A substantial information about this <em>overall security program</em> setup could be demonstrated by top-down and bottom-up approches both in <em>strategic risks</em> and <em>tactical risks</em>. <strong>Strategic risks</strong> are those risks which are assumed to be treated before deployment of software (web applications for an instance) and <strong>Tactical risks</strong> are the risks which are to be treated or handled in tactical ways to mitigate risks.</p>
+
+<p><img src="http://i.imgur.com/SK3JMhG.jpg"></p>
+
+<p>To understand how security program can be set-up, there are three primary concerns and focus area for a professional security governance manager, and these are:</p>
+
+<ol>
+<li>Security Planning</li>
+<li>Security Execution</li>
+<li>Security Post-Execution</li>
+</ol>
+
+
+<p>Let&rsquo;s discuss what happens for all of them to understand how this overall management decision turns to be the greatest leap forward to manage security risks in terms of <a href="http://pwntoken.github.io/economics-of-web-application-security/">monetary security gap impacts</a> and also in terms to provide flexibility is a security program setup.</p>
+
+<h3>Security planning</h3>
+
+<p> A robust security management effort can only be a security-centric approach keeping the development flexibility an additional touch to it. By this, I mean a security plan should not block development efforts at all. Some of these are covered in whitepapers - <a href="http://www.sans.org/reading-room/whitepapers/awareness/facets-information-security-program-1343">&ldquo;The Many Facets of an Information Security Program&rdquo;</a> and <a href="http://www.sans.org/reading-room/whitepapers/leadership/practical-approaches-organizational-information-security-management-33568">&ldquo;Practical Approaches to Organizational Information Security Management&rdquo;</a>. What&rsquo;s important is to realize that <u><strong>security planning</strong> is only a part of the <em>overall security program establishment</em></u> process and must never be treated as end-goal. Things can change at later phases which can then need <em>security plan revision</em> and others might later prove to heavily rely on development plans (in case of web applications).</p>
+
+<p><a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> mentions <em>security planning</em> to be something that is <u>critical to a security assessment </u> and a phase used to <em>gather information required to exercise execution of security assessments</em>.</p>
+
+<p> <blockquote><p>Planning: Critical to a successful security assessment, the planning phase is used to gather information needed for assessment execution — such as the assets to be assessed, the threats of interest against the assets, and the security controls to be used to mitigate those threats — and to develop the assessment approach.  A security assessment should be treated as any other project, with a project management plan to address goals and objectives, scope, requirements, team roles and responsibilities, limitations, success factors, assumptions, resources, timeline, and deliverables.</p><footer><strong>NIST-800-115</strong></footer></blockquote></p>
+
+<p>What basically <a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> suggests for <code>security planning</code> are a 6 pointer adherence to it&rsquo;s pointers and they are:</p>
+
+<ol>
+<li>To develop a <strong>security assessment policy</strong></li>
+<li>.. and then to <strong>prioritize and schedule security assessments</strong></li>
+<li>.. and then properly select <strong>technical security testing techniques</strong> and <strong>examination techniques</strong></li>
+<li>.. and next to consider the <strong>logistics of the security assessment</strong></li>
+<li>.. and finally develop the <strong>security assessment plan</strong></li>
+<li>And <strong>address legal considerations</strong> for the overall security assessment plan.</li>
+</ol>
+
+
+<p><u><strong>Overall Summary</strong></u>: The first step is transparent and it includes to establish a policy requirement factor for organizations which will provide necessary directions and will also act as an &lsquo;engine&rsquo; to the organizational security establishment. The second step will make sure business critical assets are prioritized and effort driven attention are given to these systems, servers or components that drive the organization. The third step depends on the second point because proper examination and technical security testing are to be considered to benefit from the security program. The fourth step will deal with all the necessary team set-up, the needed resources, etc for execution of the security plan. The fifth step is the most hated <code>security plan documentation</code> and suggests documenting the security plan for it&rsquo;s organization. This is most professional way to approach any problem and determine a solution for them and I find this is the only pointer which will help many-a-times at later stages. The sixth step might be optional but in large organizations - it might as well be essential to consider the legalities.</p>
+
+<h3>Security execution</h3>
+
+<p>One should know the categories and the risks they pose to the organization during the security execution phase. The risks which are being talked about aren&rsquo;t the risks the assessors will be identifying but the most immediate risks which are generated from the <code>security assessment execution</code> exercise alone. There are various levels of risks associated, but this table will try to break them down for clarity and we shall later see why these categories were associated with risks.</p>
+
+<table>
+<thead>
+<tr>
+<th> <u><strong>Category</strong></u> </th>
+<th> <u><strong>Associated Risk</strong></u> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Security Review </td>
+<td> Low Risk</td>
+</tr>
+<tr>
+<td> Target Identification and Analysis </td>
+<td> Moderate Risk</td>
+</tr>
+<tr>
+<td> Target Vulnerability Validation </td>
+<td> High Risk</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br></p>
+
+<p>There are generally two types of security assessment techniques and these are:</p>
+
+<ol>
+<li>Technical Security Assessment Techniques</li>
+<li>Non-Technical Security Assessment Techniques</li>
+</ol>
+
+
+<p>This will differ from organization to organization and the most decision makers (the security governance) will choose how much proportions of these have to be employed to the <em>overall security program</em> and decided in the security plan or rules of engagement (ROE). This will be included in the <code>security plan documentation</code> and methodologies adopted will be followed by the security practitioners.</p>
+
+<p><a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> covers technical assessment techniques and non-technical assessment techniques are out of scope of it&rsquo;s document. But it goes unsaid that non-technical security assessment techniques must be employed as well dependent on the business nature of the organization. For an example - a bank premisis will require thorough non-technical security assessment technique such as lock-picking and lock hardening, identity system security evaluation, interviewing the people in it&rsquo;s organization, etc. It&rsquo;s all a part of the procedure that is to be followed as per industry nature of that particular organization.</p>
+
+<p>For any <code>technical security assessment techniques</code>, <a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> identifies three techniques and these are:</p>
+
+<ol>
+<li>Review Techniques</li>
+<li>Target Identification and Analysis Techniques</li>
+<li>Target Vulnerability Validation Techniques</li>
+</ol>
+
+
+<p>One would now soon realize how small is <code>penetration testing</code> and will also realize <code>penetration testing</code> is a minor requirement of the overall security program that is about to follow. To detail each of these techniques will require a book and it isn&rsquo;t something I have had aimed for! But in summary it goes like:</p>
+
+<ul>
+<li><p><u><strong>Review Techniques</strong></u> - are examination techniques to measure potential security strength of any system. This is the starting point in the security program execution phase in technical terms. Documentation, logs, rulesets, system configuration and files are reviwed and since they are the starting point and no major technical efforts towards big changes are made during testing these components - they pose a <strong><code>lower risks</code></strong> in the technical assessment.</p></li>
+<li><p><u><strong>Target Identification and Analysis Techniques</strong></u> - are active techniques such as port knocking, active ping-sweeps, service identification, vulnearbility scanning, war driving and similar checks to find hints for vulnerabilities. This particular type of technical assessment does impose <strong><code>moderate risks</code></strong> because during their execution, certain systems might halt or entirely cease to operate causing productivity failure at an enterprise level.</p></li>
+<li><p><u><strong>Target Vulnerability Validation Techniques</strong></u> - are to prove the actual existence of the vulnerabilities. This is where red teams are allocated in offensive ways to determine exposure of in-depth offensive penetration to defend the organizations best interests and their assets. Penetration testing is one such example. Social Engineering is another - and yes it&rsquo;s technically driven. This type of technical assessment imposes a <strong><code>high risk</code></strong> since availability of systems are totally compromised during the test execution and might lead to complete failure from organization functionality perspective.</p></li>
+</ul>
+
+
+<p>This is how internal technical security test risks are different from the risks which security professionals actually measure. And hence these risks become the part of the problem and requires management.</p>
+
+<p><img src="http://i.imgur.com/kJcoNGC.png" title="Technical Security Assessment Risks" ></p>
+
+<p><a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> mentions that <code>security assessment execution</code> is a phase where the security execution starts and vulnerabilities are identified. Methodologies and techniques which are previously decided on <em>security planning</em> phase are executed at this important phase.</p>
+
+<blockquote><p>Execution - Primary goals for the execution phase are to identify vulnerabilities and validate them when appropriate. This phase should address activities associated with the intended assessment method and technique. Although specific activities for this phase differ by assessment type, upon completion of this phase assessors will have identified system, network, and organizational process vulnerabilities.</p><footer><strong>NIST-800-115</strong></footer></blockquote>
+
+
+<p><u><em>Note</em></u>: It&rsquo;s evident that more than one methodologies or techniques can be used. Some methodologies to be used here for web application security vulnerability identification can be <a href="https://www.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents">OWASP</a>, <a href="https://www.sans.org/critical-security-controls/control/20">SANS Critical Controls</a>, <a href="http://projects.webappsec.org/f/WASC-TC-v2_0.pdf">WASC 26</a> or a combination of these methodologies and techniques suited to the organization (<em>which can be developed in-house</em>).</p>
+
+<p>What basically <a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> suggests for <code>security execution</code> are a 4 pointer adherence to it&rsquo;s pointers and they are:</p>
+
+<ol>
+<li><p><strong>Coordination</strong></p></li>
+<li><p>.. and then <strong>Assessing</strong> the challenges in the entire security framework.</p></li>
+<li><p>.. and then <strong>Analysis</strong> which is to segregate false positives, catergorize vulnerabilities and identify the <em>root causes of vulnerabilities</em> (threat trees or attack trees).</p></li>
+<li><p>Finally <strong>Data Handling</strong>.</p></li>
+</ol>
+
+
+<p><u><strong>Overall Summary</strong></u>: The first step involves <em>Coordination</em> whereby <a href="https://en.wikipedia.org/wiki/Point_of_contact">SPOC</a>  to 3rd party security providers (such as penetration testing, source code review, etc.)  and inter-communication of internal team set-up documented in the <em>Security planning documentation</em> are followed by the key people. Next, <em>Assessing</em> which are provided in the <code>security planning documentation</code> or ROE. These include specific assessors and challenges that come internally to them such as some developers might just harden the systems while security assessments are done due to compliances but forget to keep them upgraded. Next is <em>Analysis</em>, some of which are - <em>Vulnerability Classification</em> which can be done in accordance to methodolgy adopted and planned in <code>security planning documentation</code> (<a href="https://owasp.org/index.php/Vulnerability_Classification_Mappings">OWASP Top 10</a>, <a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf">NIST SP 800-53</a>, <a href="http://projects.webappsec.org/f/WASC-TC-v2_0.pdf">WASC 26</a>). For vulnerability meterics - <a href="https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology">OWASP Risk Rating</a> for Web Applications, <a href="https://www.first.org/cvss/v2/guide">CVSSv2</a> for Network Vulnerabilities (<a href="https://www.first.org/cvss/specification-document">CVSSv3</a> is around too!), <a href="https://cve.mitre.org/cve/">CVE</a>, <a href="https://cwe.mitre.org/">CWE</a> for Software. Security Metrics will depend upon contextx, it&rsquo;s environment and architecture dependent. To create own in-house security metrics, the paper <a href="http://dl.acm.org/citation.cfm?id=1566509">&ldquo;Security Metrics for Software Systems&rdquo;</a> might just help. <em>Analysis</em> can both be during security assessment and post-security assessments. The last step will inlcude <em>Data Handling</em> - This phase includes collection and handling security data - it&rsquo;s transmission, protection, storage and destruction.</p>
 ]]></content>
   </entry>
   
