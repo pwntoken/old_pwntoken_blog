@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web_application_security | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/web-application-security/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-09-08T01:24:37+05:30</updated>
+  <updated>2015-10-07T04:43:19+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -20,18 +20,18 @@
     <id>http://pwntoken.github.io/enterprise-web-application-security-program</id>
     <content type="html"><![CDATA[<h2><em>Developing Web Security Program for Enterprise Organizations</em></h2>
 
-<p>A long-awaited idea to less complicate <em>web security program</em> came to me while researching and reading a thesis for CERN/European Organization for Nuclear Research to measure effictiveness and efficiency of web security methodologies &amp; techniques for their web applications via employement of <a href="http://link.springer.com/chapter/10.1007/978-3-642-13054-0_2#page-1">EAST - Extensible Agile Security Testing</a> on their test subject web applications and closely monitor old security methodology techniques v/s newer ones by two-times iteration of each of the respective old/new techniques.</p>
+<p>A long-awaited idea to less complicate <em>web security program</em> came to me while researching and reading a thesis for <strong>CERN/European Organization for Nuclear Research</strong> to measure effectiveness and efficiency of web security methodologies &amp; techniques for their web applications via employement of <a href="http://link.springer.com/chapter/10.1007/978-3-642-13054-0_2#page-1"><strong>EAST - Extensible Agile Security Testing</strong></a> on their test subject web applications and closely monitor old security methodology techniques v/s newer ones by two-times iteration of each of the respective old/new techniques.</p>
 
 <!-- more -->
 
 
-<p>I have already laid down the foundation of <a href="http://pwntoken.github.io/web-application-security-testing/">web application security testing</a> in one of my previous post. A web application security program is different actual security testing suite and from actual implementation This is essentially the starting point for information security managers to normalize <strong>web application security programs</strong>, required tools, resources, and other necessary tasks to chalk out the right security program planner for thier organizations at an Enterprise level. To loosely present the overall process here, it&rsquo;s relevant to discuss the essential pointers for any web application security program.</p>
+<p>I have already laid down the foundation of <a href="http://pwntoken.github.io/web-application-security-testing/">web application security testing</a> in one of my previous post. A web application security program is different than an actual security testing suite and from actual implementation. This is essentially the starting point for information security managers to normalize <strong>web application security programs</strong>, required tools, resources, and other necessary tasks to chalk out the right security program planner for thier organizations at an Enterprise level. To loosely present the overall process here, it&rsquo;s relevant to discuss the essential pointers for any web application security program.</p>
 
 <p><u>Note:</u> A Security test plan is different than that of a security program. A security program must be placed first and then this program decides the security test plans with different test cases according to it&rsquo;s requirements (both <em>business</em> &amp; <em>functional</em>). I have had done the extensive research to liquidify and place the procedure in almost fundamental terms as much as possible and fixated this post to explore <code>web security program</code> rather than elevating it into topic of discussing the <em>security test plan</em>.</p>
 
 <p>Basically, an overall information security plan could be reduced down only if certain program is in place in the enterprise organization. This is done via first questioning if any security planning is required or isn&rsquo;t essential to it&rsquo;s business nature? .. and this question is almost always true in cases for enterprise web applications. I have discussed <a href="http://pwntoken.github.io/web-application-security-testing/"><em>security governance</em></a> in Security Testing as an overall process with <a href="http://pwntoken.github.io/web-application-security-testing/">Application Lifecycle Management (ALM)</a> before and would again like to emphasize on &lsquo;governance&rsquo; since it&rsquo;s management of these processes (security program). A substantial information about this <em>overall security program</em> setup could be demonstrated by top-down and bottom-up approches both in <em>strategic risks</em> and <em>tactical risks</em>. <strong>Strategic risks</strong> are those risks which are assumed to be treated before deployment of software (web applications for an instance) and <strong>Tactical risks</strong> are the risks which are to be treated or handled in tactical ways to mitigate risks.</p>
 
-<p><img class="<a" src="href="http://i.imgur.com/SK3JMhG.jpg">http://i.imgur.com/SK3JMhG.jpg</a>&#8221;></p>
+<p><img class="center <a" src="href="http://i.imgur.com/SK3JMhG.jpg">http://i.imgur.com/SK3JMhG.jpg</a>&#8221;></p>
 
 <p>To understand how security program can be set-up, there are three primary concerns and focus area for a professional security governance manager, and these are:</p>
 
@@ -44,13 +44,13 @@
 
 <p>Let&rsquo;s discuss what happens for all of them to understand how this overall management decision turns to be the greatest leap forward to manage security risks in terms of <a href="http://pwntoken.github.io/economics-of-web-application-security/">monetary security gap impacts</a> and also in terms to provide flexibility is a security program setup.</p>
 
-<h3>Security planning</h3>
+<h3><u>Security Planning</u></h3>
 
 <p> A robust security management effort can only be a security-centric approach keeping the development flexibility an additional touch to it. By this, I mean a security plan should not block development efforts at all. Some of these are covered in whitepapers - <a href="http://www.sans.org/reading-room/whitepapers/awareness/facets-information-security-program-1343">&ldquo;The Many Facets of an Information Security Program&rdquo;</a> and <a href="http://www.sans.org/reading-room/whitepapers/leadership/practical-approaches-organizational-information-security-management-33568">&ldquo;Practical Approaches to Organizational Information Security Management&rdquo;</a>. What&rsquo;s important is to realize that <u><strong>security planning</strong> is only a part of the <em>overall security program establishment</em></u> process and must never be treated as end-goal. Things can change at later phases which can then need <em>security plan revision</em> and others might later prove to heavily rely on development plans (in case of web applications).</p>
 
 <p><a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> mentions <em>security planning</em> to be something that is <u>critical to a security assessment </u> and a phase used to <em>gather information required to exercise execution of security assessments</em>.</p>
 
-<p> <blockquote><p>Planning: Critical to a successful security assessment, the planning phase is used to gather information needed for assessment execution — such as the assets to be assessed, the threats of interest against the assets, and the security controls to be used to mitigate those threats — and to develop the assessment approach.  A security assessment should be treated as any other project, with a project management plan to address goals and objectives, scope, requirements, team roles and responsibilities, limitations, success factors, assumptions, resources, timeline, and deliverables.</p><footer><strong>NIST-800-115</strong></footer></blockquote></p>
+<p> <blockquote><p><u>Planning</u>: Critical to a successful security assessment, the planning phase is used to gather information needed for assessment execution — such as the assets to be assessed, the threats of interest against the assets, and the security controls to be used to mitigate those threats — and to develop the assessment approach.  A security assessment should be treated as any other project, with a project management plan to address goals and objectives, scope, requirements, team roles and responsibilities, limitations, success factors, assumptions, resources, timeline, and deliverables.</p><footer><strong>NIST-800-115</strong></footer></blockquote></p>
 
 <p>What basically <a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> suggests for <code>security planning</code> are a 6 pointer adherence to it&rsquo;s pointers and they are:</p>
 
@@ -66,7 +66,7 @@
 
 <p><u><strong>Overall Summary</strong></u>: The first step is transparent and it includes to establish a policy requirement factor for organizations which will provide necessary directions and will also act as an &lsquo;engine&rsquo; to the organizational security establishment. The second step will make sure business critical assets are prioritized and effort driven attention are given to these systems, servers or components that drive the organization. The third step depends on the second point because proper examination and technical security testing are to be considered to benefit from the security program. The fourth step will deal with all the necessary team set-up, the needed resources, etc for execution of the security plan. The fifth step is the most hated <code>security plan documentation</code> and suggests documenting the security plan for it&rsquo;s organization. This is most professional way to approach any problem and determine a solution for them and I find this is the only pointer which will help many-a-times at later stages. The sixth step might be optional but in large organizations - it might as well be essential to consider the legalities.</p>
 
-<h3>Security execution</h3>
+<h3><u>Security Execution</u></h3>
 
 <p>One should know the categories and the risks they pose to the organization during the security execution phase. The risks which are being talked about aren&rsquo;t the risks the assessors will be identifying but the most immediate risks which are generated from the <code>security assessment execution</code> exercise alone. There are various levels of risks associated, but this table will try to break them down for clarity and we shall later see why these categories were associated with risks.</p>
 
@@ -128,25 +128,206 @@
 
 <p>This is how internal technical security test risks are different from the risks which security professionals actually measure. And hence these risks become the part of the problem and requires management.</p>
 
-<p><img class="<a" src="href="http://i.imgur.com/kJcoNGC.png">http://i.imgur.com/kJcoNGC.png</a>&#8221; title=&#8221;Technical Security Assessment Risks&#8221; ></p>
+<p><img class="center <a" src="href="http://i.imgur.com/kJcoNGC.png">http://i.imgur.com/kJcoNGC.png</a>&#8221; title=&#8221;Technical Security Assessment Risks&#8221; ></p>
 
 <p><a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> mentions that <code>security assessment execution</code> is a phase where the security execution starts and vulnerabilities are identified. Methodologies and techniques which are previously decided on <em>security planning</em> phase are executed at this important phase.</p>
 
-<p><blockquote><p>Execution - Primary goals for the execution phase are to identify vulnerabilities and validate them when appropriate. This phase should address activities associated with the intended assessment method and technique. Although specific activities for this phase differ by assessment type, upon completion of this phase assessors will have identified system, network, and organizational process vulnerabilities.</p><footer><strong>NIST-800-115</strong></footer></blockquote></p>
+<p><blockquote><p><u>Execution</u> - Primary goals for the execution phase are to identify vulnerabilities and validate them when appropriate. This phase should address activities associated with the intended assessment method and technique. Although specific activities for this phase differ by assessment type, upon completion of this phase assessors will have identified system, network, and organizational process vulnerabilities.</p><footer><strong>NIST-800-115</strong></footer></blockquote></p>
 
 <p><u><em>Note</em></u>: It&rsquo;s evident that more than one methodologies or techniques can be used. Some methodologies to be used here for web application security vulnerability identification can be <a href="https://www.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents">OWASP</a>, <a href="https://www.sans.org/critical-security-controls/control/20">SANS Critical Controls</a>, <a href="http://projects.webappsec.org/f/WASC-TC-v2_0.pdf">WASC 26</a> or a combination of these methodologies and techniques suited to the organization (<em>which can be developed in-house</em>).</p>
 
 <p>What basically <a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> suggests for <code>security execution</code> are a 4 pointer adherence to it&rsquo;s pointers and they are:</p>
 
 <ol>
-<li><p><strong>Coordination</strong></p></li>
+<li><p><strong>Coordination</strong> within organization and 3rd-party security providers.</p></li>
 <li><p>.. and then <strong>Assessing</strong> the challenges in the entire security framework.</p></li>
 <li><p>.. and then <strong>Analysis</strong> which is to segregate false positives, catergorize vulnerabilities and identify the <em>root causes of vulnerabilities</em> (threat trees or attack trees).</p></li>
 <li><p>Finally <strong>Data Handling</strong>.</p></li>
 </ol>
 
 
-<p><u><strong>Overall Summary</strong></u>: The first step involves <em>Coordination</em> whereby <a href="https://en.wikipedia.org/wiki/Point_of_contact">SPOC</a>  to 3rd party security providers (such as penetration testing, source code review, etc.)  and inter-communication of internal team set-up documented in the <em>Security planning documentation</em> are followed by the key people. Next, <em>Assessing</em> which are provided in the <code>security planning documentation</code> or ROE. These include specific assessors and challenges that come internally to them such as some developers might just harden the systems while security assessments are done due to compliances but forget to keep them upgraded. Next is <em>Analysis</em>, some of which are - <em>Vulnerability Classification</em> which can be done in accordance to methodolgy adopted and planned in <code>security planning documentation</code> (<a href="https://owasp.org/index.php/Vulnerability_Classification_Mappings">OWASP Top 10</a>, <a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf">NIST SP 800-53</a>, <a href="http://projects.webappsec.org/f/WASC-TC-v2_0.pdf">WASC 26</a>). For vulnerability meterics - <a href="https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology">OWASP Risk Rating</a> for Web Applications, <a href="https://www.first.org/cvss/v2/guide">CVSSv2</a> for Network Vulnerabilities (<a href="https://www.first.org/cvss/specification-document">CVSSv3</a> is around too!), <a href="https://cve.mitre.org/cve/">CVE</a>, <a href="https://cwe.mitre.org/">CWE</a> for Software. Security Metrics will depend upon contexts, it&rsquo;s environment and architecture dependency. To create own in-house security metrics, the paper <a href="http://dl.acm.org/citation.cfm?id=1566509">&ldquo;Security Metrics for Software Systems&rdquo;</a> might just help. <em>Analysis</em> can both be during security assessment and post-security assessments. The last step will inlcude <em>Data Handling</em> - This phase includes collection and handling security data - it&rsquo;s transmission, protection, storage and destruction.</p>
+<p><u><strong>Overall Summary</strong></u>: The first step involves <em>Coordination</em> whereby <a href="https://en.wikipedia.org/wiki/Point_of_contact">SPOC</a>  to 3rd party security providers (such as security service providers of penetration testing, source code review, etc.)  and inter-communication of internal team set-up documented in the <em>Security planning documentation</em> are followed by the key people. Next, <em>Assessing</em> which are provided in the <code>security planning documentation</code> or ROE. These include specific assessors and challenges that come internally to them such as some developers might just harden the systems while security assessments are done due to compliances but forget to keep them upgraded. Next is <em>Analysis</em>, some of which are - <em>Vulnerability Classification</em> which can be done in accordance to methodolgy adopted and planned in <code>security planning documentation</code> (<a href="https://owasp.org/index.php/Vulnerability_Classification_Mappings">OWASP Top 10</a>, <a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf">NIST SP 800-53</a>, <a href="http://projects.webappsec.org/f/WASC-TC-v2_0.pdf">WASC 26</a>). For vulnerability meterics - <a href="https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology">OWASP Risk Rating</a> for Web Applications, <a href="https://www.first.org/cvss/v2/guide">CVSSv2</a> for Network Vulnerabilities (<a href="https://www.first.org/cvss/specification-document">CVSSv3</a> is around too!), <a href="https://cve.mitre.org/cve/">CVE</a>, <a href="https://cwe.mitre.org/">CWE</a> for Software. Security Metrics will depend upon contexts, it&rsquo;s environment and architecture dependency. To create own in-house security metrics, the paper <a href="http://dl.acm.org/citation.cfm?id=1566509">&ldquo;Security Metrics for Software Systems&rdquo;</a> might just help. <em>Analysis</em> can both be during security assessment and post-security assessments. The last step will inlcude <em>Data Handling</em> - This phase includes collection and handling security data - it&rsquo;s transmission, protection, storage and destruction.</p>
+
+<h3><u>Security Post-Testing</u></h3>
+
+<p>What generally follows after <code>security execution</code> are elements necessary to strengthen the organization&rsquo;s security posture by placing a <em>prevention framework</em>. <a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> describes <code>security post-testing</code> to be set of tasks which might be an analyzing factor outside of testing and a part of <em>risk assessment</em> for the organization in subject. Since most of the analyzing is done at <code>security execution</code> phase, the only analysis which is done at <code>security post-testing</code> phase is to identify <em>root causes</em> of the vulnerabilities and then to identify how to mitigate the risks if an attacker successfully exploits the specific vulnerability (and also what assets might be in loss and the economy loss of the organization). All of these analysis is prioritized and later produced in a <em>mitigation report</em>.</p>
+
+<p><blockquote><p><u>Post-Execution</u> - The post-execution phase focuses on analyzing identified vulnerabilities to  determine root causes, establish mitigation recommendations, and develop a final report.</p><footer><strong>NIST-800-15</strong></footer></blockquote></p>
+
+<p>But the implementations for this needs items for consideration and these are:</p>
+
+<ol>
+<li><strong>POA&amp;M</strong> for managing the vulnerabilities.</li>
+<li><strong>Mitigation Recommendations</strong> for calibrations in processes and to handle people/policies.</li>
+<li><strong>Remediation/Mitigation</strong> to <em>technically</em> resolve a security risk.</li>
+</ol>
+
+
+<p><u><strong>Overall Summary</strong></u>: <a href="http://www.energy.gov/sites/prod/files/cioprod/documents/Mon_1300_SalonIII_POAMv11_DataSphere01_jmn.pdf">POA&amp;M</a> or <em>Plan Of Action &amp; Milestones</em> are set of guidances which provides effective plan to resolve problems (<em>here we talk in terms of information security context</em>). This is the security management level program to keep track of mitigations. <a href="http://www.energy.gov/sites/prod/files/cioprod/documents/Mon_1300_SalonIII_POAMv11_DataSphere01_jmn.pdf">U.S. Department of Energy</a> quotes <strong>POA&amp;M</strong> as a tracking mechanism for managing or keeping track of mitigations.</p>
+
+<p><blockquote><p>A POA&amp;M is a management tool for tracking the mitigation of cyber security program and system level findings/weaknesses.</p><footer><strong>U.S. Department of Energy</strong></footer></blockquote></p>
+
+<p>A <em>mitigation report</em> will consist of actions to be taken and is brought forward to the <code>security governance</code> or simply put <em>the supervisor</em> handling security of the organization or the program manager. The actions to be implemented has to be justifiable considering there certainly is a security risk and the cost-cutting beneficiaries of implementing a certain mitigation.</p>
+
+<p>It&rsquo;s important to understand <em>Mitigation Recommendations</em> and <em>Remediation/Mitigation</em> are entirely two different concepts. <em>Recommendations</em> could be for organization processes where a certain process needs to be calibrated in a secure way or follow strict security policy - this could be both technical or non-technical depending on what it suits best (<a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf">NIST SP 800-53</a> covers this!) whereas <em>Remediation/Mitigation</em> is to technically eliminate the identified vulnerabilities found during the <code>security execution</code> phase. To eliminate vulnerabilties, either a technical <em>patch</em> is applied or an organization can choose to totally eliminate the functionality and build from scratch (I have had happened to experience the latter most of the times with immature industry developers and when they cannot solve a security problem!). For Mitigation, <a href="http://www.energy.gov/sites/prod/files/cioprod/documents/Mon_1300_SalonIII_POAMv11_DataSphere01_jmn.pdf">POA&amp;M</a> is essential factor. To implement technical patches, a testing environment is created and patch is tested on this environment until approval. This is because most dependency-based patches can break existing functionality of systems/applications/network and hence cannot certainly be directly applied to the production environments. During it&rsquo;s entire time, the <a href="http://www.energy.gov/sites/prod/files/cioprod/documents/Mon_1300_SalonIII_POAMv11_DataSphere01_jmn.pdf">POA&amp;M</a> guides and approves of this process of mitigations.</p>
+
+<h2>Adaptive Security Program for the Enterprise</h2>
+
+<p>In order for any organization to invest into a <em>security program</em>, it&rsquo;s essential for the management to understand the need of the investment. The pillars for any digital business, one of the foundation is always directly or indirectly related to security. Here&rsquo;s some examples:</p>
+
+<ol>
+<li><p>if you risk overlooking at security threats and you get beaten by the attacker, you <a href="http://www.shredit.com/en-us/business-brand-reputation-loss-due-to-a-security-breach">lose reputation</a> - and with it, you lose customerbase.</p></li>
+<li><p>you might <a href="http://thehill.com/blogs/congress-blog/technology/226981-in-data-eecurity-we-lost-trust">lose trust</a> among the dependent business as security is very fundamental, and once breached - the seed for furthur business is compromised.</p></li>
+<li><p>the cost of treating risk at a later point is much higher than it could had been during development of a threat prevention framework or while at SDLC.</p></li>
+</ol>
+
+
+<p><img class="center <a" src="href="http://i.imgur.com/qxff7oz.jpg">http://i.imgur.com/qxff7oz.jpg</a>&#8221;></p>
+
+<p>There&rsquo;s more to go, but keeping the scope for what&rsquo;s needed to be done to initiate a regulatory <strong>security program</strong> at your organization there are several pointers in itself to this initiative. All of them are discussed below.</p>
+
+<h3>Security Requirements - what the organization needs!?</h3>
+
+<p>In an Agile centered security program - The first ingredient is to identify specific organizational security requirements. There are primary four core components which constitutes the requirements for any organization, and these are:</p>
+
+<ol>
+<li>General Requirements</li>
+<li>Business Requirements</li>
+<li>Functional Requirements</li>
+<li>Solution Requirements</li>
+</ol>
+
+
+<p>To chart out the right security program for your organization, a <code>security requirements documentation</code> should be a handy resource to give the <em>security program</em> the right direction. To compile the <strong>security requirements</strong> into <em>security requirements documentation</em>, all the aforementioned three pillars of the organizational requirements must be taken into consideration and for such a task - a preliminary <em>checklist</em> could prove positive. According to <em>Michael Cobb</em> in an <a href="http://www.computerweekly.com/tip/ISO-27001-SoA-Creating-an-information-security-policy-document">article</a>, he writes:</p>
+
+<p><blockquote><p>it&rsquo;s surprising how quickly a disconnect can develop between an organisation&rsquo;s long-term business objectives and its IT security strategy, particularly during a period of change.</p><footer><strong>Michael Cobb</strong> <cite>Computer Weekly</cite></footer></blockquote></p>
+
+<ul>
+<li><p><strong>General Requirements</strong> - an organization has to start with the <em>general requirements</em> for a trivial buisness processing throughout the business continuity. For the organization to stick to it&rsquo;s business vision, a <em>general requirement</em> documents all the necessary stocks the organization has at current and how it&rsquo;s regulated; this includes resources such as staffing, appliances, offices, hardwares, etc. The <em>general requirement</em> also specifies the organizational business base which are &lsquo;licenses&rsquo;, &lsquo;certficates of occupancy&rsquo;, &lsquo;legal structure&rsquo;, &lsquo;trademarks and names&rsquo;, etc. All plans to transform a vision into a working business model should comprise of a study based upon <em>market research</em>, <em>partnership &amp; proprietorship</em>, <em>naming</em>, <em>business locations</em>, <em>marketing &amp; sales</em>, and <em>regulation</em> - and this is exactly where <strong><u>security governance</u></strong> shall be declared. All <em>security program</em> decisions come from here and hence adopted globally throughout the organization business continuity chain unless it&rsquo;s a necessary to make a change or deviate from the core business vision e.g. an organization is bought by another corporation and hence the latter would like to bring changes! All <em>general requirements checklists</em> are drawn out to ensure <em>security</em> will part of the core foundation if starting organization security from the scratch, or if it already isn&rsquo;t a <em>general requirement</em> for business documentation should be available. Here&rsquo;s a <a href="http://mha1.nic.in/pdfs/ForeigD-FRRO_version223.6.11.pdf">sample general requirement documentation</a> and here&rsquo;s a <a href="http://csrc.nist.gov/publications/nistpubs/800-123/SP800-123.pdf">sample general security requirements documentation</a>. The latter is for <em>server security</em> but main objectives could be derived similarily for <em>web application security</em> or any general objectives which the organization business requires can be taken as a base which will deliver key to <em>business requirements</em> in next steps.</p></li>
+<li><p><strong>Business Requirements</strong> - expected functional elements could be derived from <em>business requirement documentation</em> which would outline what are the specific business needs of the organization. While charting out security checklist for business requirements from Information Security perspective, the <em>business requirement documentation</em> would come handy and must be drilled thoroughly. This in itself will drive the next requirement which is <em>functionality requirements</em> according to business type and criteria. Additionally focus onto the sect of business the organization is in which will help derive compliance at later stages such as if your organization is Medical Care, <code>HIPAA</code> could be your security compliance standard, or else if your business was more finance oriented e.g. financial services, retails, etc., your compliance could require <code>PCI DSS</code>. It&rsquo;s entirely upto the business model and the role of the organization. Compliances are also derived with specifics to region, legalalization, state, country and more onto which business sector your business model falls onto. Chalk all <em>business requirement</em> to a <em>business requirement checklist</em>. Here&rsquo;s a <a href="http://www.slideshare.net/aquarelles/sample-business-requirement-document-5229211">sample business requrirement documentation</a>.</p></li>
+<li><p><strong>Functional Requirements</strong> - these requirements charts to more specific technical needs for the business your organization falls into. Since the business requirements leads to the functionality requirements, a heavy mapping on technical specifics should be conducted here. At this point, it would be clear if your organization should fall into a specific business model e.g. retail, financial, medical, etc. and hence to accordingly decide if a compliance was to be chosen, what would it be? After a compliance is chosen, the organization should map <em>functional requirements checklist</em> similar in pattern to the compliance requires so that it would be easy to <em>quantify</em> and <em>validate</em> the security asessments according to the compliance criteria and measure security.  Again, compliances have to be chosen somewhere between Business Requirement Planning and soon before Functional Requirements Planning since this would be the perfect time to pitch the technical requirements and set business goals for the organization. Once chosen, stick to the <code>security compliance</code> model and choose the right security controls if still at SDLC - if not, and you have gotten this <code>security program</code> somewhere at later stages, but you still already have <em>business requirements</em> and <em>functional requirements</em> documentations ready and hence it won&rsquo;t be a rocket science to choose a better security compliance model for your organization. Here&rsquo;s a <a href="http://csse.usc.edu//TECHRPTS/PhD_Dissertations/files/Wu_Dissertation.pdf">security centered sample functional requirement documentation</a> and here&rsquo;s <a href="https://www.google.co.in/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;cad=rja&amp;uact=8&amp;ved=0CCIQFjABahUKEwixrri7-aTIAhUDI44KHfvBD10&amp;url=http%3A%2F%2Fwww.mbp.state.ms.us%2Fmbop%2FPharmacy.nsf%2Fwebpageedit%2FPMDB_reporting_reportinginstructions%2F%24FILE%2FPMP%2520NextGen%2520Software.docx%3FOpenElement&amp;usg=AFQjCNHQU8r4XKfe_tbSDnnxDm2crqbkMg&amp;sig2=pfeJhRRRSCcnUvjRzOEEfQ&amp;bvm=bv.104317490,d.c2E">sample functional requirement documentation</a></p></li>
+<li><p><strong>Solution Requirements</strong> - a <em>security solution</em> is based upon the previous requirements of the organization. Depending upon what is the nature of the organization business, the enterprise scale for compliance should vary which is if the business model is healthcare, an adaptable <a href="https://books.google.co.in/books?id=pWBhK-0d-MUC&amp;pg=PA116&amp;lpg=PA116&amp;dq=security+solutions+requirement&amp;source=bl&amp;ots=5Hit3BjZMd&amp;sig=te36oRkczJpIj_g4RBPQmFoQSRs&amp;hl=en&amp;sa=X&amp;ved=0CEYQ6AEwCDgUahUKEwjBpOD_8KnIAhXCCo4KHcO6BWA#v=onepage&amp;q=security%20solutions%20requirement&amp;f=false">HIPAA</a> compliance might provide you a <code>security solution</code> for your Enterprise, while if your Organization deals with credit and information and other financial data, <a href="http://www.secureworks.com/resources/solution-briefs/featured_articles/solution-brief-pci-dss-requirements-and-solutions">PCI DSS</a> could be an avalaible option to choose from! A <em>solution requirements</em> can only be laid down after other three requirements are very clear and it&rsquo;s clear that a specific business type will be associated with a specific security compliance to be met which can further nail down <code>security objectives</code> discussed in the next section.</p></li>
+</ul>
+
+
+<h3>Security Program Objectives - set right goals!</h3>
+
+<p>The second ingredient for a successful <em>security program</em> is to accomplish goals - whether it&rsquo;s specific security testing goals or business goals (which are closely knit altogether with organization&rsquo;s security) which drives the organization. Both <em>functional security test objectives</em> and <em>business security test objectives</em> are taken into consideration and therefore a <strong>security test plan</strong> along with <strong>security testing requirements</strong> must be derived. <em>Security testing requirements</em> could only be derived from <em>security program objectives</em> plus previously concluded <code>general requirements</code>,<code>business requirements</code>, <code>functional requirements</code> and <code>solution requirements</code> - do not confuse between <em>security requirements</em> and <em>security testing requirements</em> since <code>security requirements</code> are components or initial documents which are required to kickstart the organization&rsquo;s <em>security program</em> and bring business security vision plan to technical security implementation whereas <code>security testing requirements</code> are actual technical data which is required to meet objectives or goals to benefit business.</p>
+
+<p>To sum up all and nail down to the obvious - the <em>security program</em> objectives are set forward. The <em>Security program</em> objectives should also measure security and evaluate it for security engineers to quantify the success of the <em>security program</em> and bring it to the attention of <em>security management</em> team and therefore keep <em>security governance</em> informed of how successfully the <em>Security program</em> was to support the business vision and protect the organization from any near future compromises or likelyhood of compromises from <code>threat agents</code>. An in-depth criteria for evaluating security via a <em>security program</em> and judge whether the <em>security program</em> has met it&rsquo;s objective can be studied using <a href="https://www.commoncriteriaportal.org/files/ccfiles/ccpart2v2.3.pdf"><strong>Common Criteria for Information Technology Security Evaluation</strong></a> (for Network Security), <a href="https://cwe.mitre.org/"><strong>Common Weakness Enumeration</strong></a> (for common set of systems, servers, and applications) or any other security metric system to which the organization has chosen to follow. Some examples for rating security on <em>web application security</em> could be <a href="https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology">OWASP Risk Rating</a> or using measurement taking in-houseinputs from <a href="https://www.owasp.org/index.php/Types_of_application_security_metrics">direct or in-direct measurement system</a>. Web Security metrics has been discussed by <a href="https://www.owasp.org/index.php/Types_of_application_security_metrics">Acunetix</a>, <a href="http://www.securitymetrics.org/attachments/Metricon-2-Grossman.pdf">WhiteHat Security</a> and by <a href="https://www.trustwave.com/Resources/SpiderLabs-Blog/What-s-the-Score-of-the-Game---Part-2--Web-Security-Metrics/">TrustWave</a>. What isn&rsquo;t much standardized is a common platform to bring <em>web security metrics</em>, and hence <a href="https://www.owasp.org/index.php/Main_Page">OWASP</a> could be used for <a href="https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology">OWASP Risk Rating</a> and gather security data to develop knowledgebase on <em>web security</em> via <a href="https://www.owasp.org/index.php/Category:OWASP_Web_Application_Security_Metric_using_Attack_Patterns_Project">OWASP based Attack Patterns</a> while a very brief <em>threat classification</em> for <em>web application security</em> could be derived from <a href="http://projects.webappsec.org/w/page/13246978/Threat%20Classification">WASC</a>.</p>
+
+<p>The entire <em>Information Security Program</em> phases are surrounded with <em>security testing risks</em> and everything needs to be taken into consideration while sticking to the objectives of the <code>security program</code>; some of these are explained in <code>technical security assessment techniques</code> above as per <a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf">NIST 800-115</a> document. Combining all the nitty gritty details of the risk associated while testing, the objectives would return to conclusions with a <code>security checklist</code> with observations from <em>functional security testing objectives</em> and <em>business security testing objectives</em> which will provide a direction to the entire security test suite. Now, if the ideal construction of objectives are set to both functional and business objectives of the organization derived from the overall general, business, functional, and solution documentation - a rigid strict <em>security test checklist</em> could be obtained which for Web Application Security should cover:</p>
+
+<ul>
+<li>Risk Assessment</li>
+<li>Authentication</li>
+<li>Authorization</li>
+<li>Access Controls</li>
+<li>Session Management</li>
+<li>Data and Input Validation</li>
+<li>Error Handling and Exception Handling</li>
+<li>Data Logging</li>
+<li>Remote Administration</li>
+<li>Web Application Server Configuration</li>
+</ul>
+
+
+<p> <img class="<a" src="href="http://i.imgur.com/bPEKF6e.png">http://i.imgur.com/bPEKF6e.png</a>&#8221;></p>
+
+<p>.. or more. All of these would have <em>security testcases</em> and these would be <em>security testing checklists</em> for the organization to be followed in all the web applications. If it was for an overall security of an organization such as Data Security, System Security, Network Security, Web Security, Mobile Security, Web Service Security, Endpoint Security, Database Security, Hardware and Embedded Device Security, Cloud Security, Infrastructure Security, Wireless Security, Big Data Security etc. - similar <em>security checklists</em> for all of them individually should be brough forward from the requirements documentation and overall security objective planner.</p>
+
+<p>While deep down on Risk Assessments, there will be <strong>security expertise</strong> need for these tasks:</p>
+
+<ul>
+<li><strong>Risk Analysis</strong>
+
+<ul>
+<li><a href="http://pages.uoregon.edu/harbaugh/Readings/GBE/Risk/Kahneman%201979%20E,%20Prospect%20Theory.pdf">Domain Risk Analysis</a></li>
+<li><a href="http://s3.amazonaws.com/rdcms-himss/files/production/public/HIMSSorg/Content/files/FINAL_SystemRiskAnalysisSurveyReport.pdf">System Risk Analysis</a></li>
+<li><a href="https://gupea.ub.gu.se/bitstream/2077/22251/1/gupea_2077_22251_1.pdf">Acquisition Risk Analysis</a></li>
+<li><a href="http://www.cs.tut.fi/tapahtumat/testaus04/schaefer.pdf">Verification/Testing Risk Analysis</a></li>
+<li><a href="https://www.sans.org/reading-room/whitepapers/bestprac/practical-methodology-implementing-patch-management-process-1206">Patch Integration Risk Analysis</a></li>
+<li><a href="http://www.sersc.org/journals/IJSEIA/vol5_no4_2011/9.pdf">Deployment/Configuration Risk Analysis</a></li>
+<li><a href="https://www.garp.org/media/665968/icbrr-operational0711preview.pdf">Operational Risk Analysis</a></li>
+<li><a href="http://worldcomp-proceedings.com/proc/p2013/SER2949.pdf">Maintainence Risk Analysis</a></li>
+<li><a href="http://systems.hscic.gov.uk/infogov/security/infrasec/gpg/dadosd.pdf">Disposal Risk Analysis</a></li>
+</ul>
+</li>
+<li><strong>Attack Patterns</strong>
+
+<ul>
+<li><a href="https://capec.mitre.org/">CAPEC</a></li>
+<li><a href="http://projects.webappsec.org/w/page/13246975/Threat%20Classification%20Taxonomy%20Cross%20Reference%20View">WASC</a></li>
+</ul>
+</li>
+<li><strong>Threat Modeling</strong>
+
+<ul>
+<li><a href="http://octotrike.org/">TRIKE</a></li>
+<li><a href="https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx">STRIDE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DREAD:_Risk_assessment_model">DREAD</a></li>
+<li><a href="http://bch.cbd.int/database/attachment/?id=12285">AS/NZS ISO 31000:2009</a></li>
+<li><a href="https://www.first.org/cvss">CVSS</a></li>
+<li><a href="http://www.proceedings2006.imcsit.org/pliks/160.pdf">OCTAVE</a></li>
+</ul>
+</li>
+</ul>
+
+
+<p>The pre-requisities of a <em>security program</em> is hence to accmulate as much resources as it could for the handling of <strong>secure development</strong>, <strong>secure deployment</strong>, and <strong>secure operations</strong>. During the entire <code>security program lifecycle</code> the objectives should be clear to all the participants of the <em>security program</em> and resources for handling all such operations should be channelized and supported from the <em>security governance</em> and the <a href="http://www.uab.edu/cas/thecenter/images/Documents/Information-security-management-objectives-and-practices-a-parsimonious-framework.pdf"><em>security management</em></a> - the higher authorities who would be responsible financially and statistically for the <em>security program</em> during it&rsquo;s entire lifecycle. General Objectives of an organizational security lies in it&rsquo;s three main verticals which it is dependent on - <code>people</code>, <code>process</code> and <code>technology</code>, and therefore to provide an overall practical security framework around these are the primary goals to protect the organization itself. To stick with these pointers below as mentioned in one of the <a href="http://www.uab.edu/cas/thecenter/images/Documents/Information-security-management-objectives-and-practices-a-parsimonious-framework.pdf"><em>security management framework</em></a> could be the most generalized form necessary and they are:</p>
+
+<ul>
+<li>Confidentiality/Privacy</li>
+<li>Integrity</li>
+<li>Availability</li>
+<li>Non-repudiation</li>
+<li>Identification</li>
+<li>Authentication</li>
+<li>Signature</li>
+<li>Authorization</li>
+<li>Access Control</li>
+<li>Validation</li>
+<li>Certification</li>
+<li>Time Stamping</li>
+<li>Receipt</li>
+<li>Confirmation</li>
+<li>Ownership</li>
+<li>Anonymity</li>
+<li>Revocation</li>
+<li>Witnessing</li>
+<li>Utility</li>
+<li>Possession</li>
+<li>Accountibility/Auditibility</li>
+<li>Ethics</li>
+<li>References</li>
+</ul>
+
+
+<p>.. and all of these start from the basic <a href="http://www.doc.ic.ac.uk/~ajs300/security/CIA.htm">CIA Triad</a>.</p>
+
+<h3>Security Consultancy - reduce to the right fit!</h3>
+
+<p>No matter however you put so - every organization has specific business model, procesess and human resources and not any of them could be vast enough to ensure <em>Security</em> in brief - be it in terms of application security, network secuity, infrastructure security or physical security except if you are not among the big giant corporations - Google, Microsoft, Facebook, Twitter, LinkedIn, etc. The need for security consultancy is a specific question which wold urge the management to think over twice before they invest time, money and arrangements to keep this active. To this, there are two types of consultancy organizations might deal ith ultimately:</p>
+
+<ul>
+<li>CPA (Certified Public Accountant) Firms</li>
+<li>Boutique (Small Vendors to that of CPA)</li>
+</ul>
+
+
+<p>To reflect over both of these, we have <strong>CPA</strong> firms for e.g. the Big 4&rsquo;s - KPMG, Ernst &amp; Young, PwC, and Deloitte Touche who are specialized and could be invested for where <strong>assurances</strong> are a major factor - these 4&rsquo;s cannot risk failures. They have a stroger role-play with <em>compliances</em> such as HIPAA. It&rsquo;s more off like a business question that your company is <em>security assured</em> and depends on the Big 4&rsquo;s and hence <strong>Security failure</strong> would be out of question. Be aware that their are major cases and often - vulnerabilities will still exist waiting to be exploited even after all <em>security assurances</em>. This would be a business call more than the technical call. <strong>Boutique</strong> firms could be useful for internal development and when you have limited budget set for security and you <em>still</em> need <em>security assurances</em>, most of these could fall under SourceFire, Rapid7, IOActive, FireEye, etc. Anything other then these security service players would be vendors who cover specific regions.</p>
+
+<p>Suit your best fit for your organization and stick to it. Recommendations are if you are gigantic enough that a <em>security</em> is always a business question and you cannot afford the reputational, financial or customerbase failure and you have a huge budget over security - you might want to choose <strong>CPA</strong> based firms over <strong>Boutique</strong> for your specific security needs. For anything else, such as if your business are still in development phases, or you are at a point where you are about to launch new product and test customerbase, or even if you are a growing startup and require regular security audits at low budget - <strong>Boutique</strong> firms solves it out. Again, this should be a business plus technical call from a statistical perspective and you would need to ask the right questions to your <em>security program</em> initiators, some of which can be anything below to a wide range:</p>
+
+<ol>
+<li><p>Does this security program satisfy security compliances for your company?</p></li>
+<li><p>Does it have enough staffing and resources to diminish the security gap for your company?</p></li>
+<li><p>Does the overall security plan well suited for your organization and if your company has the resources, the manpower required to coordinate the entire <em>security program</em>?</p></li>
+<li><p>Does it assure you positive security for your company, a better infrastructure, policy, or your specific security requirement?</p></li>
+</ol>
+
+
+<p>.. and these might be some valuable business questions to shrink thoughts over and choose the right security fit in consultancy terms.</p>
 ]]></content>
   </entry>
   
