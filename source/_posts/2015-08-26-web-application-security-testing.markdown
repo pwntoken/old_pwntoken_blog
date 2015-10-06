@@ -31,7 +31,7 @@ Software go through *phases of development* which is known as the **`SDLC`** and
 * Implementation
 * Operations and Maintainence
 
-{% img http://s29.postimg.org/ncdjld2on/SDLC_1.jpg %}
+{% img http://i.imgur.com/Rxw9UPI.jpg %}
 
 All of the aforementioned are packaged into the five super's i.e. functional project management, technical project management, information security assurances, system integration test plan and integration test cases and user acceptance test plan and acceptance test cases. We are more worried about **Information Security Assurances** and not long far in this way - we'll be introduced to how *information security* is governed and where SDLC is outruled by it's superset, and when precisely **security* is to be placed into `SDLC` thoughfully by it's governing superset.
 
