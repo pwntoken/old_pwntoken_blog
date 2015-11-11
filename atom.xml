@@ -4,7 +4,7 @@
   <title><![CDATA[Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2015-10-15T10:41:45+05:30</updated>
+  <updated>2015-11-11T20:29:17+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ISBN-10: 1482231611 Ethical Hacking and Penetration Testing Guide - Book Review]]></title>
+    <link href="http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/"/>
+    <updated>2015-11-11T20:15:53+05:30</updated>
+    <id>http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Enterprise Web Application Security Program]]></title>
