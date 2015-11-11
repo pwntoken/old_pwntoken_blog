@@ -1,110 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>ISBN-10: 1482231611 Ethical Hacking and Penetration Testing Guide - Book Review - Pwntoken - Digital Security Research</title>
-  <meta name="author" content="Shritam Bhowmick">
-
-  
-  <meta name="description" content="A Brief Review Of Pioneer Ethical Hacking Book Information and Details: Author: Rafay Baloch
-Genre: Ethical Penetration Testing
-Format: Hardcopy and &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><![CDATA[Category: Reviews | Pwntoken - Digital Security Research]]></title>
+  <link href="http://pwntoken.github.io/blog/categories/reviews/atom.xml" rel="self"/>
+  <link href="http://pwntoken.github.io/"/>
+  <updated>2015-11-12T01:48:28+05:30</updated>
+  <id>http://pwntoken.github.io/</id>
+  <author>
+    <name><![CDATA[Shritam Bhowmick]]></name>
+    <email><![CDATA[shritam.bhowmick@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <link rel="canonical" href="http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Pwntoken - Digital Security Research" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-60671877-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Pwntoken - Digital Security Research</a></h1>
-  
-    <h2>Information Security Sciences with Shritam Bhowmick.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="sitesearch" value="pwntoken.github.io">
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a>
-  <li><a href="/portfolio">Portfolio</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">ISBN-10: 1482231611 Ethical Hacking and Penetration Testing Guide - Book Review</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-11-11T20:15:53+05:30'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:15 pm</span></time>
-        
-           | <a href="#disqus_thread"
-             data-disqus-identifier="http://pwntoken.github.io">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><h2><em>A Brief Review Of Pioneer Ethical Hacking Book</em></h2>
+  <entry>
+    <title type="html"><![CDATA[ISBN-10: 1482231611 Ethical Hacking and Penetration Testing Guide - Book Review]]></title>
+    <link href="http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/"/>
+    <updated>2015-11-11T20:15:53+05:30</updated>
+    <id>http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review</id>
+    <content type="html"><![CDATA[<h2><em>A Brief Review Of Pioneer Ethical Hacking Book</em></h2>
 
 <h3>Information and Details:</h3>
 
@@ -126,14 +40,13 @@ Press: CRC Press
 <!-- more -->
 
 
-<p><img src="http://i.imgur.com/IkaziDt.png"></p>
+<p><img class="<a" src="href="http://i.imgur.com/IkaziDt.png">http://i.imgur.com/IkaziDt.png</a>&#8221;></p>
 
 <h2>Summary</h2>
 
 <p>I received both hardcopy and the softcopy of this ebook/paperpack by a seasoned bug hunter, a well established penetration tester and my colleague ‘Abdul Rafay Baloch‘, a guy of pure consensual security research approach with a deep interest in both network and application security. Since, the guide took a breath away for newbies in security scene and began pirating the copies already; lesser is known about the original paperback which finds it’s way to more content and due appreciated for a year of work and efforts put to this book. It wouldn’t be for this man, the information security community could feel less 1% pride off it’s rich domain, where hundreds of ventures are already investing their money into and is a next-generation industrial vision for millions. Security by itself is a subject! Rafay begins his amazing coverage of overall penetration test in a single guide with the following.</p>
 
-<blockquote><p>The more information you have about the target, the more is the chance of successful exploitation.</p><footer><strong>Ethical Hacking and Penetration Testing Guide</strong> <cite>Rafay Baloch</cite></footer></blockquote>
-
+<p><blockquote><p>The more information you have about the target, the more is the chance of successful exploitation.</p><footer><strong>Ethical Hacking and Penetration Testing Guide</strong> <cite>Rafay Baloch</cite></footer></blockquote></p>
 
 <p>Being a submissive self application security researcher myself, the irony of a penetration tester is not left withdrawn from the very first beginning of the book. Most amateur testers certainly is driven by money into bug hunting and this exactly is why the book contains a lot of coverage into application security skill-set one might need in order to accomplish him/her with easy money via making the most out of this book.</p>
 
@@ -164,7 +77,7 @@ Press: CRC Press
 </ol>
 
 
-<p><img class="center" src="https://pwntoken.files.wordpress.com/2015/01/book1.png"></p>
+<p><img class="center <a" src="href="https://pwntoken.files.wordpress.com/2015/01/book1.png">https://pwntoken.files.wordpress.com/2015/01/book1.png</a>&#8221;></p>
 
 <p>The book also tries to generalize the techniques used around with the Linux Operating System and uses Back|Track 5 as base. This would not only let the readers get the overview concept of enumeration process but would also drive the reader into deep-dive of the best known Operating System for Penetration Testing, sponsored by <a href="https://www.offensive-security.com/"><strong>Offensive Security</strong></a>. Each tool for enumeration counts and is a one-step ahead to success of the given professional penetration test task for the Red Team.</p>
 
@@ -173,7 +86,7 @@ Press: CRC Press
 </ol>
 
 
-<p><img class="center" src="https://pwntoken.files.wordpress.com/2015/01/book2.png"></p>
+<p><img class="center <a" src="href="https://pwntoken.files.wordpress.com/2015/01/book2.png">https://pwntoken.files.wordpress.com/2015/01/book2.png</a>&#8221;></p>
 
 <p>Examples have been set across the Scanning section which has majority of essential scanning assets covered using the BackTrack Operating system (by now, this might just be obsolete, since Linux Kali is the new formal penetration testing distribution, but either way might work).</p>
 
@@ -242,288 +155,7 @@ Press: CRC Press
 <h2>Thanks</h2>
 
 <p>I thank you for reading the review on Ethical Hacking and Penetration Testing Guide ISBN-10: 1482231611 which has been a buzz for now and a quite interesting to deliver a review on someone who has made through his efforts right across the desk and delivered them in a good fashion. The security community wouldn’t be so far as it’s now, if it wasn’t for people like <a href="http://www.rafayhackingarticles.net/">Abdul Rafay Baloch</a> who have been contributing their time and investing their focus in different digital security research in the midst of forest daylight through the trees. I hope this post has delivered unbiased review and would put my efforts across to make things higher quality once I have freespace.</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
+]]></content>
+  </entry>
   
-
-<span class="byline author vcard">Posted by <span class="fn">Shritam Bhowmick</span></span>
-
-      
-
-
-
-
-<time class='entry-date' datetime='2015-11-11T20:15:53+05:30'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:15 pm</span></time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/reviews/'>reviews</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/" data-via="pwntoken" data-counturl="http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/" >Tweet</a>
-  
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      <div class="about">
-     <span class="about-image">
-          <img alt="shritam" src="/images/author.jpg">
-     </span>
-     <span class="about-desc">
-          <span>
-              <i>Hello. Welcome to pwntoken. Shritam is an Information Security Analyst cum Penetration Tester. He does Application Security and here&#8217;s his <a target="_blank" href="https://www.linkedin.com/in/shritambhowmick"> LinkedIn </a> for a <bold>professional touch</bold>. Feel free to discuss about the post content and you can send him f eedbacks, if any, at his email</i>  (<a  href="mailto:shritam.bhowmick@gmail.com" style="text-decoration:none;"> <img style="border:none" alt="shritam_email" src="/images/email.png"></a>).
-           </span>
-          <br/>
-          <hr/>
-          <a href="https://twitter.com/pwntoken" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @pwntoken</a>
-     </span>
-</div>
-
-    </p>
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/enterprise-web-application-security-program/" title="Previous Post: Enterprise Web Application Security Program">&laquo; Enterprise Web Application Security Program</a>
-      
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
-</div>
-
-<aside class="sidebar">
-  
-    
-<section>
-  <h1>Information Security</h1>
-  <a href="http://security.stackexchange.com/users/66678/shritam-bhowmick">
-<img src="http://security.stackexchange.com/users/flair/66678.png?theme=dark" width="208" height="58" alt="profile for Shritam Bhowmick at Information Security Stack Exchange, Q&amp;A for information security professionals" title="profile for Shritam Bhowmick at Information Security Stack Exchange, Q&amp;A for information security professionals">
-</a>
-</section>
-<section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/">ISBN-10: 1482231611 Ethical Hacking and Penetration Testing Guide - Book Review</a>
-      </li>
-    
-      <li class="post">
-        <a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a>
-      </li>
-    
-      <li class="post">
-        <a href="/web-application-security-testing/">Web Application Security Testing</a>
-      </li>
-    
-      <li class="post">
-        <a href="/economics-of-web-application-security/">Economics of Web Application Security</a>
-      </li>
-    
-      <li class="post">
-        <a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a>
-      </li>
-    
-  </ul>
-</section>
-<section>
-  <h1>Top Categories</h1>
-    <ul id="top-category-list"><li><a href='/blog/categories/web-application-security'>web_application_security (3)</a></li><li><a href='/blog/categories/reviews'>reviews (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/events'>events (1)</a></li></ul>
-</section><h3>Year Archives</h3>
-
-    
-    
-    
-    
-    <section>
-    
-    <h2 id="2015-ref">2015</h2>
-    <h3 id="2015-November-ref">November</h3>
-    <ul>
-    
-
-    <li><a href="/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/">ISBN-10: 1482231611 Ethical Hacking and Penetration Testing Guide - Book Review</a></li>
-
-    
-            
-            
-            </ul>
-            <h3 id="2015-September-ref">September</h3>
-            <ul>
-    </section>
-            
-        
-    
-
-    
-    
-    
-    
-    <section>
-    
-
-    <li><a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a></li>
-
-    
-            
-            
-            </ul>
-            <h3 id="2015-August-ref">August</h3>
-            <ul>
-    </section>
-            
-        
-    
-
-    
-    
-    
-    
-    <section>
-    
-
-    <li><a href="/web-application-security-testing/">Web Application Security Testing</a></li>
-
-    
-            
-            
-        
-    
-
-    
-    
-    
-    
-    <section>
-    
-
-    <li><a href="/economics-of-web-application-security/">Economics of Web Application Security</a></li>
-
-    
-            
-            
-            </ul>
-            <h3 id="2015-July-ref">July</h3>
-            <ul>
-    </section>
-            
-        
-    
-
-    
-    
-    
-    
-    <section>
-    
-
-    <li><a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a></li>
-
-    
-            
-            
-            </ul>
-            <h3 id="2015-March-ref">March</h3>
-            <ul>
-    </section>
-            
-        
-    
-
-    
-    
-    
-    
-    <section>
-    
-
-    <li><a href="/initial-post-and-an-introduction/">Introduction</a></li>
-
-    
-    </ul>
-    
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Shritam Bhowmick -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'pwntoken';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/';
-        var disqus_url = 'http://pwntoken.github.io/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
