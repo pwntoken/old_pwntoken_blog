@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /error/
 
 Sitemap: http://pwntoken.github.io/sitemap.xml 
