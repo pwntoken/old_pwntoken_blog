@@ -186,7 +186,7 @@ Gist Method: The sample code below can used to pull out code from Gist from Gith
 
 _Sample Code Example_ to illustrate a random `gist` taken from Github:
 
-{% gist 85722d7e599c2858c0f3 pwntokenage.c %}
+{% gist 6987f0c08d9d82ff7eb699d577943757 osx_pentest_prefs.sh %}
 
 JSFiddle Method: Pull JavaScript code from JSFiddle
 
