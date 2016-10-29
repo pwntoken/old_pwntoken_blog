@@ -362,17 +362,426 @@
 
 <p><em>Sample Code Example</em> to illustrate a random <code>gist</code> taken from Github:</p>
 
-<div><script src='https://gist.github.com/85722d7e599c2858c0f3.js?file=pwntokenage.c'></script>
-<noscript><pre><code>#include stdio.h
-#include conio.h
+<div><script src='https://gist.github.com/6987f0c08d9d82ff7eb699d577943757.js?file=osx_pentest_prefs.sh'></script>
+<noscript><pre><code># OSX for Pentesting (Mavericks/Yosemite)
+# macOS Sierra shall be updated;
+# This&#39;s a fork, folks - suck in the caffeine!
+# http://pwntoken.github.io/
+ 
+#!/bin/sh
+ 
+# Ask for the administrator password upfront
 
-// this is a sample gist located in Github for example reasons
+echo &quot;Have you read through the script prior to running this? (y or n)&quot;
+read bcareful
 
-int main()
-{
-   printf(&quot;This is a Hi from pwntoken a.k.a Shritam Bhowmick&quot;); /* printf() prints the content inside quotation */
-   return 0;
-}</code></pre></noscript></div>
+if [ $bcareful == &quot;y&quot; ]
+
+then
+
+  echo &quot;Alright, lets get started. First, you&#39;ll need to give this script admin privileges (however, do not run as root)&quot;
+ 
+else
+  echo &quot;Goodbye&quot;
+  exit
+fi
+
+sudo -v
+
+
+echo &quot;and away we go!&quot;
+
+
+###############################################################################
+# Add useful aliases to .bash_profile
+###############################################################################
+
+echo &quot;Adding useful aliases to your .bash_profile...&quot;
+
+echo &quot;alias chrome=&#39;open -a \&quot;Google Chrome\&quot;&#39;&quot; &gt;&gt; ~/.bash_profile
+echo &quot;alias atom=&#39;open -a \&quot;Atom\&quot;&#39;&quot; &gt;&gt; ~/.bash_profile   # alternative to sublime
+echo &quot;alias attach=\&quot;hdiutil attach\&quot;&quot; &gt;&gt; ~/.bash_profile # attach volume (useful for attaching an encrypted volume)
+echo &quot;alias listen=\&quot;lsof -i TCP -n -P | grep LISTEN\&quot;&quot; &gt;&gt; ~/.bash_profile # show listening ports
+
+###############################################################################
+# Install osx command line tools
+###############################################################################
+
+xcode-select --install 
+
+###############################################################################
+# Install Homebrew
+###############################################################################
+ 
+ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+ 
+###############################################################################
+# Install pentesting binaries with homebrew
+###############################################################################
+
+echo &quot;Installing a few useful binaries&quot; 
+
+bins=(
+  python              # Update your python
+  nmap
+  hydra               # Great tool for password attacks
+  ncrack              # Alternative to hydra, supports RDP
+  john-jumbo
+  the_silver_searcher # A code searching tool similar to ack, with a focus on speed.  
+  git                 # Update to a newer version of git
+  autojump            # Great little tool for navigating directories via the command line, see https://github.com/joelthelion/autojump
+)
+
+brew install ${bins[@]}
+
+###############################################################################
+# Install useful apps with homebrew cask
+###############################################################################
+
+ 
+brew install caskroom/cask/brew-cask
+ 
+apps=(
+  alfred
+  google-chrome
+  qlcolorcode     # Quicklook plugin that handles source code with syntax highlighting
+  appcleaner 
+  firefox
+  qlmarkdown      # QuickLook generator for Markdown files
+  spotify         # Everybody loves Spotify
+  flash           # :D       
+  iterm2
+  caffeine        # Keep your mac from going to sleep (when needed)
+  virtualbox
+  limechat
+  atom            # Sublime-text alt
+  flux            # Go easy on your eyes
+  qlstephen       # Quicklook plugin for files without extensions (README, etc)
+  vlc
+  nvalt           # Nice free note taking app
+  quicklook-json  # Quicklook plugin for JSON files
+)
+ 
+echo &quot;Installing apps via brew-cask...&quot;
+
+brew cask install --appdir=&quot;/Applications&quot; ${apps[@]}
+ 
+brew cask alfred link
+ 
+brew cleanup
+
+###############################################################################
+# Install RVM to update and manage your version of ruby
+###############################################################################
+
+echo &quot;Installing RVM, updating Ruby, and installing Bundler to manage gems&quot;
+
+curl -L https://get.rvm.io | bash -s stable
+
+source ~/.bash_profile
+
+rvm use ruby --install --default
+
+gem install bundler
+
+###############################################################################
+# General UI/UX
+###############################################################################
+
+ 
+echo &quot;&quot;
+echo &quot;Hide the Time Machine, Volume, User, and Bluetooth icons&quot;
+for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+  defaults write &quot;${domain}&quot; dontAutoLoad -array \
+    &quot;/System/Library/CoreServices/Menu Extras/TimeMachine.menu&quot; \
+    &quot;/System/Library/CoreServices/Menu Extras/Volume.menu&quot; \
+    &quot;/System/Library/CoreServices/Menu Extras/User.menu&quot;
+done
+defaults write com.apple.systemuiserver menuExtras -array \
+  &quot;/System/Library/CoreServices/Menu Extras/Bluetooth.menu&quot; \
+  &quot;/System/Library/CoreServices/Menu Extras/AirPort.menu&quot; \
+  &quot;/System/Library/CoreServices/Menu Extras/Battery.menu&quot; \
+  &quot;/System/Library/CoreServices/Menu Extras/Clock.menu&quot;
+ 
+sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+ 
+echo &quot;&quot;
+echo &quot;Disabling OS X Gate Keeper&quot;
+echo &quot;(You&#39;ll be able to install any app you want from here on, not just Mac App Store apps)&quot;
+sudo spctl --master-disable
+sudo defaults write /var/db/SystemPolicy-prefs.plist enabled -string no
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+ 
+echo &quot;&quot;
+echo &quot;Increasing the window resize speed for Cocoa applications&quot;
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+ 
+echo &quot;&quot;
+echo &quot;Expanding the save panel by default&quot;
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+ 
+echo &quot;&quot;
+echo &quot;Automatically quit printer app once the print jobs complete&quot;
+defaults write com.apple.print.PrintingPrefs &quot;Quit When Finished&quot; -bool true
+ 
+echo &quot;&quot;
+echo &quot;Disabling automatic termination of inactive apps&quot;
+defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+ 
+echo &quot;&quot;
+echo &quot;Saving to disk (not to iCloud) by default&quot;
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+ 
+echo &quot;&quot;
+echo &quot;Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window&quot;
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+ 
+echo &quot;&quot;
+echo &quot;Check for software updates daily, not just once per week&quot;
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+ 
+echo &quot;&quot;
+echo &quot;Disable smart quotes and smart dashes as theyÃ¢â‚¬â„¢re annoying when typing code&quot;
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+ 
+ 
+###############################################################################
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Increasing sound quality for Bluetooth headphones/headsets&quot;
+defaults write com.apple.BluetoothAudioAgent &quot;Apple Bitpool Min (editable)&quot; -int 40
+ 
+echo &quot;&quot;
+echo &quot;Enabling full keyboard access for all controls (e.g. enable Tab in modal dialogs)&quot;
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+ 
+echo &quot;&quot;
+echo &quot;Disabling press-and-hold for keys in favor of a key repeat&quot;
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+ 
+echo &quot;&quot;
+echo &quot;Setting a blazingly fast keyboard repeat rate (ain&#39;t nobody got time fo special chars while coding!)&quot;
+defaults write NSGlobalDomain KeyRepeat -int 0
+ 
+echo &quot;&quot;
+echo &quot;Disabling auto-correct&quot;
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+ 
+echo &quot;&quot;
+echo &quot;Setting trackpad &amp; mouse speed to a reasonable number&quot;
+defaults write -g com.apple.trackpad.scaling 2
+defaults write -g com.apple.mouse.scaling 2.5
+ 
+echo &quot;&quot;
+echo &quot;Turn off keyboard illumination when computer is not used for 5 minutes&quot;
+defaults write com.apple.BezelServices kDimTime -int 300
+ 
+###############################################################################
+# Screen
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Requiring password immediately after sleep or screen saver begins&quot;
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+ 
+echo &quot;&quot;
+echo &quot;Enabling subpixel font rendering on non-Apple LCDs&quot;
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
+ 
+echo &quot;&quot;
+echo &quot;Enable HiDPI display modes (requires restart)&quot;
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+ 
+###############################################################################
+# Finder
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Showing icons for hard drives, servers, and removable media on the desktop&quot;
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+ 
+echo &quot;&quot;
+echo &quot;Showing all filename extensions in Finder by default&quot;
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+ 
+echo &quot;&quot;
+echo &quot;Showing status bar in Finder by default&quot;
+defaults write com.apple.finder ShowStatusBar -bool true
+ 
+echo &quot;&quot;
+echo &quot;Allowing text selection in Quick Look/Preview in Finder by default&quot;
+defaults write com.apple.finder QLEnableTextSelection -bool true
+ 
+echo &quot;&quot;
+echo &quot;Displaying full POSIX path as Finder window title&quot;
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+ 
+echo &quot;&quot;
+echo &quot;Disabling the warning when changing a file extension&quot;
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+ 
+echo &quot;&quot;
+echo &quot;Use column view in all Finder windows by default&quot;
+defaults write com.apple.finder FXPreferredViewStyle Clmv
+ 
+echo &quot;&quot;
+echo &quot;Avoiding the creation of .DS_Store files on network volumes&quot;
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+ 
+echo &quot;&quot;
+echo &quot;Disabling disk image verification&quot;
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+ 
+echo &quot;&quot;
+echo &quot;Enabling snap-to-grid for icons on the desktop and in other icon views&quot;
+/usr/libexec/PlistBuddy -c &quot;Set :DesktopViewSettings:IconViewSettings:arrangeBy grid&quot; ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c &quot;Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid&quot; ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c &quot;Set :StandardViewSettings:IconViewSettings:arrangeBy grid&quot; ~/Library/Preferences/com.apple.finder.plist
+ 
+ 
+###############################################################################
+# Dock &amp; Mission Control
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate&quot;
+defaults write com.apple.dock tilesize -int 36
+ 
+echo &quot;&quot;
+echo &quot;Speeding up Mission Control animations and grouping windows by application&quot;
+defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults write com.apple.dock &quot;expose-group-by-app&quot; -bool true
+ 
+echo &quot;&quot;
+echo &quot;Setting Dock to auto-hide and removing the auto-hiding delay&quot;
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+ 
+ 
+###############################################################################
+# Safari &amp; WebKit
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Hiding Safari bookmarks bar by default&quot;
+defaults write com.apple.Safari ShowFavoritesBar -bool false
+ 
+echo &quot;&quot;
+echo &quot;Hiding Safari sidebar in Top Sites&quot;
+defaults write com.apple.Safari ShowSidebarInTopSites -bool false
+ 
+echo &quot;&quot;
+echo &quot;Disabling Safari thumbnail cache for History and Top Sites&quot;
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+ 
+echo &quot;&quot;
+echo &quot;Enabling Safari debug menu&quot;
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+ 
+echo &quot;&quot;
+echo &quot;Making Safari search banners default to Contains instead of Starts With&quot;
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+ 
+echo &quot;&quot;
+echo &quot;Removing useless icons from Safari bookmarks bar&quot;
+defaults write com.apple.Safari ProxiesInBookmarksBar &quot;()&quot;
+ 
+echo &quot;&quot;
+echo &quot;Allow hitting the Backspace key to go to the previous page in history&quot;
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
+ 
+echo &quot;&quot;
+echo &quot;Enabling the Develop menu and the Web Inspector in Safari&quot;
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari &quot;com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled&quot; -bool true
+ 
+echo &quot;&quot;
+echo &quot;Adding a context menu item for showing the Web Inspector in web views&quot;
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+ 
+ 
+###############################################################################
+# Terminal
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Enabling UTF-8 ONLY in Terminal.app and setting the Pro theme by default&quot;
+defaults write com.apple.terminal StringEncodings -array 4
+defaults write com.apple.Terminal &quot;Default Window Settings&quot; -string &quot;Pro&quot;
+defaults write com.apple.Terminal &quot;Startup Window Settings&quot; -string &quot;Pro&quot;
+ 
+ 
+###############################################################################
+# Time Machine
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Preventing Time Machine from prompting to use new hard drives as backup volume&quot;
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+ 
+echo &quot;&quot;
+echo &quot;Disabling local Time Machine backups&quot;
+hash tmutil &amp;&gt; /dev/null &amp;&amp; sudo tmutil disablelocal
+ 
+ 
+###############################################################################
+# Messages                                                                    #
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Disable smart quotes&quot;
+defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add &quot;automaticQuoteSubstitutionEnabled&quot; -bool false
+ 
+echo &quot;&quot;
+echo &quot;Disable continuous spell checking&quot;
+defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add &quot;continuousSpellCheckingEnabled&quot; -bool false
+ 
+###############################################################################
+# Misc Additions
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Disable hibernation (speeds up entering sleep mode)&quot;
+sudo pmset -a hibernatemode 0
+ 
+echo &quot;&quot;
+echo &quot;Remove the sleep image file to save disk space&quot;
+sudo rm /Private/var/vm/sleepimage
+echo &quot;Creating a zero-byte file instead&quot;
+sudo touch /Private/var/vm/sleepimage
+echo &quot;and make sure it can&#39;t be rewritten&quot;
+sudo chflags uchg /Private/var/vm/sleepimage
+ 
+echo &quot;&quot;
+echo &quot;Disable the sudden motion sensor as its not useful for SSDs&quot;
+sudo pmset -a sms 0
+ 
+echo &quot;&quot;
+echo &quot;Speeding up wake from sleep to 24 hours from an hour&quot;
+# http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
+sudo pmset -a standbydelay 86400
+ 
+echo &quot;&quot;
+echo &quot;Disable annoying backswipe in Chrome&quot;
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+ 
+echo &quot;&quot;
+echo &quot;Generating db for the locate command&quot;
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+source ~/.bash_profile
+
+echo &quot;Done!&quot;</code></pre></noscript></div>
 
 
 <p>JSFiddle Method: Pull JavaScript code from JSFiddle</p>
@@ -587,10 +996,6 @@ int main()
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/">ISBN-10: 1482231611 Ethical Hacking and Penetration Testing Guide - Book Review</a>
-      </li>
-    
-      <li class="post">
         <a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a>
       </li>
     
@@ -606,11 +1011,15 @@ int main()
         <a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a>
       </li>
     
+      <li class="post">
+        <a href="/initial-post-and-an-introduction/">Introduction</a>
+      </li>
+    
   </ul>
 </section>
 <section>
   <h1>Top Categories</h1>
-    <ul id="top-category-list"><li><a href='/blog/categories/web-application-security'>web_application_security (3)</a></li><li><a href='/blog/categories/reviews'>reviews (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/events'>events (1)</a></li></ul>
+    <ul id="top-category-list"><li><a href='/blog/categories/web-application-security'>web_application_security (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/events'>events (1)</a></li></ul>
 </section><h3>Year Archives</h3>
 
     
@@ -620,28 +1029,8 @@ int main()
     <section>
     
     <h2 id="2015-ref">2015</h2>
-    <h3 id="2015-November-ref">November</h3>
+    <h3 id="2015-September-ref">September</h3>
     <ul>
-    
-
-    <li><a href="/isbn-10-1482231611-ethical-hacking-and-penetration-testing-guide-book-review/">ISBN-10: 1482231611 Ethical Hacking and Penetration Testing Guide - Book Review</a></li>
-
-    
-            
-            
-            </ul>
-            <h3 id="2015-September-ref">September</h3>
-            <ul>
-    </section>
-            
-        
-    
-
-    
-    
-    
-    
-    <section>
     
 
     <li><a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a></li>
@@ -733,7 +1122,7 @@ int main()
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Shritam Bhowmick -
+  Copyright &copy; 2016 - Shritam Bhowmick -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
