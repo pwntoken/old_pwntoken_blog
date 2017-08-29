@@ -51,6 +51,10 @@ git add .
 git commit -m "any message here, a conventional one"
 git push origin source
 ```
+.. after this one might deploy using below:
+
+``` rake deploy ```
+
 ##Before you commit to Octopress
 
 There are basics if one really would need to customize and initiate the power of octopress to the next level. One does not simply limit himself to understanding of markdown but there's a lot ~~under-the-hood in the octopress framework~~ (*not really*, take time reading!).
