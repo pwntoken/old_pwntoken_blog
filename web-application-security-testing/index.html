@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Web Application Security Testing - Pwntoken - Digital Security Research</title>
+  <meta name="author" content="Shritam Bhowmick">
+
+  
+  <meta name="description" content=".. is it that hard to integrate security into SDLC? Web Applications (Useful Applications which can be served in Web 2.0/3.0) today are rich and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://pwntoken.github.io/web-application-security-testing/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pwntoken - Digital Security Research" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-60671877-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pwntoken - Digital Security Research</a></h1>
+  
+    <h2>Information Security Sciences with Shritam Bhowmick.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="pwntoken.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a>
+  <li><a href="/portfolio">Portfolio</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Web Application Security Testing</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-26T06:16:19+05:30'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:16 am</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://pwntoken.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2><em>.. is it that hard to integrate security into SDLC?</em></h2>
+
+<p>Web Applications (Useful Applications which can be served in Web 2.0/3.0) today are rich and serve an intended purpose - be it to serve an ecommerce website or host a collaborative API to re-create <em>something useful</em> using <em>new ideas</em> for people and by the people. It&rsquo;s completely safe to assume web applications should have a generic SDLC (<em>software decelopment life cycle</em> or <em>system development life cycle</em>) compared to that of software (<em>as in thick client</em>) and not surprisingly - they do!</p>
+
+<!-- more -->
+
+
+<p>Software go through <em>phases of development</em> which is known as the <strong><code>SDLC</code></strong> and represents how a particular task is carried out periodically and efficiently for better code productivity in terms of functionality. A generic overview process of a SDLC is to break tasks into pieces so that they can me managed well and later integrated into a complete working <em>product</em> which can be <em>used</em> for the intended consumers of that product. Similarily Enterprise Web Applications go through <em>application development processess</em> and on each of these phases of the entire process, seperate developers working on an unit is responsible for that particular code and hence is the <em>code maintainer</em>. <code>SDLC</code> isn&rsquo;t short and static at Enterprise level but get&rsquo;s worse and complex when phases begin to shift from one stage to another. There are main ingredients such as:</p>
+
+<ul>
+<li>Functional Project Management</li>
+<li>Technical Project Management</li>
+<li>Information Security Assurances</li>
+<li>System Integration Test Plan/Integration Test Cases</li>
+<li>User Acceptance Test Plan/ Acceptance Test Cases</li>
+</ul>
+
+
+<p>.. and most of what everyone else knows and what project managers are theoritically trained to prepare for boils down to:</p>
+
+<ul>
+<li>Planning</li>
+<li>Requirement Analysis</li>
+<li>Design</li>
+<li>Development</li>
+<li>System Integration</li>
+<li>User Acceptance and Parallel Testing</li>
+<li>Implementation</li>
+<li>Operations and Maintainence</li>
+</ul>
+
+
+<p><img src="http://i.imgur.com/Rxw9UPI.jpg"></p>
+
+<p>All of the aforementioned are packaged into the five super&rsquo;s i.e. functional project management, technical project management, information security assurances, system integration test plan and integration test cases and user acceptance test plan and acceptance test cases. We are more worried about <strong>Information Security Assurances</strong> and not long far in this way - we&rsquo;ll be introduced to how <em>information security</em> is governed and where SDLC is outruled by it&rsquo;s superset, and when precisely <em>*security</em> is to be placed into <code>SDLC</code> thoughfully by it&rsquo;s governing superset.</p>
+
+<h2>But the Question Remains ..</h2>
+
+<p><u>How Enterprise Web Application SDLC are any different from Software Product Based SDLC?</u> and <u>how shall security governance take place during the entire lifecycle?</u> Enter <code>ALM - Application Lifecycle Management</code>. To cut short of everything else and <del>leave details</del> to it&rsquo;s own research place:</p>
+
+<ol>
+<li><p>Enterprise Web Applications <em>differ</em> in production, business case, and it&rsquo;s relative uses than that of a product applications. To elaborate - web applications might die fast due to it&rsquo;s trend nature, user acceptance or short life use case - <em>which means as long as the trend survives, the web application survives</em>, product software whilst might have <em>core re-use functionality</em> in operating systems (e.g. Microsoft Word? OpenOffice? ..). People leave Orkut to go newly obtained trend of Google+ and might never get sick of <code>#hashtags</code> at Facebook but they never leave <em>productivity software suite</em> installed in their PC/Laptop for <em>general core functionality</em> use.</p></li>
+<li><p>To take care governance for both - Web Application Security as well as Software Security or for that matter all the five super ingredients we talked about earlier - we have <code>ALM</code> and it&rsquo;s really <em>not equal to</em> <code>SDLC</code>. <code>ALM</code> could be considered as the top gem mounted  above the <code>SDLC</code>, where <code>SDLC</code> lies in the bottom looking up at the <code>ALM</code> to manage it&rsquo;s <code>governance</code>, <code>development</code> and <code>operations</code>. The <code>ALM</code> has control of the <code>SDLC</code> - and <code>SDLC</code> has control of the <code>modular software/application deployment</code>.</p></li>
+</ol>
+
+
+<h2>Shritam! don&rsquo;t tl;dr ALM ..</h2>
+
+<p>.. and so I won&rsquo;t. <code>ALM</code> as you now know is <code>Application Lifecycle Management</code>, it&rsquo;s easier to think of it as a <em>superset</em> of <code>SDLC</code>. If <code>SDLC</code> takes care of the operational part, the <code>ALM</code> takes care of it&rsquo;s governance. It&rsquo;s important to understand that <code>security</code> from it&rsquo;s very core has to be <em>governed</em> and <em>regulated</em> in authoritive perspective or code maintainers would continue to write bad code - and <strong>this</strong> exactly is <em>what happens to the most applications - be them web application or applications/products in general!</em></p>
+
+<p>The three aspects of <code>ALM</code> is to provide:</p>
+
+<ol>
+<li>Governance</li>
+<li>Development</li>
+<li>Operations</li>
+</ol>
+
+
+<p>And all of these three factors are essential to run the show for <code>SDLC</code>, and ofcourse <code>SDLC</code> sometimes depend on it <em>operationally</em> if not for entire <em>development</em> (ever wonder about <code>DevOps</code>?). This is exactly where <em>security professionals</em> should be looking at! If one looks deeper thoughfully, any development criteria is only fullfilled by authorized operational means and if <em>operationally</em> security is placed forward - the <em>secure development</em> will become mandatory. There is a reason why I introduced <code>ALM</code> here because in layman terms:</p>
+
+<blockquote><p>If project managers care not to outrule their developers to enforce security internally and make it mandatory, someone else have had got the system processes broken already!</p><footer><strong>Shritam Bhowmick</strong> <cite>His Information Security Diaries.</cite></footer></blockquote>
+
+
+<p>Back to <code>ALM</code> basics, what we have is a raw idea which has a potential to either become an end-product for it&rsquo;s consumers and accepted by the massess in core functionality or it dies out and serves a short span of life to benefit from short-term use case/business case.</p>
+
+<p><img src="http://s13.postimg.org/blw9dfkrr/ALM_1.png"></p>
+
+<p>If the <code>security problem</code> at <em>operation level</em> has been identified, let&rsquo;s not forget to take a submarine-dive to explore what&rsquo;s beneath <code>ALM</code>.</p>
+
+<h3><strong>Governance</strong> for ALM</h3>
+
+<p>Take a <em>sweet note</em> - authorities always have a higher ground and what they only know is business, be it short termed or long termed - as long as it&rsquo;s beneficiaries are transparent, people will invest into the project. In <code>ALM</code>, to escalate ideas into businesses, there has to be a purpose; An application has to serve a purpose and then it should have a business value - this is the <code>business use case</code>. Everything else is High-Lower authority for the entire project and they are <code>project portfolio management</code> and <code>application portfolio management</code>.</p>
+
+<p><img src="http://s1.postimg.org/7hmdr1nbj/ALM_Governance.png"></p>
+
+<p>What they do specifically as part of the governance are simplified here.</p>
+
+<p><strong>Business Case Development</strong>: Business Authorities hold the investment share, they have the equities, they know the business, they have stolen the idea ( .. or have them originally perceived!?) and now they are ready to invest on this BIG-O-BANG idea and wish not to lose out on the competitor game. They decide the finances. This first serious move is known to be <code>Business Case Development</code> or <code>BCD</code>.</p>
+
+<p>To support the idea, there are peers who do the analysis for them (business authorities) and chalk out business use for the idea and if they are beneficial to the investors. If they are, business case is approved and application development might now proceed.</p>
+
+<p><strong>Project Portfolio Management</strong>: The people who might have originally perceived the idea, might not have his/her own abilities to implement and transform it into a working product. They need someone else to do it for them and hence <code>people</code>, <code>processes</code> and <code>product</code> become the essentials for any organization.</p>
+
+<p>There are two ways <code>Project Portfolio Management</code> or <code>PPM</code> is carried away - either a <code>project manager</code> is assigned the task with relative technical abilities to regulate a group of people who become the <code>core team</code> of that particular project or there is a dedicated <code>PMO</code> (Project Management Office) to regulate procedures at this level. Here actual development begins.</p>
+
+<p><strong>Application Portfolio Management</strong>: If Application deployment is over, it&rsquo;s now an <code>asset</code> to the organization and more importantly the investors who have invested money into the project. There needs to be an ongoing check on it&rsquo;s beneficiaries and costs plus measures to check if the trend isn&rsquo;t dying and flipping out of it&rsquo;s way.</p>
+
+<p><code>APM</code> or Application Portfolio Management provides a gateway to manage ongoing operation products, provide regulations around major revision (application or end-product software, as the case may be!) changes and perform updates keeping it&rsquo;s <code>business use case</code> in track and perform regular checks on it. If the trend persists, and the end-product or the application is feasibly performing well, updates for better performance, or added functionality is rolled out or a major updates are issued and released. This again needs checks from both <code>PMO</code> (or <code>PPM</code>) and <code>BCD</code>.</p>
+
+<p>Now if we look down here, pretty much during the whole process of life start to life end of the application development or software application end-product development - the <code>governance</code> is constant and does not die out; and this also includes SDLC&rsquo;s in-between (during which the <code>governance</code> hasn&rsquo;t died out either! and as described SDLC is only a part of the entire process).</p>
+
+<h3><strong>Development</strong> for ALM</h3>
+
+<p>Yet again, take a <em>sweet note</em> here - it&rsquo;s not always feasible or necessary for an organization to stick to traditional SDLC i.e. <code>RAD</code>, <code>Waterfall</code>, etc. <code>Iterative</code> might be sometimes the need of the time and more modern organizations have been using them.</p>
+
+<p><img src="http://s16.postimg.org/8ndjypyx1/ALM_Development.png"></p>
+
+<p>Development is a fundamental necessity for any <code>custom web application</code>, an <code>Enterprise Product</code> or any <code>End Product</code> and this is precisely the <code>security gone wrong</code> point which has <code>SDLC</code> phases in it. During the entire ALM, the <code>SDLC</code> is a part of the lifecycle and it&rsquo;s this point where <code>security professionals</code> should target and permanently set a reminder for a <code>security cross check</code>.</p>
+
+<p>Now, as talked before - generic <code>SDLC</code> has <strong>seven phases</strong> and equally there are <strong>seven security solutions</strong> to neutralize <code>security risks</code> specifically at those places.</p>
+
+<p><img src="http://s16.postimg.org/akevh1eyt/SDLC_3_Security.jpg"></p>
+
+<p>As to keep <code>security point-of-view</code> in reminder, here are the clauses for these <strong><u>specific security solutions at specific phases of a SDLC</u></strong>:</p>
+
+<ol>
+<li>Code Review</li>
+<li>Risk Analysis</li>
+<li>Penetration Testing</li>
+<li>Risk-Based Security Tests</li>
+<li>Abuse Cases</li>
+<li>Security Requirements</li>
+<li>Security Operations</li>
+</ol>
+
+
+<p><code>Security Operations</code> will be talked about when we discuss on <code>Operations</code> segment of <code>ALM</code> where it&rsquo;s an integral ongoing security process. Based on what we have covered so far, we have <code>code review</code> which is to be placed during <em>developing code (development)</em> and this can have:</p>
+
+<ul>
+<li>static code analysis and review</li>
+<li>dynamic code analysis and reviw</li>
+</ul>
+
+
+<p>.. and then there is <code>Risk Analysis</code> which is covered both during <em>requirements/use case planning</em> and <em>architectural design</em>. <code>Penetration Testing</code> is to be done both and as part of <code>testing</code> and <code>maintainence/feedback from the field</code> which if elaborated falls under the following types of tests:</p>
+
+<ul>
+<li>black-box penetration testing</li>
+<li>white-box penetration testing</li>
+<li>grey-box penetration testing</li>
+<li>glass-box penetration testing</li>
+</ul>
+
+
+<p>To really define these and cross the margin more:</p>
+
+<p>A <code>black-box penetration test</code> means there are no external or internal informational put upfront and security professionals should identify and abuse security loopholes externally and if required <em>offensively</em> go indepth of the flaw which means <em>exploiting</em> necessary security flaws to it&rsquo;s deepest extent.</p>
+
+<p>A <code>white-box penetration test</code> means there would be full feedback from the developers or <code>ALM</code> project managers to pin-point <em>resources of interest</em> and if required additionally provide <em>access credentials</em> to <em>security test</em> restricted zones. This sometimes is the industry de-facto because it&rsquo;s efficient.</p>
+
+<p>A <code>grey-box penetration test</code> means to provide necessary <em>resources of interests</em> while the penetration testers are encouraged to find security flaws on their own but not limiting them to be short of credential request, if necessity be!</p>
+
+<p>A <code>glass-box penetration test</code> is new modular penetration test where <code>security test monitoring</code> are placed (often times automated) and people monitor the activities of penetration testers while penetration testers are performing the test.</p>
+
+<p><code>Risk Based Security Test</code> is a suite of <em>Security testing</em> for <em>test plans</em> that are prepared which has to be formulated into the <em>development code</em>, the code is at <em>staging</em> area and isn&rsquo;t gone <em>productional</em> yet. <em>Abuse Cases</em> is where testers pre-discuss how a certain business model could be abused and in what ways it could be defended providing the right solutions in very early phases of the <code>SDLC</code> which is <em>Requirements Planning and Use Cases Development</em>. <code>Security Requirements</code> as fit as per the necessary feedbacks from <code>abuse cases</code> and also performed for <em>Requirements Planning and Use Cases Development</em> phase.</p>
+
+<p>Now if the <strong>Mammoth Security Gap Problem</strong> has been accessed right and the equation is to solve this <strong>security gap</strong>, <code>SDLC</code> is specifically where <em>security professionals</em> should start looking at and because this now has been <strong>scientifically proven</strong> and <strong>deduced</strong> out!</p>
+
+<p>Back to <code>ALM</code>, the part of lifecycle which we discussed have <code>SDLC</code> and this is where <strong>Security gap</strong> exists. There is another part of the problem which has to be ruled out and i.e <code>Maintainence</code>. As <em>developers</em> begin to write <em>code</em> and business case demands more functionalities, more <em>code</em> is generated using frameworks and these in turn have adverse effects ranging from <em>introduction of vulnerabilities</em> from frameworks itself. <code>Code Maintainence</code> have two popular entities:</p>
+
+<ol>
+<li>Updates</li>
+<li>Patches</li>
+</ol>
+
+
+<p>.. and both of them could do either of the following:</p>
+
+<ol>
+<li>either break functionality and feasibility</li>
+<li>or break security without letting anyone know</li>
+</ol>
+
+
+<p>.. and both of the aforementioned isn&rsquo;t preferred. This is exactly where <code>ALM</code> has another level i.e. <code>Operations</code> where for specifically <code>security</code> concerns, an organization should have a <code>security operations center</code> to identify vulnerabilities and threat them.</p>
+
+<h3><strong>Operations</strong> for ALM</h3>
+
+<p>No more <em>sweet notes</em>, it&rsquo;s tl;dr: <code>DevOps</code>.</p>
+
+<p><img src="http://s1.postimg.org/qjakg2b0v/ALM_Operations.png"></p>
+
+<p>Soon after applications are deployed from <code>staging</code> to <code>production</code>, they start receiving <code>patches</code> and <code>updates</code>. To cope up with these the application has to be managed throughout it&rsquo;s entire lifecycle and is now bond with the developers and the development team. The people who take care basically of both are <code>DevOps</code> and a <code>security operations center</code> here should be excactly placed here to do a routine check of <code>patches</code> and <code>updates</code> and release <code>security fixes</code> for <code>updates</code>, <code>patches</code> or <code>deployment code</code> as well.</p>
+
+<p>And in this way <code>security management</code> is closely packed with <code>SDLC</code> and <code>SDLC</code> is pushed forward keeping <strong>security as a process and not as a product</strong>. This should be the case but ..</p>
+
+<h2>is <em>security testing</em> an intergal part of most organizations?</h2>
+
+<p>And Now we have been asking the <em>right question</em>.</p>
+
+<p><img src="http://s4.postimg.org/bbuqihcel/SDLC_2.jpg"></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Shritam Bhowmick</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-08-26T06:16:19+05:30'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:16 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/web-application-security/'>web_application_security</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pwntoken.github.io/web-application-security-testing/" data-via="pwntoken" data-counturl="http://pwntoken.github.io/web-application-security-testing/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      <div class="about">
+     <span class="about-image">
+          <img alt="shritam" src="/images/author.jpg">
+     </span>
+     <span class="about-desc">
+          <span>
+              <i>Hello. Welcome to pwntoken. Shritam is an Information Security Analyst cum Penetration Tester. He does Application Security and here&#8217;s his <a target="_blank" href="https://www.linkedin.com/in/shritambhowmick"> LinkedIn </a> for a <bold>professional touch</bold>. Feel free to discuss about the post content and you can send him f eedbacks, if any, at his email</i>  (<a  href="mailto:shritam.bhowmick@gmail.com" style="text-decoration:none;"> <img style="border:none" alt="shritam_email" src="/images/email.png"></a>).
+           </span>
+          <br/>
+          <hr/>
+          <a href="https://twitter.com/pwntoken" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @pwntoken</a>
+     </span>
+</div>
+
+    </p>
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/economics-of-web-application-security/" title="Previous Post: Economics of Web Application Security">&laquo; Economics of Web Application Security</a>
+      
+      
+        <a class="basic-alignment right" href="/enterprise-web-application-security-program/" title="Next Post: Enterprise Web Application Security Program">Enterprise Web Application Security Program &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+  <h1>Information Security</h1>
+  <a href="http://security.stackexchange.com/users/66678/shritam-bhowmick">
+<img src="http://security.stackexchange.com/users/flair/66678.png?theme=dark" width="208" height="58" alt="profile for Shritam Bhowmick at Information Security Stack Exchange, Q&amp;A for information security professionals" title="profile for Shritam Bhowmick at Information Security Stack Exchange, Q&amp;A for information security professionals">
+</a>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a>
+      </li>
+    
+      <li class="post">
+        <a href="/web-application-security-testing/">Web Application Security Testing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/economics-of-web-application-security/">Economics of Web Application Security</a>
+      </li>
+    
+      <li class="post">
+        <a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/initial-post-and-an-introduction/">Introduction</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Top Categories</h1>
+    <ul id="top-category-list"><li><a href='/blog/categories/web-application-security'>web_application_security (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/events'>events (1)</a></li></ul>
+</section><h3>Year Archives</h3>
+
+    
+    
+    
+    
+    <section>
+    
+    <h2 id="2015-ref">2015</h2>
+    <h3 id="2015-September-ref">September</h3>
+    <ul>
+    
+
+    <li><a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-August-ref">August</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/web-application-security-testing/">Web Application Security Testing</a></li>
+
+    
+            
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/economics-of-web-application-security/">Economics of Web Application Security</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-July-ref">July</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-March-ref">March</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/initial-post-and-an-introduction/">Introduction</a></li>
+
+    
+    </ul>
+    
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - Shritam Bhowmick -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'pwntoken';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://pwntoken.github.io/web-application-security-testing/';
+        var disqus_url = 'http://pwntoken.github.io/web-application-security-testing/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

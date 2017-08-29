@@ -1,0 +1,1178 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Driving-By Dirty Octopress - Pwntoken - Digital Security Research</title>
+  <meta name="author" content="Shritam Bhowmick">
+
+  
+  <meta name="description" content="and getting started with Octopress 2.0! If you drove off here to know about the Octopress framework and get started rapidly over in a hour, this &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://pwntoken.github.io/driving-by-dirty-octopress/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pwntoken - Digital Security Research" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-60671877-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pwntoken - Digital Security Research</a></h1>
+  
+    <h2>Information Security Sciences with Shritam Bhowmick.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="pwntoken.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a>
+  <li><a href="/portfolio">Portfolio</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Driving-By Dirty Octopress</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-07-14T11:25:27+05:30'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>11:25 am</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://pwntoken.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2><em>and getting started with Octopress 2.0!</em></h2>
+
+<p>If you drove off here to know about the Octopress framework and get started rapidly over in a hour, this could be your best bet or you could always research and end up in thousand more blogs and end up on the same thing except only after having lost hours linking one solution to another problem and vice versa.</p>
+
+<!-- more -->
+
+
+<h2>Why migrate to Octopress?</h2>
+
+<p>Why would a chap like me want to migrate from Wordpress to Octopress? For that I would first need to answer problems with the basic setup and i.e: PHP/MySQL stack - a complete stupid stack with needs to update plugins/code, etc. in a long run, generate more dynamic pages, parameters, etc in order to exhale more security loopholes.</p>
+
+<h4>Pointers:</h4>
+
+<ul>
+<li>I never wanted to maintain security updates</li>
+<li>Being in Security, I know the pain</li>
+<li>A nice attempt to keep it clean</li>
+<li>Not at all for novice users</li>
+<li>Above gives heartache</li>
+</ul>
+
+
+<h2>In a Nutshell</h2>
+
+<table>
+<thead>
+<tr>
+<th> <strong>Octopress</strong> </th>
+<th> <strong>Wordpress</strong> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Markdown Powered </td>
+<td> Driven by UI Interface</td>
+</tr>
+<tr>
+<td> Parse Engine Choice </td>
+<td> WP Engine Default</td>
+</tr>
+<tr>
+<td> Novice Unfriendly </td>
+<td> Novice Userbase Recommended</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>Deploying to Github:</h2>
+
+<hr />
+
+<ul>
+<li>create a new repository at Github, this is fairly self explanatory.</li>
+<li>the host machine must have Ruby, Github and Octopress downloaded via Git.</li>
+<li>Now that, everything is ready, move to octopress folder and run: <code>rake setup_github_pages</code></li>
+<li>set the repository URL from Github when asked.</li>
+<li>run rake generate via <code>rake generate</code></li>
+<li>run deployment. This might ask username and SSH keys password from Github; Use <code>rake deploy</code></li>
+<li>check git status to look if anything is uncommited; Use <code>git status</code></li>
+<li>to push any changes into the remote github repository, use below:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -m "any message here, a conventional one"
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Before you commit to Octopress</h2>
+
+<p>There are basics if one really would need to customize and initiate the power of octopress to the next level. One does not simply limit himself to understanding of markdown but there&rsquo;s a lot <del>under-the-hood in the octopress framework</del> (<em>not really</em>, take time reading!).</p>
+
+<p>Octopress 3.0 makes it more simpler but here I would be using Octopress 2.0 in it&rsquo;s truest and meanest form possible since it&rsquo;s easy and isn&rsquo;t tough for one from a developer background. That been said, here are some pre-requisities suggested (<del>although not mandatory</del>, but it is!)</p>
+
+<ul>
+<li><p>Octopress documentation could be a great place to start with. Here&rsquo;s <a target ="_blank" href="http://octopress.org/docs/">the web documentation</a>.</p></li>
+<li><p>Markdown basics and additional markdown cheatsheets could be a benifit. Start with <a href="http://daringfireball.net/projects/markdown/basics">DaringBall Markdown Basics</a>. A good amount of <a href="http://www.sitepoint.com/markdown-processing-ruby/">pointers on markup summarization</a> has been done by Jesse Herrick. Take time going through them as well.</p></li>
+<li><p>Before you do down deeper, know what are different parsers which are used with octopress installation and take liberty to understand <code>rDiscount</code>, <code>Kramdown</code> and <code>Shopify Templates</code> or one can also read through the documentation covered here in <a href="http://jekyllrb.com/docs/home/">Jekyll</a>. Jekyll go hand-in-hand with Octopress 2.0 and Octopress relies on it&rsquo;s support, however this has come to an drastic change since <a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/">release of Octopress 3.0</a>.</p></li>
+</ul>
+
+
+<h2>Octopress Plugins and Support</h2>
+
+<p><strong>Octopress Video Plugin</strong>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">video</span><span class="w"> </span>absolute<span class="w"> </span>url<span class="w"> </span>[width<span class="w"> </span>height]<span class="w"> </span>[the<span class="w"> </span>image]<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">video</span><span class="w"> </span><span class="na">http</span><span class="o">:</span><span class="na">//localhost</span><span class="o">:</span><span class="mi">4000</span>/video.mov<span class="w"> </span><span class="mi">854</span><span class="w"> </span><span class="mi">480</span><span class="w"> </span><span class="na">http</span><span class="o">:</span>//image_host.com/someimage.png<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Video</em> via YouTube Embed (without using <em>markdown</em>):</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0cLh_-O-SJA" frameborder="0" allowfullscreen></iframe>
+
+
+<p><em>Original Source</em> used for the above were (YouTube&rsquo;s Embed):</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/0cLh_-O-SJA&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><u><em>Note</em></u>: Frame height and width can be accordingly adjusted using the given <code>width-height</code> parameters.</p>
+
+<p><em>Sample Video</em> via <em>Markdown</em> (using Liquid Markup Video-Image Alternatives):</p>
+
+<p><video width='640' height='320' preload='metadata' controls poster='http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+
+<p><em>Original Sample</em> taken from <a href="http://octopress.org/docs/plugins/video-tag/">Octopress Documentation</a>.</p>
+
+<p><strong>Octopress Image Plugin</strong>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">img</span><span class="w"> </span>[class<span class="w"> </span>name]<span class="w"> </span>/path/to/image<span class="w"> </span>[width]<span class="w"> </span>[height]<span class="w"> </span>[title<span class="w"> </span>text<span class="w"> </span>[alt<span class="w"> </span>text]]<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">img</span><span class="w"> </span><span class="na">http</span><span class="o">:</span><span class="na">//localhost</span><span class="o">:</span><span class="mi">4000</span>/assets/img.png<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Image Example</em> using Liquid Markup:</p>
+
+<p><img src="http://s17.postimg.org/wvwql2atr/sample.png"></p>
+
+<p><u><em>Note</em></u>: This image was not set for <em>heights</em> and <em>widths</em>, the raw source code is as follows:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">img</span><span class="w"> </span><span class="na">http</span><span class="o">:</span>//s<span class="mi">17</span>.postimg.org/wvwql<span class="mi">2</span>atr/sample.png<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Octopress Blockquote Plugin:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">blockquote</span><span class="w"> </span>[author<span class="w"> </span>[<span class="p">,</span><span class="w"> </span>source<span class="w"> </span>]]<span class="w"> </span>[link]<span class="w"> </span>[source<span class="w"> </span>link<span class="w"> </span>title]<span class="w"> </span><span class="p">%}</span> <span class="p">{%</span><span class="w"> </span><span class="nt">endblockquote</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">blockquote</span><span class="w"> </span>Shritam<span class="w"> </span>Bhowmick<span class="p">,</span><span class="w"> </span>His<span class="w"> </span>Portfolio<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>To the mind that is still, the whole world surrenders.
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">endblockquote</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Quote Example</em>:</p>
+
+<blockquote><p>To the mind that is still, the whole world surrenders.</p><footer><strong>Shritam Bhowmick</strong> <cite>His Portfolio.</cite></footer></blockquote>
+
+
+<p>Octopress Code Plugin:</p>
+
+<p>Markdown Method: tab (indent) in your code.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>    var framework = &quot;octopress&quot;;
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Code Example</em> Block using tab indenting:</p>
+
+<pre><code>var framework = "octopress";
+</code></pre>
+
+<p>Backtick Method: open and close with three backticks.</p>
+
+<figure class='code'><figcaption><span> (backtick.js)</span> <a href='/downloads/code/backtick.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="err">```</span> <span class="nx">js</span> <span class="nx">Variable</span> <span class="nx">Assignment</span> <span class="nx">http</span><span class="o">:</span><span class="c1">//www.localhost:4000/ Link</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">framework</span> <span class="o">=</span> <span class="s2">&quot;octopress&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="err">```</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Code Example</em> using Backtick method for a codeblock:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>js Variable Assignment http://www.localhost:4000/ Link
+</span><span class='line'>var framework = "octopress";</span></code></pre></td></tr></table></div></figure>
+
+
+<p>CodeBlock Method: more like blockquote method.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">codeblock</span><span class="w"> </span>Variable<span class="w"> </span>Assignment<span class="w"> </span><span class="na">lang</span><span class="o">:</span>js<span class="w"> </span><span class="na">http</span><span class="o">:</span><span class="na">//www.localhost</span><span class="o">:</span><span class="mi">4000</span>/<span class="w"> </span>Link<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>var framework = &quot;octopress&quot;;
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">endcodeblock</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Code Example</em> using codeblock method with <code>lang:js</code> i.e. language set to it&rsquo;s intended type:</p>
+
+<figure class='code'><figcaption><span>Variable Assignment</span><a href='http://www.localhost:4000/'>Link </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">framework</span> <span class="o">=</span> <span class="s2">&quot;octopress&quot;</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Include Code: file is stored in the octopress source directory, and one can include the code from the file. The user needs to use the /config.yml and there would be code_dir set to the default one.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">include_code</span><span class="w"> </span>JS<span class="w"> </span><span class="na">lang</span><span class="o">:</span>js<span class="w"> </span>file.js<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Code Example</em> of an included <code>.js</code> file which has it&#8217;code content:</p>
+
+<figure class='code'><figcaption><span>JS  (week.js)</span> <a href='/downloads/code/week.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">DayOfWeek</span><span class="p">(</span><span class="nx">day</span><span class="p">,</span> <span class="nx">month</span><span class="p">,</span> <span class="nx">year</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="mi">14</span> <span class="o">-</span> <span class="nx">month</span><span class="p">)</span> <span class="o">/</span> <span class="mi">12</span><span class="p">);</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">year</span> <span class="o">-</span> <span class="nx">a</span><span class="p">;</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="nx">month</span> <span class="o">+</span> <span class="mi">12</span> <span class="o">*</span> <span class="nx">a</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="p">(</span><span class="nx">day</span> <span class="o">+</span> <span class="nx">y</span> <span class="o">+</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">y</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">y</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span>
+</span><span class='line'>             <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">y</span> <span class="o">/</span> <span class="mi">400</span><span class="p">)</span> <span class="o">+</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="mi">31</span> <span class="o">*</span> <span class="nx">m</span><span class="p">)</span> <span class="o">/</span> <span class="mi">12</span><span class="p">))</span>  <span class="o">%</span> <span class="mi">7</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Gist Method: The sample code below can used to pull out code from Gist from Github</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">gist</span><span class="w"> </span>gist_id<span class="w"> </span>[filename]<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Code Example</em> to illustrate a random <code>gist</code> taken from Github:</p>
+
+<div><script src='https://gist.github.com/6987f0c08d9d82ff7eb699d577943757.js?file=osx_pentest_prefs.sh'></script>
+<noscript><pre><code># OSX for Pentesting (Mavericks/Yosemite)
+# macOS Sierra shall be updated;
+# This&#39;s a fork, folks - suck in the caffeine!
+# http://pwntoken.github.io/
+ 
+#!/bin/sh
+ 
+# Ask for the administrator password upfront
+
+echo &quot;Have you read through the script prior to running this? (y or n)&quot;
+read bcareful
+
+if [ $bcareful == &quot;y&quot; ]
+
+then
+
+  echo &quot;Alright, lets get started. First, you&#39;ll need to give this script admin privileges (however, do not run as root)&quot;
+ 
+else
+  echo &quot;Goodbye&quot;
+  exit
+fi
+
+sudo -v
+
+
+echo &quot;and away we go!&quot;
+
+
+###############################################################################
+# Add useful aliases to .bash_profile
+###############################################################################
+
+echo &quot;Adding useful aliases to your .bash_profile...&quot;
+
+echo &quot;alias chrome=&#39;open -a \&quot;Google Chrome\&quot;&#39;&quot; &gt;&gt; ~/.bash_profile
+echo &quot;alias atom=&#39;open -a \&quot;Atom\&quot;&#39;&quot; &gt;&gt; ~/.bash_profile   # alternative to sublime
+echo &quot;alias attach=\&quot;hdiutil attach\&quot;&quot; &gt;&gt; ~/.bash_profile # attach volume (useful for attaching an encrypted volume)
+echo &quot;alias listen=\&quot;lsof -i TCP -n -P | grep LISTEN\&quot;&quot; &gt;&gt; ~/.bash_profile # show listening ports
+
+###############################################################################
+# Install osx command line tools
+###############################################################################
+
+xcode-select --install 
+
+###############################################################################
+# Install Homebrew
+###############################################################################
+ 
+ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+ 
+###############################################################################
+# Install pentesting binaries with homebrew
+###############################################################################
+
+echo &quot;Installing a few useful binaries&quot; 
+
+bins=(
+  python              # Update your python
+  nmap
+  hydra               # Great tool for password attacks
+  ncrack              # Alternative to hydra, supports RDP
+  john-jumbo
+  the_silver_searcher # A code searching tool similar to ack, with a focus on speed.  
+  git                 # Update to a newer version of git
+  autojump            # Great little tool for navigating directories via the command line, see https://github.com/joelthelion/autojump
+)
+
+brew install ${bins[@]}
+
+###############################################################################
+# Install useful apps with homebrew cask
+###############################################################################
+
+ 
+brew install caskroom/cask/brew-cask
+ 
+apps=(
+  alfred
+  google-chrome
+  qlcolorcode     # Quicklook plugin that handles source code with syntax highlighting
+  appcleaner 
+  firefox
+  qlmarkdown      # QuickLook generator for Markdown files
+  spotify         # Everybody loves Spotify
+  flash           # :D       
+  iterm2
+  caffeine        # Keep your mac from going to sleep (when needed)
+  virtualbox
+  limechat
+  atom            # Sublime-text alt
+  flux            # Go easy on your eyes
+  qlstephen       # Quicklook plugin for files without extensions (README, etc)
+  vlc
+  nvalt           # Nice free note taking app
+  quicklook-json  # Quicklook plugin for JSON files
+)
+ 
+echo &quot;Installing apps via brew-cask...&quot;
+
+brew cask install --appdir=&quot;/Applications&quot; ${apps[@]}
+ 
+brew cask alfred link
+ 
+brew cleanup
+
+###############################################################################
+# Install RVM to update and manage your version of ruby
+###############################################################################
+
+echo &quot;Installing RVM, updating Ruby, and installing Bundler to manage gems&quot;
+
+curl -L https://get.rvm.io | bash -s stable
+
+source ~/.bash_profile
+
+rvm use ruby --install --default
+
+gem install bundler
+
+###############################################################################
+# General UI/UX
+###############################################################################
+
+ 
+echo &quot;&quot;
+echo &quot;Hide the Time Machine, Volume, User, and Bluetooth icons&quot;
+for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+  defaults write &quot;${domain}&quot; dontAutoLoad -array \
+    &quot;/System/Library/CoreServices/Menu Extras/TimeMachine.menu&quot; \
+    &quot;/System/Library/CoreServices/Menu Extras/Volume.menu&quot; \
+    &quot;/System/Library/CoreServices/Menu Extras/User.menu&quot;
+done
+defaults write com.apple.systemuiserver menuExtras -array \
+  &quot;/System/Library/CoreServices/Menu Extras/Bluetooth.menu&quot; \
+  &quot;/System/Library/CoreServices/Menu Extras/AirPort.menu&quot; \
+  &quot;/System/Library/CoreServices/Menu Extras/Battery.menu&quot; \
+  &quot;/System/Library/CoreServices/Menu Extras/Clock.menu&quot;
+ 
+sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+ 
+echo &quot;&quot;
+echo &quot;Disabling OS X Gate Keeper&quot;
+echo &quot;(You&#39;ll be able to install any app you want from here on, not just Mac App Store apps)&quot;
+sudo spctl --master-disable
+sudo defaults write /var/db/SystemPolicy-prefs.plist enabled -string no
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+ 
+echo &quot;&quot;
+echo &quot;Increasing the window resize speed for Cocoa applications&quot;
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+ 
+echo &quot;&quot;
+echo &quot;Expanding the save panel by default&quot;
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+ 
+echo &quot;&quot;
+echo &quot;Automatically quit printer app once the print jobs complete&quot;
+defaults write com.apple.print.PrintingPrefs &quot;Quit When Finished&quot; -bool true
+ 
+echo &quot;&quot;
+echo &quot;Disabling automatic termination of inactive apps&quot;
+defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+ 
+echo &quot;&quot;
+echo &quot;Saving to disk (not to iCloud) by default&quot;
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+ 
+echo &quot;&quot;
+echo &quot;Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window&quot;
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+ 
+echo &quot;&quot;
+echo &quot;Check for software updates daily, not just once per week&quot;
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+ 
+echo &quot;&quot;
+echo &quot;Disable smart quotes and smart dashes as theyÃ¢â‚¬â„¢re annoying when typing code&quot;
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+ 
+ 
+###############################################################################
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Increasing sound quality for Bluetooth headphones/headsets&quot;
+defaults write com.apple.BluetoothAudioAgent &quot;Apple Bitpool Min (editable)&quot; -int 40
+ 
+echo &quot;&quot;
+echo &quot;Enabling full keyboard access for all controls (e.g. enable Tab in modal dialogs)&quot;
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+ 
+echo &quot;&quot;
+echo &quot;Disabling press-and-hold for keys in favor of a key repeat&quot;
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+ 
+echo &quot;&quot;
+echo &quot;Setting a blazingly fast keyboard repeat rate (ain&#39;t nobody got time fo special chars while coding!)&quot;
+defaults write NSGlobalDomain KeyRepeat -int 0
+ 
+echo &quot;&quot;
+echo &quot;Disabling auto-correct&quot;
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+ 
+echo &quot;&quot;
+echo &quot;Setting trackpad &amp; mouse speed to a reasonable number&quot;
+defaults write -g com.apple.trackpad.scaling 2
+defaults write -g com.apple.mouse.scaling 2.5
+ 
+echo &quot;&quot;
+echo &quot;Turn off keyboard illumination when computer is not used for 5 minutes&quot;
+defaults write com.apple.BezelServices kDimTime -int 300
+ 
+###############################################################################
+# Screen
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Requiring password immediately after sleep or screen saver begins&quot;
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+ 
+echo &quot;&quot;
+echo &quot;Enabling subpixel font rendering on non-Apple LCDs&quot;
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
+ 
+echo &quot;&quot;
+echo &quot;Enable HiDPI display modes (requires restart)&quot;
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+ 
+###############################################################################
+# Finder
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Showing icons for hard drives, servers, and removable media on the desktop&quot;
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+ 
+echo &quot;&quot;
+echo &quot;Showing all filename extensions in Finder by default&quot;
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+ 
+echo &quot;&quot;
+echo &quot;Showing status bar in Finder by default&quot;
+defaults write com.apple.finder ShowStatusBar -bool true
+ 
+echo &quot;&quot;
+echo &quot;Allowing text selection in Quick Look/Preview in Finder by default&quot;
+defaults write com.apple.finder QLEnableTextSelection -bool true
+ 
+echo &quot;&quot;
+echo &quot;Displaying full POSIX path as Finder window title&quot;
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+ 
+echo &quot;&quot;
+echo &quot;Disabling the warning when changing a file extension&quot;
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+ 
+echo &quot;&quot;
+echo &quot;Use column view in all Finder windows by default&quot;
+defaults write com.apple.finder FXPreferredViewStyle Clmv
+ 
+echo &quot;&quot;
+echo &quot;Avoiding the creation of .DS_Store files on network volumes&quot;
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+ 
+echo &quot;&quot;
+echo &quot;Disabling disk image verification&quot;
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+ 
+echo &quot;&quot;
+echo &quot;Enabling snap-to-grid for icons on the desktop and in other icon views&quot;
+/usr/libexec/PlistBuddy -c &quot;Set :DesktopViewSettings:IconViewSettings:arrangeBy grid&quot; ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c &quot;Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid&quot; ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c &quot;Set :StandardViewSettings:IconViewSettings:arrangeBy grid&quot; ~/Library/Preferences/com.apple.finder.plist
+ 
+ 
+###############################################################################
+# Dock &amp; Mission Control
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate&quot;
+defaults write com.apple.dock tilesize -int 36
+ 
+echo &quot;&quot;
+echo &quot;Speeding up Mission Control animations and grouping windows by application&quot;
+defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults write com.apple.dock &quot;expose-group-by-app&quot; -bool true
+ 
+echo &quot;&quot;
+echo &quot;Setting Dock to auto-hide and removing the auto-hiding delay&quot;
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+ 
+ 
+###############################################################################
+# Safari &amp; WebKit
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Hiding Safari bookmarks bar by default&quot;
+defaults write com.apple.Safari ShowFavoritesBar -bool false
+ 
+echo &quot;&quot;
+echo &quot;Hiding Safari sidebar in Top Sites&quot;
+defaults write com.apple.Safari ShowSidebarInTopSites -bool false
+ 
+echo &quot;&quot;
+echo &quot;Disabling Safari thumbnail cache for History and Top Sites&quot;
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+ 
+echo &quot;&quot;
+echo &quot;Enabling Safari debug menu&quot;
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+ 
+echo &quot;&quot;
+echo &quot;Making Safari search banners default to Contains instead of Starts With&quot;
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+ 
+echo &quot;&quot;
+echo &quot;Removing useless icons from Safari bookmarks bar&quot;
+defaults write com.apple.Safari ProxiesInBookmarksBar &quot;()&quot;
+ 
+echo &quot;&quot;
+echo &quot;Allow hitting the Backspace key to go to the previous page in history&quot;
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
+ 
+echo &quot;&quot;
+echo &quot;Enabling the Develop menu and the Web Inspector in Safari&quot;
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari &quot;com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled&quot; -bool true
+ 
+echo &quot;&quot;
+echo &quot;Adding a context menu item for showing the Web Inspector in web views&quot;
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+ 
+ 
+###############################################################################
+# Terminal
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Enabling UTF-8 ONLY in Terminal.app and setting the Pro theme by default&quot;
+defaults write com.apple.terminal StringEncodings -array 4
+defaults write com.apple.Terminal &quot;Default Window Settings&quot; -string &quot;Pro&quot;
+defaults write com.apple.Terminal &quot;Startup Window Settings&quot; -string &quot;Pro&quot;
+ 
+ 
+###############################################################################
+# Time Machine
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Preventing Time Machine from prompting to use new hard drives as backup volume&quot;
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+ 
+echo &quot;&quot;
+echo &quot;Disabling local Time Machine backups&quot;
+hash tmutil &amp;&gt; /dev/null &amp;&amp; sudo tmutil disablelocal
+ 
+ 
+###############################################################################
+# Messages                                                                    #
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Disable smart quotes&quot;
+defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add &quot;automaticQuoteSubstitutionEnabled&quot; -bool false
+ 
+echo &quot;&quot;
+echo &quot;Disable continuous spell checking&quot;
+defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add &quot;continuousSpellCheckingEnabled&quot; -bool false
+ 
+###############################################################################
+# Misc Additions
+###############################################################################
+ 
+echo &quot;&quot;
+echo &quot;Disable hibernation (speeds up entering sleep mode)&quot;
+sudo pmset -a hibernatemode 0
+ 
+echo &quot;&quot;
+echo &quot;Remove the sleep image file to save disk space&quot;
+sudo rm /Private/var/vm/sleepimage
+echo &quot;Creating a zero-byte file instead&quot;
+sudo touch /Private/var/vm/sleepimage
+echo &quot;and make sure it can&#39;t be rewritten&quot;
+sudo chflags uchg /Private/var/vm/sleepimage
+ 
+echo &quot;&quot;
+echo &quot;Disable the sudden motion sensor as its not useful for SSDs&quot;
+sudo pmset -a sms 0
+ 
+echo &quot;&quot;
+echo &quot;Speeding up wake from sleep to 24 hours from an hour&quot;
+# http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
+sudo pmset -a standbydelay 86400
+ 
+echo &quot;&quot;
+echo &quot;Disable annoying backswipe in Chrome&quot;
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+ 
+echo &quot;&quot;
+echo &quot;Generating db for the locate command&quot;
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+source ~/.bash_profile
+
+echo &quot;Done!&quot;</code></pre></noscript></div>
+
+
+<p>JSFiddle Method: Pull JavaScript code from JSFiddle</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">jsfiddle</span><span class="w"> </span>shorttag<span class="w"> </span>[tabs]<span class="w"> </span>{skin}<span class="w"> </span>[height]<span class="w"> </span>[width]<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">jsfiddle</span><span class="w"> </span>fATe<span class="mi">6</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Sample Code Example</em> with a random <code>jsfiddle</code> ID:</p>
+
+<iframe style="width: 100%; height: 300px" frameborder="0" seamless="seamless" src="http://jsfiddle.net/fATe6/embedded/js,resources,html,css,result/light/"></iframe>
+
+
+<p>To split a page into &lsquo;read more&rsquo; styling, use:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>&lt;!-- more --&gt;
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <em>sample</em> for this was illustrated when you chose to click on <code>continue reading ..</code></p>
+
+<h2>Fixes and Work-Arounds!</h2>
+
+<p>These are some of the fixes which I though might be just helpful when not using any automation for markdown via editors such as Atom, etc .. if you are writing in raw text and believe it&rsquo;s going to be all easy - trust me it&rsquo;s not going to be!</p>
+
+<ul>
+<li><strong>Fix &ldquo;Liquid Exceptions&rdquo;</strong> - common symptoms are &lsquo;tags not closed&rsquo; etc .. Here&rsquo;s a hint for you - always close tags in proper syntax such as for blockquote:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">blockquote</span><span class="w"> </span>Octopress<span class="p">,</span><span class="w"> </span>It&#39;s<span class="w"> </span>Documentation<span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>has to end with endblockquotes
+</span><span class='line'><span class="p">{%</span><span class="w"> </span><span class="nt">endblockquote</span><span class="w"> </span><span class="p">%}</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><strong>Fix color compatibility</strong> with proper liquid code block usage. This one, I needed documentation help and also existing Kramdown userbase help. I had a friend who suggested me to use the below code for all octopress documentation code in liquid since it&rsquo;s markdown support with color is amazing and Rdiscount parser which ships with octopress does not cry about it!</li>
+</ul>
+
+
+<figure class='code'><figcaption><span> (code.js)</span> <a href='/downloads/code/code.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="nx">codeblock</span> <span class="nx">lang</span><span class="o">:</span><span class="nx">liquid</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="nx">raw</span> <span class="o">%</span><span class="p">}</span>
+</span><span class='line'><span class="nx">Put</span> <span class="nx">your</span> <span class="nx">code</span> <span class="nx">here</span>
+</span><span class='line'><span class="p">{</span><span class="o">%</span> <span class="nx">endraw</span> <span class="o">%</span><span class="p">}</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcodeblock</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><u><em>Note</em></u>: you&rsquo;ll notice I have had used <em>include code</em> method instead of <code>codeblock</code> to illustrate my example in the above code snippet. The reason is I would had to iterate the <code>raw</code> and <code>endraw</code> liquid markup and escape opening liquid markup. This is however possible using <code>assign</code> operators; however I have had not done the research on it and it somehow rendered the entire code bad.</p>
+
+<ul>
+<li>Having been into security, I would <em>really</em> need to illustrate code snippets which carry special information and thos which deal with non-ASCII, such as <code>&amp;#x3c</code> and such. <strong>Special Characters in Octopress</strong> could be used using the method as shown above i.e via using <code>raw</code> and <code>endraw</code>. Have a look at the Sample code below!</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>&amp;#x3C;ul id=&amp;#x22;beers-list&amp;#x22;&amp;#x3E;
+</span><span class='line'>    <span class="p">{{</span><span class="err">#</span><span class="nv">beers</span><span class="p">}}</span>
+</span><span class='line'>        &amp;#x3C;li&amp;#x3E;<span class="p">{{</span><span class="nv">name</span><span class="p">}}</span> - <span class="p">{{</span><span class="nv">color</span><span class="p">}}</span> - <span class="p">{{</span><span class="nv">alcohol</span><span class="p">}}</span>%&amp;#x3C;/li&amp;#x3E;
+</span><span class='line'>    <span class="p">{{</span><span class="err">/</span><span class="nv">beers</span><span class="p">}}</span>
+</span><span class='line'>&amp;#x3C;/ul&amp;#x3E;
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Fix <em>liquid exception</em> <strong>undefined method <code>[]</code></strong> on octopress might just be a time consuming research. I have it before-hand for you. So, the ground fact is here&rsquo;s what you might end up sometime while doing a <code>rake generate</code> and hence the parser not being able to <em>completely</em> generate the markdown files (e.g. below)</li>
+</ul>
+
+
+<p><img src="http://s23.postimg.org/k2ylvsmmz/fixundefined.png"></p>
+
+<p>To solve this, goto the <code>.pygments-cache</code> and <code>rm .pygments-cache</code> directory as a whole as shown below in your octopress installation.</p>
+
+<p><u><em>Note</em></u>: ignore <code>The system cannot find the path specified.</code> since they are generic custom <code>cmd</code> environment errors and not related to octopress, it&rsquo;s ruby dependency or python pygments highlighter dependencies.</p>
+
+<p><img src="http://s30.postimg.org/wx0nlazht/deletepygments.png"></p>
+
+<p>This <em>issue</em> persists with Windows installations and haven&rsquo;t been found in linux installations. I had however tried <em>re-installing python 2.7.x</em>, <em>re-installing ruby 2.2.x</em>, and everything else which were possible but all solution ended up to this <em>working method</em>.</p>
+
+<ul>
+<li><p>To fix and be <u>choosy</u> of your <em>markdown processor</em> not being able to provide with you with good alternatives for code block, you do know it&rsquo;s customizable and you can always have a <code>GitHub Style</code> combination <a href="http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/">here</a>.</p></li>
+<li><p>To fix <em>bullet/numbered</em> styling which ships as default and indents to cornering left of the actual article body, you will require to add below lines to <code>sass/custom/_style.scss</code>:</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='liquid'><span class='line'>article {
+</span><span class='line'>  ol, ul {
+</span><span class='line'>    padding-left: 3em;
+</span><span class='line'>  }
+</span><span class='line'>}
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Conclusions</h2>
+
+<p>That was a short but a devasting ride for a start with the <code>Octopress Framework</code>. My recommendations would be to stick to the Octopress <em>documentation</em>, and research a lot in order to get a perfect working shape of your work.</p>
+
+<p>Feel free to drop your queries below and I could test them to get a <code>new rake post task</code> for you under the octopress category section - laters!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Shritam Bhowmick</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-07-14T11:25:27+05:30'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>11:25 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pwntoken.github.io/driving-by-dirty-octopress/" data-via="pwntoken" data-counturl="http://pwntoken.github.io/driving-by-dirty-octopress/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      <div class="about">
+     <span class="about-image">
+          <img alt="shritam" src="/images/author.jpg">
+     </span>
+     <span class="about-desc">
+          <span>
+              <i>Hello. Welcome to pwntoken. Shritam is an Information Security Analyst cum Penetration Tester. He does Application Security and here&#8217;s his <a target="_blank" href="https://www.linkedin.com/in/shritambhowmick"> LinkedIn </a> for a <bold>professional touch</bold>. Feel free to discuss about the post content and you can send him f eedbacks, if any, at his email</i>  (<a  href="mailto:shritam.bhowmick@gmail.com" style="text-decoration:none;"> <img style="border:none" alt="shritam_email" src="/images/email.png"></a>).
+           </span>
+          <br/>
+          <hr/>
+          <a href="https://twitter.com/pwntoken" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @pwntoken</a>
+     </span>
+</div>
+
+    </p>
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/initial-post-and-an-introduction/" title="Previous Post: Introduction">&laquo; Introduction</a>
+      
+      
+        <a class="basic-alignment right" href="/economics-of-web-application-security/" title="Next Post: Economics of Web Application Security">Economics of Web Application Security &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+  <h1>Information Security</h1>
+  <a href="http://security.stackexchange.com/users/66678/shritam-bhowmick">
+<img src="http://security.stackexchange.com/users/flair/66678.png?theme=dark" width="208" height="58" alt="profile for Shritam Bhowmick at Information Security Stack Exchange, Q&amp;A for information security professionals" title="profile for Shritam Bhowmick at Information Security Stack Exchange, Q&amp;A for information security professionals">
+</a>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a>
+      </li>
+    
+      <li class="post">
+        <a href="/web-application-security-testing/">Web Application Security Testing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/economics-of-web-application-security/">Economics of Web Application Security</a>
+      </li>
+    
+      <li class="post">
+        <a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/initial-post-and-an-introduction/">Introduction</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Top Categories</h1>
+    <ul id="top-category-list"><li><a href='/blog/categories/web-application-security'>web_application_security (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/events'>events (1)</a></li></ul>
+</section><h3>Year Archives</h3>
+
+    
+    
+    
+    
+    <section>
+    
+    <h2 id="2015-ref">2015</h2>
+    <h3 id="2015-September-ref">September</h3>
+    <ul>
+    
+
+    <li><a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-August-ref">August</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/web-application-security-testing/">Web Application Security Testing</a></li>
+
+    
+            
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/economics-of-web-application-security/">Economics of Web Application Security</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-July-ref">July</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-March-ref">March</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/initial-post-and-an-introduction/">Introduction</a></li>
+
+    
+    </ul>
+    
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - Shritam Bhowmick -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'pwntoken';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://pwntoken.github.io/driving-by-dirty-octopress/';
+        var disqus_url = 'http://pwntoken.github.io/driving-by-dirty-octopress/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
