@@ -53,7 +53,7 @@ git push origin source
 ```
 ##Before you commit to Octopress
 
-There are basics if one really would need to customize and initiate the power of octopress to the next level. One does not simply limit himself to understanding of markdown but there's a lot ~~under-the-hood in the octopress framework~~ (*not really*, take time reading!). 
+There are basics if one really would need to customize and initiate the power of octopress to the next level. One does not simply limit himself to understanding of markdown but there's a lot ~~under-the-hood in the octopress framework~~ (*not really*, take time reading!).
 
 Octopress 3.0 makes it more simpler but here I would be using Octopress 2.0 in it's truest and meanest form possible since it's easy and isn't tough for one from a developer background. That been said, here are some pre-requisities suggested (~~although not mandatory~~, but it is!)
 
@@ -139,7 +139,7 @@ Markdown Method: tab (indent) in your code.
 _Sample Code Example_ Block using tab indenting:
 
     var framework = "octopress";
-  
+
 Backtick Method: open and close with three backticks.
 
 {% include_code backtick.js %}
@@ -227,7 +227,7 @@ has to end with endblockquotes
 
 {% include_code code.js %}
 
-<u>*Note*</u>: you'll notice I have had used *include code* method instead of `codeblock` to illustrate my example in the above code snippet. The reason is I would had to iterate the `raw` and `endraw` liquid markup and escape opening liquid markup. This is however possible using `assign` operators; however I have had not done the research on it and it somehow rendered the entire code bad. 
+<u>*Note*</u>: you'll notice I have had used *include code* method instead of `codeblock` to illustrate my example in the above code snippet. The reason is I would had to iterate the `raw` and `endraw` liquid markup and escape opening liquid markup. This is however possible using `assign` operators; however I have had not done the research on it and it somehow rendered the entire code bad.
 
 * Having been into security, I would *really* need to illustrate code snippets which carry special information and thos which deal with non-ASCII, such as `&#x3c` and such. **Special Characters in Octopress** could be used using the method as shown above i.e via using `raw` and `endraw`. Have a look at the Sample code below!
 
@@ -244,13 +244,13 @@ has to end with endblockquotes
 
 {% img http://s23.postimg.org/k2ylvsmmz/fixundefined.png %}
 
-To solve this, goto the `.pygments-cache` and `rm .pygments-cache` directory as a whole as shown below in your octopress installation. 
+To solve this, goto the `.pygments-cache` and `rm .pygments-cache` directory as a whole as shown below in your octopress installation.
 
 <u>*Note*</u>: ignore `The system cannot find the path specified.` since they are generic custom `cmd` environment errors and not related to octopress, it's ruby dependency or python pygments highlighter dependencies.
 
 {% img http://s30.postimg.org/wx0nlazht/deletepygments.png %}
 
-This *issue* persists with Windows installations and haven't been found in linux installations. I had however tried *re-installing python 2.7.x*, *re-installing ruby 2.2.x*, and everything else which were possible but all solution ended up to this *working method*. 
+This *issue* persists with Windows installations and haven't been found in linux installations. I had however tried *re-installing python 2.7.x*, *re-installing ruby 2.2.x*, and everything else which were possible but all solution ended up to this *working method*.
 
 * To fix and be <u>choosy</u> of your *markdown processor* not being able to provide with you with good alternatives for code block, you do know it's customizable and you can always have a `GitHub Style` combination [here](http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/).
 
@@ -266,6 +266,10 @@ article {
 
 ## Conclusions
 
-That was a short but a devasting ride for a start with the `Octopress Framework`. My recommendations would be to stick to the Octopress *documentation*, and research a lot in order to get a perfect working shape of your work. 
+That was a short but a devasting ride for a start with the `Octopress Framework`. My recommendations would be to stick to the Octopress *documentation*, and research a lot in order to get a perfect working shape of your work.
 
 Feel free to drop your queries below and I could test them to get a `new rake post task` for you under the octopress category section - laters!
+
+Update: Please keep referencing these which might be very useful from time to time ..
+
+	- [How to setup Octopress Cloned Blog & keping accessing from different machines, also - the basic working of Octopress](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/)
