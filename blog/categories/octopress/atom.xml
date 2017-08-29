@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2017-08-30T00:44:01+05:30</updated>
+  <updated>2017-08-30T00:47:48+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -818,10 +818,14 @@ echo &quot;Done!&quot;</code></pre></noscript></div>
 
 <p>Feel free to drop your queries below and I could test them to get a <code>new rake post task</code> for you under the octopress category section - laters!</p>
 
-<p>Update: Please keep referencing these which might be very useful from time to time ..</p>
+<h2>Updates</h2>
 
-<pre><code>- [How to setup Octopress Cloned Blog &amp; keping accessing from different machines, also - the basic working of Octopress](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/)
-</code></pre>
+<p>Please keep referencing these which might be very useful from time to time ..</p>
+
+<ul>
+<li><a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">How to setup Octopress Cloned Blog &amp; keeping accessing from different machines, also - the basic working of Octopress</a></li>
+</ul>
+
 ]]></content>
   </entry>
   
