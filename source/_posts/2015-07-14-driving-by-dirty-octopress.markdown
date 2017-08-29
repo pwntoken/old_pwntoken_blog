@@ -270,6 +270,8 @@ That was a short but a devasting ride for a start with the `Octopress Framework`
 
 Feel free to drop your queries below and I could test them to get a `new rake post task` for you under the octopress category section - laters!
 
-Update: Please keep referencing these which might be very useful from time to time ..
+## Updates
 
-	- [How to setup Octopress Cloned Blog & keping accessing from different machines, also - the basic working of Octopress](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/)
+Please keep referencing these which might be very useful from time to time ..
+
+* [How to setup Octopress Cloned Blog & keeping accessing from different machines, also - the basic working of Octopress](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/)
