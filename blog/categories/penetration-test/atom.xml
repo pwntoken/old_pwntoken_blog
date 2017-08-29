@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Penetration_test | Pwntoken - Digital Security Research]]></title>
+  <link href="http://pwntoken.github.io/blog/categories/penetration-test/atom.xml" rel="self"/>
+  <link href="http://pwntoken.github.io/"/>
+  <updated>2017-08-30T01:15:46+05:30</updated>
+  <id>http://pwntoken.github.io/</id>
+  <author>
+    <name><![CDATA[Shritam Bhowmick]]></name>
+    <email><![CDATA[shritam.bhowmick@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Defining an Enterprise Penetration Test]]></title>
+    <link href="http://pwntoken.github.io/defining-an-enterprise-penetration-test/"/>
+    <updated>2017-08-30T01:00:22+05:30</updated>
+    <id>http://pwntoken.github.io/defining-an-enterprise-penetration-test</id>
+    <content type="html"><![CDATA[<h2><em>Are Enterprises Aware Of A Defined Penetration Test?</em></h2>
+
+<p>It really took me a complete decade to have a meaningful dedicated routine time having few legit set of questions &amp; debunks we&rsquo;ll be looking at frequencies from here onwards. After having experienced a large number of strategic targets for our business commitments, I have now concluded the larger scale enterprises lack a defined understanding of what a <strong>Penetration Test</strong> really is.</p>
+
+<p>.. wait - don&rsquo;t be waiting any longer to have a second thought about mistaking the wide information security domain with just a penetration test. The width I&rsquo;m talking takes grasping this wide domain .. I&rsquo;ll leave you there.</p>
+
+<!-- more -->
+
+
+<p><img src="{{ root_url }}/Desktop/octopress/source/images/Penetration_Test/infosecdomain.jpg" /></p>
+]]></content>
+  </entry>
+  
+</feed>
