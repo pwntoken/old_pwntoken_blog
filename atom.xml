@@ -4,7 +4,7 @@
   <title><![CDATA[Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2017-08-31T00:06:58+05:30</updated>
+  <updated>2017-08-31T00:50:48+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -20,7 +20,9 @@
     <id>http://pwntoken.github.io/defining-an-enterprise-penetration-test</id>
     <content type="html"><![CDATA[<h2><em>Are Enterprises Aware Of A Defined Penetration Test?</em></h2>
 
-<p>It really took me a complete decade to have a meaningful dedicated routine time having few legit set of questions &amp; debunks we&rsquo;ll be looking at frequencies from here onwards. After having experienced a large number of strategic targets for our business commitments, I have now concluded the larger scale enterprises lack a defined understanding of what a <strong>Penetration Test</strong> really is. My study show a very poor performance of the Enterprises at a far capital market reach of a Billion Dollar Industry that the Cyber Security Market can upscale to. I will be the surgeon &amp; would logically be concluding:</p>
+<p>It really took me a complete decade to have a meaningful dedicated routine time having few legit set of questions &amp; debunks we&rsquo;ll be looking at frequencies from here onwards. After having experienced a large number of strategic targets spending a decade of nights, an expensive totalitarian disciplined existence into hacker community circles ranging from the Mexican Boards, Russian Boards to few selected ones for intel since ages now &amp; a sincere Executioner of Myth, Fanatics including an Experience in side swiping Best Charlatans who&rsquo;re evolving at a faster pace;</p>
+
+<p>I have with all such detailed experience in total truth concluded the larger scale enterprises lack a defined understanding of what a <strong>Penetration Test</strong> really is. My study show a very poor performance of the Enterprises at a far capital market reach of a Billion Dollar Industry that the Cyber Security Market can upscale to. I will be the surgeon &amp; would logically be concluding:</p>
 
 <ol>
 <li>Are they Aware!?</li>
@@ -63,7 +65,7 @@
 <img src="../images/Penetration_Test/luci3.png" title="Lucideus Repo Loss" alt="Lucideus" />
 <img src="../images/Penetration_Test/luci4.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
 
-<p>.. Somehow the Security Community had got it&rsquo;s weapons hooked &amp; did really picked an effort appreciated (Thanks, to <a href="http://www.opensecurityalliance.org">Dinesh Bajera</a>).</p>
+<p>.. Somehow the Security Community had got it&rsquo;s weapons hooked &amp; did really picked an effort appreciated (Thanks, to <a href="http://www.opensecurityalliance.org">Dinesh Bareja</a>).</p>
 
 <p><img src="../images/Penetration_Test/bhim.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
 
@@ -142,6 +144,31 @@
 <li><p>You heard it. The processes itself which segregates IT Security Operations from that of normal IT Operations aren&rsquo;t segregated &amp; eventually run parallel thinking <strong>buying a really costly https certificate would help prevent any &amp; every attacks</strong>.</p></li>
 <li><p>There are <strong>no ways to communicate to upper management on a defined segregation of IT Operations Budget to that of IT Security Operations Budget</strong> which entirely at a later stage put the Organization to the every possible Security Risk in-front of their investors. This really is a problem when you do not have an approved budget for any expenditure on Security lest the whole hard work in already in ruins.</p></li>
 <li><p>Organization Managers are not well informed of their IT Operations Risks &amp; Hazards as this will definitely put senior managers to an extra work load &amp; few might even miss a beautifully love wedding at Miami Beach for that matter. Most <strong>managers, senior managers cum Executive Directors including that of Excreting on Money Current Chairmen &amp; the Board Of Directors DO NOT UNDERSTAND Security Risks, Threats, Glitches &amp; eventually everything that&rsquo;s in-between</strong>.</p></li>
+</ol>
+
+
+<h3>Organizations literally BUY Compliances without really any Actual Compliance ..</h3>
+
+<ol>
+<li><p><strong>Buy a https certificate &amp; they&rsquo;ll say you&rsquo;re secure.</strong> Please re-consider, you&rsquo;re just not.</p></li>
+<li><p><strong>Get a fancy Compliance Security Audit done from a Big4 &amp; you&rsquo;re Secure?</strong>: I&rsquo;ve gotten this really covered &amp; laughed <del>twice</del> thrice to this. I&rsquo;d only hint all Big4&rsquo;s at this moment compromised.</p></li>
+<li><p><strong>They trust Certificates</strong>: when hiring, this really doesn&rsquo;t work for Security Operations bench. EC|CEH certified will be really a waste for your resource. Use money &amp; use a brain!</p></li>
+</ol>
+
+
+<h3>The Trendy Bug Bounty get&rsquo;s the Cut!?</h3>
+
+<p>Just don&rsquo;t. You&rsquo;ll realize when I make this post useful &amp; define penetration tests at later stages &amp; it&rsquo;s applicable scopes for different ranges of selected optimized on a very controlled productivity-full for maximizing end-results with different unique modes in SecOps (Security Operations).</p>
+
+<p>I intend to Debunk Bug Bounties at a later part in my life time in order to save me the disaster of just proving as it is meant to be proved in true fashion. I&rsquo;m hoping my readers can direct me to a great gentlemen who can take this up for me using the mainstream media houses.</p>
+
+<h3>When it&rsquo;s Pricey?</h3>
+
+<ol>
+<li><p>When Organizations are literally bombarded with a FULL DISCLOSURE which evaporates money, finances, data, reputation &amp; probably would risk their wives if lucky in the sleepless process.</p></li>
+<li><p>When Organizations are dis-qualified to be any more Compliant to that Investment Bank you&rsquo;re hoping not checking in security controls. Better Stay non-compliant if not ready. Because it&rsquo;s just a major embarrassment.</p></li>
+<li><p>When userbase have alternatives &amp; they really think their data isn&rsquo;t any safe than the duck aimed to be killed &amp; not even pyre/burial arrangements are made.</p></li>
+<li><p>When Organizations are ransomed. But instead later, kicked again after having the ransom money. haha. That was humorous tho. That&rsquo;s called the state of getting into a <code>over pricey</code> tricky situation in the White House Situation Room during an Afgan War lost because Special Forces were not given real equipments for the war operations.</p></li>
 </ol>
 
 ]]></content>
