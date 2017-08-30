@@ -53,7 +53,9 @@ git push origin source
 ```
 .. after this one might deploy using below:
 
-``` rake deploy ```
+```
+rake deploy
+```
 
 ##Before you commit to Octopress
 
@@ -279,3 +281,10 @@ Feel free to drop your queries below and I could test them to get a `new rake po
 Please keep referencing these which might be very useful from time to time ..
 
 * [How to setup Octopress Cloned Blog & keeping accessing from different machines, also - the basic working of Octopress](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/)
+
+* How to fix *Error:  Pygments can't parse unknown language: rake*:
+
+  - use /plugins/pygments_code.rb file
+  - change `raise "Pygments can't parse unknown language: #{lang}#` to `raise "Pygments can't parse unknown language: #{lang}#{code}`
+  - next time a `rake generate` is issued, the location is shown which wouldn't before.
+  - fix the syntax. This probably triggers by using *backticks* without a proper line-feed.
