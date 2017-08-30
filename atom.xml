@@ -4,7 +4,7 @@
   <title><![CDATA[Pwntoken - Digital Security Research]]></title>
   <link href="http://pwntoken.github.io/atom.xml" rel="self"/>
   <link href="http://pwntoken.github.io/"/>
-  <updated>2017-08-30T00:47:48+05:30</updated>
+  <updated>2017-08-31T00:06:58+05:30</updated>
   <id>http://pwntoken.github.io/</id>
   <author>
     <name><![CDATA[Shritam Bhowmick]]></name>
@@ -12,6 +12,140 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Defining an Enterprise Penetration Test]]></title>
+    <link href="http://pwntoken.github.io/defining-an-enterprise-penetration-test/"/>
+    <updated>2017-08-30T01:00:22+05:30</updated>
+    <id>http://pwntoken.github.io/defining-an-enterprise-penetration-test</id>
+    <content type="html"><![CDATA[<h2><em>Are Enterprises Aware Of A Defined Penetration Test?</em></h2>
+
+<p>It really took me a complete decade to have a meaningful dedicated routine time having few legit set of questions &amp; debunks we&rsquo;ll be looking at frequencies from here onwards. After having experienced a large number of strategic targets for our business commitments, I have now concluded the larger scale enterprises lack a defined understanding of what a <strong>Penetration Test</strong> really is. My study show a very poor performance of the Enterprises at a far capital market reach of a Billion Dollar Industry that the Cyber Security Market can upscale to. I will be the surgeon &amp; would logically be concluding:</p>
+
+<ol>
+<li>Are they Aware!?</li>
+<li>Are Even Cyber Security Companies Themselves Aware?</li>
+<li>What about the Indian Enterprise Eco-Space - they&rsquo;re looking a complete joke by now.</li>
+<li>Re-Iterating &amp; Re-Focusing, Do Indian Enterprise Eco-System Aware of a Dis-balanced IT Ops Budget &amp; Security Ops Budget?</li>
+</ol>
+
+
+<p>.. wait - don&rsquo;t be waiting any longer to have a second thought about mistaking the wide information security domain with just a penetration test. The width I&rsquo;m talking takes grasping this wide domain .. I&rsquo;ll leave you there to the width in an image below ..</p>
+
+<!-- more -->
+
+
+<p><img src="../images/Penetration_Test/infosecdomain.png" title="information Security Domain" alt="infosec" /></p>
+
+<p>A Penetration Test by any margin among that huge wide Information Security Domain is simply put a task in an organization to settle down on a risk factor which includes live infiltration via the Organization&rsquo;s Asset - the Application Stack or the Network Stack. And no, this doesn&rsquo;t include Social Engineering attack for the <code>people</code>, that&rsquo;s <code>Red Teaming</code> &amp; has a larger strategical construct. <code>Red Teaming</code> includes several other facets &amp; factors involved - We&rsquo;d debunk that later for good.</p>
+
+<p>Right now, let&rsquo;s focus around <code>Penetration Test</code>. What would take an Organization, an Enterprise which is highly decorated in it&rsquo;s all reputed glories from decades of business investments to fall apart from the reputation!? This!</p>
+
+<p><img src="../images/Penetration_Test/repoloss.png" title="Reputation Loss" alt="reputationlossPT" /></p>
+
+<p>Little to no surprise, The Enterprises are slowly evolving &amp; have introduced <code>DevOps</code> which has a more simpler way of an efficient IT Operation but a complex variant of necessary subset &amp; routine security check which&rsquo;s often missed. By this factor, very fewer Organizations have really known the difference between a <code>Vulnerability Assessment</code> &amp; a <code>Penetration Test</code> given that they understand necessary scopes to be involved.</p>
+
+<p>Given the experiences I had - in my opinion, they <strong>DO NOT YET UNDERSTAND PENETRATION TEST</strong>.</p>
+
+<h2><em>Are Cyber Security Companies Across India Aware?</em></h2>
+
+<p>Whilst being on a standard operation, I had to focus around getting away with analyzing if Claimed Cyber Security Companies are themselves aware. To my amazement - they&rsquo;re completely off that street &amp; have already went boasting their permits without really having any In-Depth measures often to take.</p>
+
+<p>We&rsquo;ll rewind my experience in short &amp; debunk this out since a company called <a href="www.lucideus.com">Lucideus Tech</a> was recently roasted at Reddit India for the very same reasons. Please don&rsquo;t judge already, I was involved with the operations AVP @ Penetration Testing &amp; resigned due to particularly this nature. Let&rsquo;s take a look at the history how that unfolded ..</p>
+
+<p><img src="../images/Penetration_Test/luci1.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p><img src="../images/Penetration_Test/luci5.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>Looks great, in all format a very better PR team that there is .. In pure amazement, I had to hook up my instruments of mass destructions &amp; concluded it wasn&rsquo;t really that <em>secure</em> as claimed. A complete exchange of the email transcript to me fellow reputed security professionals were as below:</p>
+
+<p><img src="../images/Penetration_Test/luci2.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/luci3.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/luci4.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>.. Somehow the Security Community had got it&rsquo;s weapons hooked &amp; did really picked an effort appreciated (Thanks, to <a href="http://www.opensecurityalliance.org">Dinesh Bajera</a>).</p>
+
+<p><img src="../images/Penetration_Test/bhim.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>The resultant fixes were made &amp; code changes at Android Play Stores were made quickly to compass embarrassment to a direction which were a very generic statement to it&rsquo;s users.</p>
+
+<p><img src="../images/Penetration_Test/bhim2.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>Moving on. I insisted &amp; exchanged couple of mails to Lucideus handler then stating how much such PR doesn&rsquo;t really help the userbase &amp; insisted on making patches to Lucideus own systems.</p>
+
+<p><img src="../images/Penetration_Test/luciexploitmail.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>I&rsquo;d cut this short &amp; re-frame to pointer wise security weaknesses now that the threats are completely patched.</p>
+
+<p><img src="../images/Penetration_Test/luex1.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/luex2.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/luex3.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>In short, we&rsquo;re able to trigger JD&rsquo;s &amp; enough PHP mechanisms which could lead to a <code>Code Injection</code> variant of an attack. Given that these were patched. We recently now bumped into this below:</p>
+
+<p><img src="../images/Penetration_Test/lupr1.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/lupr2.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>It concludes two take-away morales:</p>
+
+<ul>
+<li>PR does make a Cyber Security Company Glitter.</li>
+<li>PR somehow doesn&rsquo;t make their end users secure.</li>
+</ul>
+
+
+<p>This additionally concludes our question <strong>&ldquo;Are Indian Cyber Security Companies Aware?&rdquo;</strong>, Be my guest to be the judge.</p>
+
+<h2><em>..Mmmhm And What About the Indian Eco-Space Enterprises?</em></h2>
+
+<p>Now that pretty cosmetics are really well priced. Please know, compliances in Security are easy earned certificates but definitely a hard earned cash equaling to business risks for any investment banks or the investors &amp; cannot already be managed fruitfully if left to BugBounty Programs. I&rsquo;d debunk that later, but hey!</p>
+
+<p><img src="../images/Penetration_Test/redbusroast1.png" title="RedBus Repo Loss" alt="RedBus" /></p>
+
+<p>No! Invoices were!</p>
+
+<p><img src="../images/Penetration_Test/redbusroast2.png" title="RedBus Repo Loss" alt="RedBus" /></p>
+
+<p>The patch has been responsibly taken care of by now. It&rsquo;s to bring the essence of where the Indian Enterprises are failing. To opt another example out as per Public Disclosure Record after Glorious Patch Success Days ..</p>
+
+<p>.. This was exactly what needs to be pointed out in the Indian Eco-System, you really do not need to articulate non-closures if not already taking Security Operations Serious, more explanation to that later in this series ..</p>
+
+<p><img src="../images/Penetration_Test/olaroast1.png" title="Olacabs Repo Loss" alt="Olacabs" /></p>
+
+<p>Amazon Servers are real taste these days ..</p>
+
+<p><img src="../images/Penetration_Test/olaroast2.png" title="Olacabs Repo Loss" alt="Olacabs" /></p>
+
+<p>.. Sad proved to be very misleading story.</p>
+
+<p><img src="../images/Penetration_Test/olaroast3.png" title="Olacabs Repo Loss" alt="Olacabs" /></p>
+
+<p>All patches were responsibly closed. This isn&rsquo;t about the de-motivation but to really take a point across - BugBounties often isn&rsquo;t any real Penetration Testing to start with nor a Vulnerability Assessment can make organizations any better. The Indian Eco-System has sustained by the rule of Politics where it bends the way management decides but this only later proves the fish to be roasted later during serious compliances &amp; disclosures.</p>
+
+<p>Hence, point proved to our questioning of <strong>Does Indian Enterprise Eco-Space take Security Operations Serious?</strong>. Please be my Guest to be the Judge. The Executioner &amp; this to me, atleast is looking like a complete Joke by now. This isn&rsquo;t about these Enterprises - ALL of them have a positive hit ratio. Let&rsquo;s not try turning a Blind Eye!</p>
+
+<h2>Let&rsquo;s Re-Focus Ourselves to the Cause &amp; Countermeasures!</h2>
+
+<ul>
+<li>Blame Game</li>
+<li>Poor Work Culture</li>
+<li>Management Politics Dependency</li>
+<li>.. &amp; etc ..</li>
+</ul>
+
+
+<p><img src="../images/Penetration_Test/debug.png" title="Sad Debugging Instincts" alt="Debugging" /></p>
+
+<h3>Most Organizations do not have a well defined IT Operations &amp; IT Security Operations Segregation ..</h3>
+
+<ol>
+<li><p>You heard it. The processes itself which segregates IT Security Operations from that of normal IT Operations aren&rsquo;t segregated &amp; eventually run parallel thinking <strong>buying a really costly https certificate would help prevent any &amp; every attacks</strong>.</p></li>
+<li><p>There are <strong>no ways to communicate to upper management on a defined segregation of IT Operations Budget to that of IT Security Operations Budget</strong> which entirely at a later stage put the Organization to the every possible Security Risk in-front of their investors. This really is a problem when you do not have an approved budget for any expenditure on Security lest the whole hard work in already in ruins.</p></li>
+<li><p>Organization Managers are not well informed of their IT Operations Risks &amp; Hazards as this will definitely put senior managers to an extra work load &amp; few might even miss a beautifully love wedding at Miami Beach for that matter. Most <strong>managers, senior managers cum Executive Directors including that of Excreting on Money Current Chairmen &amp; the Board Of Directors DO NOT UNDERSTAND Security Risks, Threats, Glitches &amp; eventually everything that&rsquo;s in-between</strong>.</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Enterprise Web Application Security Program]]></title>
@@ -727,6 +861,12 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>git add .
 </span><span class='line'>git commit -m "any message here, a conventional one"
 </span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<p>.. after this one might deploy using below:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Before you commit to Octopress</h2>
@@ -1470,7 +1610,16 @@ echo &quot;Done!&quot;</code></pre></noscript></div>
 <p>Please keep referencing these which might be very useful from time to time ..</p>
 
 <ul>
-<li><a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">How to setup Octopress Cloned Blog &amp; keeping accessing from different machines, also - the basic working of Octopress</a></li>
+<li><p><a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">How to setup Octopress Cloned Blog &amp; keeping accessing from different machines, also - the basic working of Octopress</a></p></li>
+<li><p>How to fix <em>Error:  Pygments can&rsquo;t parse unknown language: rake</em>:</p>
+
+<ul>
+<li>use /plugins/pygments_code.rb file</li>
+<li>change <code>raise "Pygments can't parse unknown language: #{lang}#</code> to <code>raise "Pygments can't parse unknown language: #{lang}#{code}</code></li>
+<li>next time a <code>rake generate</code> is issued, the location is shown which wouldn&rsquo;t before.</li>
+<li>fix the syntax. This probably triggers by using <em>backticks</em> without a proper line-feed.</li>
+</ul>
+</li>
 </ul>
 
 ]]></content>

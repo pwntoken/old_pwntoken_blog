@@ -174,6 +174,12 @@
 </span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
 
 
+<p>.. after this one might deploy using below:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
 <h2>Before you commit to Octopress</h2>
 
 <p>There are basics if one really would need to customize and initiate the power of octopress to the next level. One does not simply limit himself to understanding of markdown but there&rsquo;s a lot <del>under-the-hood in the octopress framework</del> (<em>not really</em>, take time reading!).</p>
@@ -915,7 +921,16 @@ echo &quot;Done!&quot;</code></pre></noscript></div>
 <p>Please keep referencing these which might be very useful from time to time ..</p>
 
 <ul>
-<li><a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">How to setup Octopress Cloned Blog &amp; keeping accessing from different machines, also - the basic working of Octopress</a></li>
+<li><p><a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/">How to setup Octopress Cloned Blog &amp; keeping accessing from different machines, also - the basic working of Octopress</a></p></li>
+<li><p>How to fix <em>Error:  Pygments can&rsquo;t parse unknown language: rake</em>:</p>
+
+<ul>
+<li>use /plugins/pygments_code.rb file</li>
+<li>change <code>raise "Pygments can't parse unknown language: #{lang}#</code> to <code>raise "Pygments can't parse unknown language: #{lang}#{code}</code></li>
+<li>next time a <code>rake generate</code> is issued, the location is shown which wouldn&rsquo;t before.</li>
+<li>fix the syntax. This probably triggers by using <em>backticks</em> without a proper line-feed.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -1005,6 +1020,10 @@ echo &quot;Done!&quot;</code></pre></noscript></div>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/defining-an-enterprise-penetration-test/">Defining an Enterprise Penetration Test</a>
+      </li>
+    
+      <li class="post">
         <a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a>
       </li>
     
@@ -1020,15 +1039,11 @@ echo &quot;Done!&quot;</code></pre></noscript></div>
         <a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a>
       </li>
     
-      <li class="post">
-        <a href="/initial-post-and-an-introduction/">Introduction</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Top Categories</h1>
-    <ul id="top-category-list"><li><a href='/blog/categories/web-application-security'>web_application_security (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/events'>events (1)</a></li></ul>
+    <ul id="top-category-list"><li><a href='/blog/categories/web-application-security'>web_application_security (3)</a></li><li><a href='/blog/categories/penetration-test'>penetration_test (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/events'>events (1)</a></li></ul>
 </section><h3>Year Archives</h3>
 
     
@@ -1037,9 +1052,27 @@ echo &quot;Done!&quot;</code></pre></noscript></div>
     
     <section>
     
-    <h2 id="2015-ref">2015</h2>
-    <h3 id="2015-September-ref">September</h3>
+    <h2 id="2017-ref">2017</h2>
+    <h3 id="2017-August-ref">August</h3>
     <ul>
+    
+
+    <li><a href="/defining-an-enterprise-penetration-test/">Defining An Enterprise Penetration Test</a></li>
+
+    
+        
+        </ul>
+        <h2 id="2015-ref">2015</h2>
+        <h3 id="2015-September-ref">September</h3>
+        <ul>
+        
+    
+
+    
+    
+    
+    
+    <section>
     
 
     <li><a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a></li>

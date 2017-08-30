@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Defining an Enterprise Penetration Test - Pwntoken - Digital Security Research</title>
+  <meta name="author" content="Shritam Bhowmick">
+
+  
+  <meta name="description" content="Are Enterprises Aware Of A Defined Penetration Test? It really took me a complete decade to have a meaningful dedicated routine time having few legit &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://pwntoken.github.io/defining-an-enterprise-penetration-test/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Pwntoken - Digital Security Research" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-60671877-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Pwntoken - Digital Security Research</a></h1>
+  
+    <h2>Information Security Sciences with Shritam Bhowmick.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="pwntoken.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a>
+  <li><a href="/portfolio">Portfolio</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Defining an Enterprise Penetration Test</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2017-08-30T01:00:22+05:30'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>1:00 am</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://pwntoken.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2><em>Are Enterprises Aware Of A Defined Penetration Test?</em></h2>
+
+<p>It really took me a complete decade to have a meaningful dedicated routine time having few legit set of questions &amp; debunks we&rsquo;ll be looking at frequencies from here onwards. After having experienced a large number of strategic targets for our business commitments, I have now concluded the larger scale enterprises lack a defined understanding of what a <strong>Penetration Test</strong> really is. My study show a very poor performance of the Enterprises at a far capital market reach of a Billion Dollar Industry that the Cyber Security Market can upscale to. I will be the surgeon &amp; would logically be concluding:</p>
+
+<ol>
+<li>Are they Aware!?</li>
+<li>Are Even Cyber Security Companies Themselves Aware?</li>
+<li>What about the Indian Enterprise Eco-Space - they&rsquo;re looking a complete joke by now.</li>
+<li>Re-Iterating &amp; Re-Focusing, Do Indian Enterprise Eco-System Aware of a Dis-balanced IT Ops Budget &amp; Security Ops Budget?</li>
+</ol>
+
+
+<p>.. wait - don&rsquo;t be waiting any longer to have a second thought about mistaking the wide information security domain with just a penetration test. The width I&rsquo;m talking takes grasping this wide domain .. I&rsquo;ll leave you there to the width in an image below ..</p>
+
+<!-- more -->
+
+
+<p><img src="../images/Penetration_Test/infosecdomain.png" title="information Security Domain" alt="infosec" /></p>
+
+<p>A Penetration Test by any margin among that huge wide Information Security Domain is simply put a task in an organization to settle down on a risk factor which includes live infiltration via the Organization&rsquo;s Asset - the Application Stack or the Network Stack. And no, this doesn&rsquo;t include Social Engineering attack for the <code>people</code>, that&rsquo;s <code>Red Teaming</code> &amp; has a larger strategical construct. <code>Red Teaming</code> includes several other facets &amp; factors involved - We&rsquo;d debunk that later for good.</p>
+
+<p>Right now, let&rsquo;s focus around <code>Penetration Test</code>. What would take an Organization, an Enterprise which is highly decorated in it&rsquo;s all reputed glories from decades of business investments to fall apart from the reputation!? This!</p>
+
+<p><img src="../images/Penetration_Test/repoloss.png" title="Reputation Loss" alt="reputationlossPT" /></p>
+
+<p>Little to no surprise, The Enterprises are slowly evolving &amp; have introduced <code>DevOps</code> which has a more simpler way of an efficient IT Operation but a complex variant of necessary subset &amp; routine security check which&rsquo;s often missed. By this factor, very fewer Organizations have really known the difference between a <code>Vulnerability Assessment</code> &amp; a <code>Penetration Test</code> given that they understand necessary scopes to be involved.</p>
+
+<p>Given the experiences I had - in my opinion, they <strong>DO NOT YET UNDERSTAND PENETRATION TEST</strong>.</p>
+
+<h2><em>Are Cyber Security Companies Across India Aware?</em></h2>
+
+<p>Whilst being on a standard operation, I had to focus around getting away with analyzing if Claimed Cyber Security Companies are themselves aware. To my amazement - they&rsquo;re completely off that street &amp; have already went boasting their permits without really having any In-Depth measures often to take.</p>
+
+<p>We&rsquo;ll rewind my experience in short &amp; debunk this out since a company called <a href="www.lucideus.com">Lucideus Tech</a> was recently roasted at Reddit India for the very same reasons. Please don&rsquo;t judge already, I was involved with the operations AVP @ Penetration Testing &amp; resigned due to particularly this nature. Let&rsquo;s take a look at the history how that unfolded ..</p>
+
+<p><img src="../images/Penetration_Test/luci1.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p><img src="../images/Penetration_Test/luci5.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>Looks great, in all format a very better PR team that there is .. In pure amazement, I had to hook up my instruments of mass destructions &amp; concluded it wasn&rsquo;t really that <em>secure</em> as claimed. A complete exchange of the email transcript to me fellow reputed security professionals were as below:</p>
+
+<p><img src="../images/Penetration_Test/luci2.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/luci3.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/luci4.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>.. Somehow the Security Community had got it&rsquo;s weapons hooked &amp; did really picked an effort appreciated (Thanks, to <a href="http://www.opensecurityalliance.org">Dinesh Bajera</a>).</p>
+
+<p><img src="../images/Penetration_Test/bhim.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>The resultant fixes were made &amp; code changes at Android Play Stores were made quickly to compass embarrassment to a direction which were a very generic statement to it&rsquo;s users.</p>
+
+<p><img src="../images/Penetration_Test/bhim2.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>Moving on. I insisted &amp; exchanged couple of mails to Lucideus handler then stating how much such PR doesn&rsquo;t really help the userbase &amp; insisted on making patches to Lucideus own systems.</p>
+
+<p><img src="../images/Penetration_Test/luciexploitmail.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>I&rsquo;d cut this short &amp; re-frame to pointer wise security weaknesses now that the threats are completely patched.</p>
+
+<p><img src="../images/Penetration_Test/luex1.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/luex2.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/luex3.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>In short, we&rsquo;re able to trigger JD&rsquo;s &amp; enough PHP mechanisms which could lead to a <code>Code Injection</code> variant of an attack. Given that these were patched. We recently now bumped into this below:</p>
+
+<p><img src="../images/Penetration_Test/lupr1.png" title="Lucideus Repo Loss" alt="Lucideus" />
+<img src="../images/Penetration_Test/lupr2.png" title="Lucideus Repo Loss" alt="Lucideus" /></p>
+
+<p>It concludes two take-away morales:</p>
+
+<ul>
+<li>PR does make a Cyber Security Company Glitter.</li>
+<li>PR somehow doesn&rsquo;t make their end users secure.</li>
+</ul>
+
+
+<p>This additionally concludes our question <strong>&ldquo;Are Indian Cyber Security Companies Aware?&rdquo;</strong>, Be my guest to be the judge.</p>
+
+<h2><em>..Mmmhm And What About the Indian Eco-Space Enterprises?</em></h2>
+
+<p>Now that pretty cosmetics are really well priced. Please know, compliances in Security are easy earned certificates but definitely a hard earned cash equaling to business risks for any investment banks or the investors &amp; cannot already be managed fruitfully if left to BugBounty Programs. I&rsquo;d debunk that later, but hey!</p>
+
+<p><img src="../images/Penetration_Test/redbusroast1.png" title="RedBus Repo Loss" alt="RedBus" /></p>
+
+<p>No! Invoices were!</p>
+
+<p><img src="../images/Penetration_Test/redbusroast2.png" title="RedBus Repo Loss" alt="RedBus" /></p>
+
+<p>The patch has been responsibly taken care of by now. It&rsquo;s to bring the essence of where the Indian Enterprises are failing. To opt another example out as per Public Disclosure Record after Glorious Patch Success Days ..</p>
+
+<p>.. This was exactly what needs to be pointed out in the Indian Eco-System, you really do not need to articulate non-closures if not already taking Security Operations Serious, more explanation to that later in this series ..</p>
+
+<p><img src="../images/Penetration_Test/olaroast1.png" title="Olacabs Repo Loss" alt="Olacabs" /></p>
+
+<p>Amazon Servers are real taste these days ..</p>
+
+<p><img src="../images/Penetration_Test/olaroast2.png" title="Olacabs Repo Loss" alt="Olacabs" /></p>
+
+<p>.. Sad proved to be very misleading story.</p>
+
+<p><img src="../images/Penetration_Test/olaroast3.png" title="Olacabs Repo Loss" alt="Olacabs" /></p>
+
+<p>All patches were responsibly closed. This isn&rsquo;t about the de-motivation but to really take a point across - BugBounties often isn&rsquo;t any real Penetration Testing to start with nor a Vulnerability Assessment can make organizations any better. The Indian Eco-System has sustained by the rule of Politics where it bends the way management decides but this only later proves the fish to be roasted later during serious compliances &amp; disclosures.</p>
+
+<p>Hence, point proved to our questioning of <strong>Does Indian Enterprise Eco-Space take Security Operations Serious?</strong>. Please be my Guest to be the Judge. The Executioner &amp; this to me, atleast is looking like a complete Joke by now. This isn&rsquo;t about these Enterprises - ALL of them have a positive hit ratio. Let&rsquo;s not try turning a Blind Eye!</p>
+
+<h2>Let&rsquo;s Re-Focus Ourselves to the Cause &amp; Countermeasures!</h2>
+
+<ul>
+<li>Blame Game</li>
+<li>Poor Work Culture</li>
+<li>Management Politics Dependency</li>
+<li>.. &amp; etc ..</li>
+</ul>
+
+
+<p><img src="../images/Penetration_Test/debug.png" title="Sad Debugging Instincts" alt="Debugging" /></p>
+
+<h3>Most Organizations do not have a well defined IT Operations &amp; IT Security Operations Segregation ..</h3>
+
+<ol>
+<li><p>You heard it. The processes itself which segregates IT Security Operations from that of normal IT Operations aren&rsquo;t segregated &amp; eventually run parallel thinking <strong>buying a really costly https certificate would help prevent any &amp; every attacks</strong>.</p></li>
+<li><p>There are <strong>no ways to communicate to upper management on a defined segregation of IT Operations Budget to that of IT Security Operations Budget</strong> which entirely at a later stage put the Organization to the every possible Security Risk in-front of their investors. This really is a problem when you do not have an approved budget for any expenditure on Security lest the whole hard work in already in ruins.</p></li>
+<li><p>Organization Managers are not well informed of their IT Operations Risks &amp; Hazards as this will definitely put senior managers to an extra work load &amp; few might even miss a beautifully love wedding at Miami Beach for that matter. Most <strong>managers, senior managers cum Executive Directors including that of Excreting on Money Current Chairmen &amp; the Board Of Directors DO NOT UNDERSTAND Security Risks, Threats, Glitches &amp; eventually everything that&rsquo;s in-between</strong>.</p></li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Shritam Bhowmick</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2017-08-30T01:00:22+05:30'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>1:00 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/penetration-test/'>penetration_test</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://pwntoken.github.io/defining-an-enterprise-penetration-test/" data-via="pwntoken" data-counturl="http://pwntoken.github.io/defining-an-enterprise-penetration-test/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      <div class="about">
+     <span class="about-image">
+          <img alt="shritam" src="/images/author.jpg">
+     </span>
+     <span class="about-desc">
+          <span>
+              <i>Hello. Welcome to pwntoken. Shritam is an Information Security Analyst cum Penetration Tester. He does Application Security and here&#8217;s his <a target="_blank" href="https://www.linkedin.com/in/shritambhowmick"> LinkedIn </a> for a <bold>professional touch</bold>. Feel free to discuss about the post content and you can send him f eedbacks, if any, at his email</i>  (<a  href="mailto:shritam.bhowmick@gmail.com" style="text-decoration:none;"> <img style="border:none" alt="shritam_email" src="/images/email.png"></a>).
+           </span>
+          <br/>
+          <hr/>
+          <a href="https://twitter.com/pwntoken" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @pwntoken</a>
+     </span>
+</div>
+
+    </p>
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/enterprise-web-application-security-program/" title="Previous Post: Enterprise Web Application Security Program">&laquo; Enterprise Web Application Security Program</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+<section>
+  <h1>Information Security</h1>
+  <a href="http://security.stackexchange.com/users/66678/shritam-bhowmick">
+<img src="http://security.stackexchange.com/users/flair/66678.png?theme=dark" width="208" height="58" alt="profile for Shritam Bhowmick at Information Security Stack Exchange, Q&amp;A for information security professionals" title="profile for Shritam Bhowmick at Information Security Stack Exchange, Q&amp;A for information security professionals">
+</a>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/defining-an-enterprise-penetration-test/">Defining an Enterprise Penetration Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a>
+      </li>
+    
+      <li class="post">
+        <a href="/web-application-security-testing/">Web Application Security Testing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/economics-of-web-application-security/">Economics of Web Application Security</a>
+      </li>
+    
+      <li class="post">
+        <a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Top Categories</h1>
+    <ul id="top-category-list"><li><a href='/blog/categories/web-application-security'>web_application_security (3)</a></li><li><a href='/blog/categories/penetration-test'>penetration_test (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/events'>events (1)</a></li></ul>
+</section><h3>Year Archives</h3>
+
+    
+    
+    
+    
+    <section>
+    
+    <h2 id="2017-ref">2017</h2>
+    <h3 id="2017-August-ref">August</h3>
+    <ul>
+    
+
+    <li><a href="/defining-an-enterprise-penetration-test/">Defining An Enterprise Penetration Test</a></li>
+
+    
+        
+        </ul>
+        <h2 id="2015-ref">2015</h2>
+        <h3 id="2015-September-ref">September</h3>
+        <ul>
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/enterprise-web-application-security-program/">Enterprise Web Application Security Program</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-August-ref">August</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/web-application-security-testing/">Web Application Security Testing</a></li>
+
+    
+            
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/economics-of-web-application-security/">Economics of Web Application Security</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-July-ref">July</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/driving-by-dirty-octopress/">Driving-By Dirty Octopress</a></li>
+
+    
+            
+            
+            </ul>
+            <h3 id="2015-March-ref">March</h3>
+            <ul>
+    </section>
+            
+        
+    
+
+    
+    
+    
+    
+    <section>
+    
+
+    <li><a href="/initial-post-and-an-introduction/">Introduction</a></li>
+
+    
+    </ul>
+    
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - Shritam Bhowmick -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'pwntoken';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://pwntoken.github.io/defining-an-enterprise-penetration-test/';
+        var disqus_url = 'http://pwntoken.github.io/defining-an-enterprise-penetration-test/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
